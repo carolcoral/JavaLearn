@@ -3,9 +3,9 @@
 
 博客地址：http://blog.csdn.net/carolcoral
 
-# JavaSE
+## JavaSE
 
-## Arithmetic（包含 JavaSE 中主要需要了解和学习的内容的文本资料）
+### Arithmetic（包含 JavaSE 中主要需要了解和学习的内容的文本资料）
 
  1.[封装、继承、多态](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day09—封装、继承、多态.java)；  
 
