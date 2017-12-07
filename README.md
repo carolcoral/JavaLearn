@@ -7,7 +7,7 @@
 
 ### Arithmetic（包含 JavaSE 中主要需要了解和学习的内容的文本资料）
 
-* 1.[封装、继承、多态](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day09—封装、继承、多态.java)；  
+* > 1.[封装、继承、多态](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day09—封装、继承、多态.java)；  
 
 * 2.[继承、访问控制符、final 关键字、对象创建过程、多态、抽象类](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day10—继承、访问控制符、final关键字、对象创建过程、多态、抽象类.java)；  
 
