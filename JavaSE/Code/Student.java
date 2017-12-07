@@ -1,11 +1,11 @@
-package xdl.day16;
+package xdl.day14;
 
 public class Student implements Comparable<Student> {
 	private int id;
 	private String name;
 	private int age;
 
-	public Student(int id, String name, int age) throws AgeExcption {
+	public Student(int id, String name, int age) {
 		super();
 		setId(id);
 		setName(name);
@@ -40,12 +40,11 @@ public class Student implements Comparable<Student> {
 		return age;
 	}
 
-	public void setAge(int age) throws AgeExcption {
+	public void setAge(int age) {
 		if (age > 3 && age < 300)
 			this.age = age;
 		else {
-			// System.out.println("年龄不合法false");
-			throw new AgeExcption();
+			System.out.println("年龄不合法false");
 		}
 	}
 
@@ -81,4 +80,11 @@ public class Student implements Comparable<Student> {
 		// TODO Auto-generated method stub
 		return getId() - o.getId();
 	}
+
+	// @Override
+	// public int compareTo(Student o) {
+	// // TODO Auto-generated method stub
+	// // return 1;//不能使用0作为返回值，因为会丢失其他数据
+	// return getId() - o.getId();//根据学号信息判断
+	// }
 }
