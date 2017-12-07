@@ -5,7 +5,7 @@
 
 # JavaSE
 
-    ## Arithmetic
+  ## Arithmetic
 
   1.[封装、继承、多态](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day09—封装、继承、多态.java)；  
 
