@@ -1,7 +1,6 @@
 今日内容：
 1.File 类
 2.I/O 流
-3.
 
 1.File 类（重点）
 1.1 基本概念
@@ -80,20 +79,43 @@
 	int read(byte[] b) — 用于读满整个数组
 	int available() — 获取该输入流对应文件的大小并返回
 
+2.6 DataOutputStream 类（熟悉）
+（1）基本概念
+	java.io.DataOutputStream 类用于以适当方式写入 Java 基本数据类型到输出流。
+（2）常用方法
+	DataOutputStream(OutputStream out) — 根据参数指定引用构造对象
+				— OutputStream 类是抽象类，因此实参需要传递该类子类的对象
+	void writeInt(int v) — 用于将参数指定的整数写入输出流
 
+2.7 DataInputStream 类（熟悉）
+（1）基本概念
+	java.io.DataInputStream 类用于从输入流中读取 Java 基本数据类型。
+（2）常用方法
+	DataInputStream(InputStream in) — 根据参数指定引用构造对象
+			— InputStream 类似抽象类，因此实参需要传递子类对象
+	int readInt() — 用于读取一个整数并返回
+	void close() — 关闭
 
+2.8 BufferedWriter 类（重点）
+（1）基本概念
+	java.io.BufferedWriter 类用于写入单个字符、字符数组以及字符串到输出流中。
+（2）常用方法
+	BufferedWriter(Writer out) — 根据参数指定引用来构造对象
+				— Writer 类是抽象类，因此实参传递子类对象
+	void writ(int c) — 用于写入单个字符
+	void write(char[]  cbuf , int off, int len) — 写入字符数组的一部分
+	void write(String s, int off, int len) — 写入字符串的一部分
+	void write(String str) — 写入整个字符串（继承的）
+	void newLine() — 写入行分隔符
+	void close() 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+2.9 BufferedReader 类（重点）
+（1）基本概念
+	java.io.BufferedReader 类用于读取单个字符、字符数组以及一行字符串。
+（2）常用方法
+	BufferedReader(Reader in ) — 根据参数引用构造对象
+			— Reader 类似抽象类，实参需要传递子类的对象
+	int read() — 用于读取单个字符
+	int read(char[] cbuf, int off int len) — 读满数组的一部分空间
+	String readLine() — 读取一行字符串
+	void close()
