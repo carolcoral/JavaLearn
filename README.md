@@ -27,4 +27,6 @@
 
 10.[I/O流、线程基本概念、线程常用方法、线程同步机制](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day18—输入输出流、线程.java)
 
+11.[线程的基本操作、线程的同步机制](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day19—线程的同步机制、线程的基本操作.java)
+
 * ### Code（包含 JavaSE 中 学习过程中所编写的一些代码）
