@@ -33,4 +33,14 @@
 
 13.[反射机制、常用的设计原则和模型](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day21—反射机制、常用的设计原则和模型.java)
 
-* ### Code（包含 JavaSE 中 学习过程中所编写的一些代码）
+* ### Code（包含 JavaSE 中 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
+
+1.[文件复制功能](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFileCopy.java)
+
+2.[集合内容大小比较](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSort.java)
+
+3.[重写 toString()、hashCode()、equals()方法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/Student.java)
+
+4.[基于 TCP 协议的网络通信](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ServerSocket.java)
+
+
