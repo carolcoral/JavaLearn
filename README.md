@@ -46,7 +46,7 @@
 5.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
 
 
-* ### Student（学生信息管理系统）
+* ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
 
 >AgeException.java : 创建的判断年龄异常的异常类；
 
