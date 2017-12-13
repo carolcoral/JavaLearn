@@ -43,6 +43,8 @@
 
 4.[基于 TCP 协议的网络通信](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ServerSocket.java)
 
+5.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
+
 
 * ### Student（学生信息管理系统）
 
