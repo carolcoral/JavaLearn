@@ -44,3 +44,26 @@
 4.[基于 TCP 协议的网络通信](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ServerSocket.java)
 
 
+* ### Student（学生信息管理系统）
+
+>AgeException.java : 创建的判断年龄异常的异常类；
+
+>IdException.java : 创建的判断学号是否异常的异常类；
+
+>DaoStudent.java : 将获取的学生信息写入到文件中；
+
+>ManagerStudent.java : 对学生信息进行增删改查操作的方法类，属于 MVC 中的 M 层；
+
+>Student.java : 创建有关学生信息的类；
+
+>TestStudentManager.java : 学生信息的测试类；
+
+>ViewStudent.java : 显示学生信息的类，视图层；
+
+
+
+
+
+
+
+
