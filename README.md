@@ -35,15 +35,17 @@
 
 * ### Code（包含 JavaSE 中 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
-1.[文件复制功能](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFileCopy.java)
+1.[单例模式的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/Singerton.java)
 
-2.[集合内容大小比较](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSort.java)
+2.[文件复制功能](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFileCopy.java)
 
-3.[重写 toString()、hashCode()、equals()方法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/Student.java)
+3.[集合内容大小比较](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSort.java)
 
-4.[基于 TCP 协议的网络通信](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ServerSocket.java)
+4.[重写 toString()、hashCode()、equals()方法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/Student.java)
 
-5.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
+5.[基于 TCP 协议的网络通信](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ServerSocket.java)
+
+6.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
 
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
