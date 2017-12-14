@@ -54,7 +54,7 @@
 
 7.[查找算法的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFind.java)
 
-8.[排序算法的几种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSortArith.java)
+8.[排序算法的四种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSortArith.java)
 
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
