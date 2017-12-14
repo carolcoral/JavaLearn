@@ -5,6 +5,8 @@
 
 ## JavaSE
 
+<textarea>
+
 * ### Arithmetic（包含学习 JavaSE 中主要需要了解和学习的内容的文本资料）
 
 1.[封装、继承、多态](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day09—封装、继承、多态.java)；  
@@ -66,7 +68,7 @@
 
 
 
-
+</textarea>
 
 
 
