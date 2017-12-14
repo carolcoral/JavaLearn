@@ -4,24 +4,24 @@
 http-equiv="X-UA-Compatible">
  
 <META charset="utf-8"> <TITLE>Java开发中的23种设计模式详解</TITLE> <LINK 
-href="Java开发中的23种设计模式详解_files/blog-common.css" rel="stylesheet" type="text/css"> 
-<LINK id="MainCss" href="Java开发中的23种设计模式详解_files/bundle-darkgreentrip.css" rel="stylesheet" 
+href="Java-23-_files/blog-common.css" rel="stylesheet" type="text/css"> 
+<LINK id="MainCss" href="Java-23-_files/bundle-darkgreentrip.css" rel="stylesheet" 
 type="text/css"> <LINK title="RSS" href="http://www.cnblogs.com/maowang1991/rss" 
 rel="alternate" type="application/rss+xml"> <LINK title="RSD" href="http://www.cnblogs.com/maowang1991/rsd.xml" 
 rel="EditURI" type="application/rsd+xml"> <LINK href="http://www.cnblogs.com/maowang1991/wlwmanifest.xml" 
 rel="wlwmanifest" type="application/wlwmanifest+xml"> 
-<SCRIPT src="Java开发中的23种设计模式详解_files/jquery.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="Java-23-_files/jquery.js" type="text/javascript"></SCRIPT>
   
 <SCRIPT type="text/javascript">var currentBlogApp = 'maowang1991', cb_enable_mathjax=false;var isLogined=false;</SCRIPT>
  
-<SCRIPT src="Java开发中的23种设计模式详解_files/blog-common.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="Java-23-_files/blog-common.js" type="text/javascript"></SCRIPT>
  
 <META name="GENERATOR" content="MSHTML 11.00.9600.18427"></HEAD> 
 <BODY><A name="top"></A> <!--done--> 
 <DIV id="home">
 <DIV id="header">
 <DIV id="blogTitle"><A id="lnkBlogLogo" href="http://www.cnblogs.com/maowang1991/"><IMG 
-id="blogLogo" alt="返回主页" src="Java开发中的23种设计模式详解_files/logo.gif"></A>					<!--done--> 
+id="blogLogo" alt="返回主页" src="Java-23-_files/logo.gif"></A>					<!--done--> 
 	 
 <DIV id="navigator">
 <UL id="navList">
@@ -67,7 +67,7 @@ target="_blank">http://pan.baidu.com/share/link?shareid=372668&amp;uk=4076915866
 <P>结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。</P>
 <P>行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</P>
 <P>其实还有两类：并发型模式和线程池模式。用一个图片来整体描述一下：</P>
-<P><IMG width="700" height="840" title="点击查看原始大小图片" class="magplus" alt="" src="Java开发中的23种设计模式详解_files/57a92d42-4d84-3aa9-a8b9-63a0b02c2c36.jpg"></P>
+<P><IMG width="700" height="840" title="点击查看原始大小图片" class="magplus" alt="" src="Java-23-_files/57a92d42-4d84-3aa9-a8b9-63a0b02c2c36.jpg"></P>
 <P>&nbsp;</P>
 <P><SPAN><STRONG>二、设计模式的六大原则</STRONG></SPAN></P>
 <P><SPAN><STRONG>1、开闭原则（Open Close Principle）</STRONG></SPAN></P>
@@ -90,7 +90,7 @@ From Baidu 百科</P>
 <P><STRONG><SPAN>1、工厂方法模式（Factory Method）</SPAN></STRONG></P>
 <P>工厂方法模式分为三种：</P>
 <P><STRONG><EM>11、普通工厂模式</EM></STRONG>，就是建立一个工厂类，对实现了同一接口的一些类进行实例的创建。首先看下关系图：</P>
-<P><IMG width="657" height="352" alt="" src="Java开发中的23种设计模式详解_files/421a1a3f-6777-3bca-85d7-00fc60c1ae8b.png"></P>
+<P><IMG width="657" height="352" alt="" src="Java-23-_files/421a1a3f-6777-3bca-85d7-00fc60c1ae8b.png"></P>
 <P>举例如下：（我们举一个发送邮件和短信的例子）</P>
 <P>首先，创建二者的共同接口：</P>
 <DIV>
@@ -157,7 +157,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
   <LI><SPAN>}&nbsp;&nbsp;</SPAN></LI></OL></DIV>
 <P>输出：this is sms sender!</P>
 <P><EM><STRONG>22、多个工厂方法模式</STRONG></EM>，是对普通工厂方法模式的改进，在普通工厂方法模式中，如果传递的字符串出错，则不能正确创建对象，而多个工厂方法模式是提供多个工厂方法，分别创建对象。关系图：</P>
-<P><IMG width="700" height="313" title="点击查看原始大小图片" class="magplus" alt="" src="Java开发中的23种设计模式详解_files/84673ccf-ef89-3774-b5cf-6d2523cd03e5.jpg"></P>
+<P><IMG width="700" height="313" title="点击查看原始大小图片" class="magplus" alt="" src="Java-23-_files/84673ccf-ef89-3774-b5cf-6d2523cd03e5.jpg"></P>
 <P>将上面的代码做下修改，改动下SendFactory类就行，如下：</P>
 <DIV>
 <DIV>
@@ -222,7 +222,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>总体来说，工厂模式适合：凡是出现了大量的产品需要创建，并且具有共同的接口时，可以通过工厂方法模式进行创建。在以上的三种模式中，第一种如果传入的字符串有误，不能正确创建对象，第三种相对于第二种，不需要实例化工厂类，所以，大多数情况下，我们会选用第三种——静态工厂方法模式。</P>
 <P><STRONG><SPAN>2、抽象工厂模式（Abstract Factory）</SPAN></STRONG></P>
 <P>工厂方法模式有一个问题就是，类的创建依赖工厂类，也就是说，如果想要拓展程序，必须对工厂类进行修改，这违背了闭包原则，所以，从设计角度考虑，有一定的问题，如何解决？就用到抽象工厂模式，创建多个工厂类，这样一旦需要增加新的功能，直接增加新的工厂类就可以了，不需要修改之前的代码。因为抽象工厂不太好理解，我们先看看图，然后就和代码，就比较容易理解。</P>
-<P><IMG width="700" height="295" title="点击查看原始大小图片" class="magplus" alt="" src="Java开发中的23种设计模式详解_files/34a0f8de-16e0-3cd5-9f69-257fcb2be742.jpg"></P>
+<P><IMG width="700" height="295" title="点击查看原始大小图片" class="magplus" alt="" src="Java-23-_files/34a0f8de-16e0-3cd5-9f69-257fcb2be742.jpg"></P>
 <P>请看例子：</P>
 <DIV>
 <DIV>
@@ -597,9 +597,9 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <DIV>要实现深复制，需要采用流的形式读入当前对象的二进制输入，再写出二进制数据对应的对象。</DIV>
 <DIV>
 <P>我们接着讨论设计模式，上篇文章我讲完了5种创建型模式，这章开始，我将讲下7种结构型模式：适配器模式、装饰模式、代理模式、外观模式、桥接模式、组合模式、享元模式。其中对象的适配器模式是各种模式的起源，我们看下面的图：</P>
-<P><IMG width="700" height="371" title="点击查看原始大小图片" class="magplus" alt="" src="Java开发中的23种设计模式详解_files/e28698b9-994e-3fa8-8810-16f30e7cf3e3.jpg"></P>
+<P><IMG width="700" height="371" title="点击查看原始大小图片" class="magplus" alt="" src="Java-23-_files/e28698b9-994e-3fa8-8810-16f30e7cf3e3.jpg"></P>
 <P>&nbsp;适配器模式将某个类的接口转换成客户端期望的另一个接口表示，目的是消除由于接口不匹配所造成的类的兼容性问题。主要分为三类：类的适配器模式、对象的适配器模式、接口的适配器模式。首先，我们来看看<STRONG><SPAN>类的适配器模式</SPAN></STRONG>，先看类图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/6b2d13aa-7cc7-3e98-9764-bdcb2c64f795.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/6b2d13aa-7cc7-3e98-9764-bdcb2c64f795.jpg"></P>
 <P>核心思想就是：有一个Source类，拥有一个方法，待适配，目标接口时Targetable，通过Adapter类，将Source的功能扩展到Targetable里，看代码：</P>
 <DIV>
 <DIV>
@@ -656,7 +656,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>这样Targetable接口的实现类就具有了Source类的功能。</P>
 <P><STRONG><SPAN>对象的适配器模式</SPAN></STRONG></P>
 <P>基本思路和类的适配器模式相同，只是将Adapter类作修改，这次不继承Source类，而是持有Source类的实例，以达到解决兼容性的问题。看图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/0aabe35b-5b79-3ead-838f-9d4b6fbd774d.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/0aabe35b-5b79-3ead-838f-9d4b6fbd774d.jpg"></P>
 <P>&nbsp;</P>
 <P>只需要修改Adapter类的源码即可：</P>
 <DIV>
@@ -699,7 +699,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
   <LI><SPAN>}&nbsp;&nbsp;</SPAN></LI></OL></DIV>
 <P>输出与第一种一样，只是适配的方法不同而已。</P>
 <P>第三种适配器模式是<STRONG><SPAN>接口的适配器模式</SPAN></STRONG>，接口的适配器是这样的：有时我们写的一个接口中有多个抽象方法，当我们写该接口的实现类时，必须实现该接口的所有方法，这明显有时比较浪费，因为并不是所有的方法都是我们需要的，有时只需要某一些，此处为了解决这个问题，我们引入了接口的适配器模式，借助于一个抽象类，该抽象类实现了该接口，实现了所有的方法，而我们不和原始的接口打交道，只和该抽象类取得联系，所以我们写一个类，继承该抽象类，重写我们需要的方法就行。看一下类图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/a604fca8-e0c6-3e4e-b00a-49da21595b4e.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/a604fca8-e0c6-3e4e-b00a-49da21595b4e.jpg"></P>
 <P>这个很好理解，在实际开发中，我们也常会遇到这种接口中定义了太多的方法，以致于有时我们在一些实现类中并不是都需要。看代码：</P>
 <DIV>
 <DIV>
@@ -769,7 +769,7 @@ Sub2!</P>
 <P>接口的适配器模式：当不希望实现一个接口中所有的方法时，可以创建一个抽象类Wrapper，实现所有方法，我们写别的类的时候，继承抽象类即可。</P>
 <P><STRONG><SPAN>7、装饰模式（Decorator）</SPAN></STRONG></P>
 <P>顾名思义，装饰模式就是给一个对象增加一些新的功能，而且是动态的，要求装饰对象和被装饰对象实现同一个接口，装饰对象持有被装饰对象的实例，关系图如下：</P>
-<P><IMG width="382" height="228" alt="" src="Java开发中的23种设计模式详解_files/e1b8b6a3-0150-31ae-8f77-7c3d888b6f80.jpg"></P>
+<P><IMG width="382" height="228" alt="" src="Java-23-_files/e1b8b6a3-0150-31ae-8f77-7c3d888b6f80.jpg"></P>
 <P>Source类是被装饰类，Decorator类是一个装饰类，可以为Source类动态的添加一些功能，代码如下：</P>
 <DIV>
 <DIV>
@@ -833,7 +833,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>缺点：产生过多相似的对象，不易排错！</P>
 <P><SPAN><STRONG>8、代理模式（Proxy）</STRONG></SPAN></P>
 <P>其实每个模式名称就表明了该模式的作用，代理模式就是多一个代理类出来，替原对象进行一些操作，比如我们在租房子的时候回去找中介，为什么呢？因为你对该地区房屋的信息掌握的不够全面，希望找一个更熟悉的人去帮你做，此处的代理就是这个意思。再如我们有的时候打官司，我们需要请律师，因为律师在法律方面有专长，可以替我们进行操作，表达我们的想法。先来看看关系图：<IMG 
-width="462" height="226" alt="" src="Java开发中的23种设计模式详解_files/ea094ad9-efc5-337d-a8e8-ce9223511144.jpg"></P>
+width="462" height="226" alt="" src="Java-23-_files/ea094ad9-efc5-337d-a8e8-ce9223511144.jpg"></P>
 <P>&nbsp;</P>
 <P>根据上文的阐述，代理模式就比较容易的理解了，我们看下代码：</P>
 <DIV>
@@ -904,7 +904,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>使用代理模式，可以将功能划分的更加清晰，有助于后期维护！</P>
 <P><STRONG><SPAN>9、外观模式（Facade）</SPAN></STRONG></P>
 <P>外观模式是为了解决类与类之家的依赖关系的，像spring一样，可以将类和类之间的关系配置到配置文件中，而外观模式就是将他们的关系放在一个Facade类中，降低了类类之间的耦合度，该模式中没有涉及到接口，看下类图：（我们以一个计算机的启动过程为例）</P>
-<P><IMG width="544" height="294" alt="" src="Java开发中的23种设计模式详解_files/eebe2103-6ced-35f2-8664-3a2e8a557f81.jpg"></P>
+<P><IMG width="544" height="294" alt="" src="Java-23-_files/eebe2103-6ced-35f2-8664-3a2e8a557f81.jpg"></P>
 <P>我们先看下实现类：</P>
 <DIV>
 <DIV>
@@ -1004,7 +1004,7 @@ shutdown!<BR>memory shutdown!<BR>disk shutdown!<BR>computer closed!</P>
 <P>如果我们没有Computer类，那么，CPU、Memory、Disk他们之间将会相互持有实例，产生关系，这样会造成严重的依赖，修改一个类，可能会带来其他类的修改，这不是我们想要看到的，有了Computer类，他们之间的关系被放在了Computer类里，这样就起到了解耦的作用，这，就是外观模式！</P>
 <P><SPAN><STRONG>10、桥接模式（Bridge）</STRONG></SPAN></P>
 <P>桥接模式就是把事物和其具体实现分开，使他们可以各自独立的变化。桥接的用意是：<STRONG><SPAN>将抽象化与实现化解耦，使得二者可以独立变化</SPAN></STRONG>，像我们常用的JDBC桥DriverManager一样，JDBC进行连接数据库的时候，在各个数据库之间进行切换，基本不需要动太多的代码，甚至丝毫不用动，原因就是JDBC提供统一接口，每个数据库提供各自的实现，用一个叫做数据库驱动的程序来桥接就行了。我们来看看关系图：</P>
-<P><IMG width="640" height="247" alt="" src="Java开发中的23种设计模式详解_files/35f0b172-b976-3757-bb51-c65d5c9ce68e.jpg"></P>
+<P><IMG width="640" height="247" alt="" src="Java-23-_files/35f0b172-b976-3757-bb51-c65d5c9ce68e.jpg"></P>
 <P>实现代码：</P>
 <P>先定义接口：</P>
 <DIV>
@@ -1097,10 +1097,10 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>output：</P>
 <P>this is the first sub!<BR>this is the second sub!</P>
 <P>这样，就通过对Bridge类的调用，实现了对接口Sourceable的实现类SourceSub1和SourceSub2的调用。接下来我再画个图，大家就应该明白了，因为这个图是我们JDBC连接的原理，有数据库学习基础的，一结合就都懂了。</P>
-<P><IMG width="613" height="197" alt="" src="Java开发中的23种设计模式详解_files/6f713d07-1409-3312-99c9-fa6b0909f0b2.jpg"></P>
+<P><IMG width="613" height="197" alt="" src="Java-23-_files/6f713d07-1409-3312-99c9-fa6b0909f0b2.jpg"></P>
 <P><SPAN><STRONG>11、组合模式（Composite）</STRONG></SPAN></P>
 <P>组合模式有时又叫<STRONG><SPAN>部分-整体</SPAN></STRONG>模式在处理类似树形结构的问题时比较方便，看看关系图：</P>
-<P><IMG width="483" height="177" alt="" src="Java开发中的23种设计模式详解_files/09cab656-5ff9-380e-9df1-326339ac3509.jpg"></P>
+<P><IMG width="483" height="177" alt="" src="Java-23-_files/09cab656-5ff9-380e-9df1-326339ac3509.jpg"></P>
 <P>直接来看代码：</P>
 <DIV>
 <DIV>
@@ -1174,10 +1174,10 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>使用场景：将多个对象组合在一起进行操作，常用于表示树形结构中，例如二叉树，数等。</P>
 <P><SPAN><STRONG>12、享元模式（Flyweight）</STRONG></SPAN></P>
 <P>享元模式的主要目的是实现对象的共享，即共享池，当系统中对象多的时候可以减少内存的开销，通常与工厂模式一起使用。</P>
-<P><IMG width="484" height="171" alt="" src="Java开发中的23种设计模式详解_files/f7aae0dd-b250-3829-bb07-49d87069bfbb.jpg"></P>
+<P><IMG width="484" height="171" alt="" src="Java-23-_files/f7aae0dd-b250-3829-bb07-49d87069bfbb.jpg"></P>
 <P>FlyWeightFactory负责创建和管理享元单元，当一个客户端请求时，工厂需要检查当前对象池中是否有符合条件的对象，如果有，就返回已经存在的对象，如果没有，则创建一个新对象，FlyWeight是超类。一提到共享池，我们很容易联想到Java里面的JDBC连接池，想想每个连接的特点，我们不难总结出：适用于作共享的一些个对象，他们有一些共有的属性，就拿数据库连接池来说，url、driverClassName、username、password及dbname，这些属性对于每个连接来说都是一样的，所以就适合用享元模式来处理，建一个工厂类，将上述类似属性作为内部数据，其它的作为外部数据，在方法调用时，当做参数传进来，这样就节省了空间，减少了实例的数量。</P>
 <P>看个例子：</P>
-<P><IMG width="452" height="196" alt="" src="Java开发中的23种设计模式详解_files/53bc0bf4-cafb-3a12-8574-e20a525f2b72.jpg"></P>
+<P><IMG width="452" height="196" alt="" src="Java-23-_files/53bc0bf4-cafb-3a12-8574-e20a525f2b72.jpg"></P>
 <P>看下数据库连接池的代码：</P>
 <DIV>
 <DIV>
@@ -1239,10 +1239,10 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P><STRONG>&nbsp;</STRONG></P>
 <P>先来张图，看看这11中模式的关系：</P>
 <P>第一类：通过父类与子类的关系进行实现。第二类：两个类之间。第三类：类的状态。第四类：通过中间类</P>
-<P><IMG width="681" height="314" alt="" src="Java开发中的23种设计模式详解_files/5e2feb58-4170-3c07-a370-ed99bdcab223.jpg"></P>
+<P><IMG width="681" height="314" alt="" src="Java-23-_files/5e2feb58-4170-3c07-a370-ed99bdcab223.jpg"></P>
 <P><SPAN><STRONG>13、策略模式（strategy）</STRONG></SPAN></P>
 <P>策略模式定义了一系列算法，并将每个算法封装起来，使他们可以相互替换，且算法的变化不会影响到使用算法的客户。需要设计一个接口，为一系列实现类提供统一的方法，多个实现类实现该接口，设计一个抽象类（可有可无，属于辅助类），提供辅助函数，关系图如下：</P>
-<P><IMG width="560" height="260" alt="" src="Java开发中的23种设计模式详解_files/2319a2c3-7ebd-3ee3-b389-1548074ea9c6.jpg"></P>
+<P><IMG width="560" height="260" alt="" src="Java-23-_files/2319a2c3-7ebd-3ee3-b389-1548074ea9c6.jpg"></P>
 <P>图中ICalculator提供同意的方法，<BR>AbstractCalculator是辅助类，提供辅助方法，接下来，依次实现下每个类：</P>
 <P>首先统一接口：</P>
 <DIV>
@@ -1329,7 +1329,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>策略模式的决定权在用户，系统本身提供不同算法的实现，新增或者删除算法，对各种算法做封装。因此，策略模式多用在算法决策系统中，外部用户只需要决定用哪个算法即可。</P>
 <P><SPAN><STRONG>14、模板方法模式（Template Method）</STRONG></SPAN></P>
 <P>解释一下模板方法模式，就是指：一个抽象类中，有一个主方法，再定义1...n个方法，可以是抽象的，也可以是实际的方法，定义一个类，继承该抽象类，重写抽象方法，通过调用抽象类，实现对子类的调用，先看个关系图：</P>
-<P><IMG width="478" height="205" alt="" src="Java开发中的23种设计模式详解_files/c3d57775-ddf9-302b-9dfe-c65967518d3c.jpg"></P>
+<P><IMG width="478" height="205" alt="" src="Java-23-_files/c3d57775-ddf9-302b-9dfe-c65967518d3c.jpg"></P>
 <P>就是在AbstractCalculator类中定义一个主方法calculate，calculate()调用spilt()等，Plus和Minus分别继承AbstractCalculator类，通过对AbstractCalculator的调用实现对子类的调用，看下面的例子：</P>
 <DIV>
 <DIV>
@@ -1388,7 +1388,7 @@ num2后，将值返回到AbstractCalculator类，赋给result，打印出来。�
 <P><SPAN><STRONG>15、观察者模式（Observer）</STRONG></SPAN></P>
 <P>包括这个模式在内的接下来的四个模式，都是类和类之间的关系，不涉及到继承，学的时候应该 
 记得归纳，记得本文最开始的那个图。观察者模式很好理解，类似于邮件订阅和RSS订阅，当我们浏览一些博客或wiki时，经常会看到RSS图标，就这的意思是，当你订阅了该文章，如果后续有更新，会及时通知你。其实，简单来讲就一句话：当一个对象变化时，其它依赖该对象的对象都会收到通知，并且随着变化！对象之间是一种一对多的关系。先来看看关系图：</P>
-<P><IMG width="626" height="380" alt="" src="Java开发中的23种设计模式详解_files/d588525c-fbad-3040-971c-69b2716c67a4.jpg"></P>
+<P><IMG width="626" height="380" alt="" src="Java-23-_files/d588525c-fbad-3040-971c-69b2716c67a4.jpg"></P>
 <P>我解释下这些类的作用：MySubject类就是我们的主对象，Observer1和Observer2是依赖于MySubject的对象，当MySubject变化时，Observer1和Observer2必然变化。AbstractSubject类中定义着需要监控的对象列表，可以对其进行修改：增加或删除被监控对象，且当MySubject变化时，负责通知在列表内存在的对象。我们看实现代码：</P>
 <P>一个Observer接口：</P>
 <DIV>
@@ -1507,7 +1507,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>&nbsp;这些东西，其实不难，只是有些抽象，不太容易整体理解，建议读者：<STRONG><SPAN>根据关系图，新建项目，自己写代码（或者参考我的代码）,<STRONG>按照</STRONG>总体思路走一遍，这样才能体会它的思想，理解起来容易！</SPAN></STRONG><STRONG><SPAN>&nbsp;</SPAN></STRONG></P>
 <P><STRONG><SPAN>16、迭代子模式（Iterator）</SPAN></STRONG></P>
 <P>顾名思义，迭代器模式就是顺序访问聚集中的对象，一般来说，集合中非常常见，如果对集合类比较熟悉的话，理解本模式会十分轻松。这句话包含两层意思：一是需要遍历的对象，即聚集对象，二是迭代器对象，用于对聚集对象进行遍历访问。我们看下关系图：</P>
-<P>&nbsp;<IMG width="640" height="344" alt="" src="Java开发中的23种设计模式详解_files/f7571a69-3c85-3fe1-b781-e460563a40a8.jpg"></P>
+<P>&nbsp;<IMG width="640" height="344" alt="" src="Java-23-_files/f7571a69-3c85-3fe1-b781-e460563a40a8.jpg"></P>
 <P>这个思路和我们常用的一模一样，MyCollection中定义了集合的一些操作，MyIterator中定义了一系列迭代操作，且持有Collection实例，我们来看看实现代码：</P>
 <P>两个接口：</P>
 <DIV>
@@ -1632,7 +1632,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>此处我们貌似模拟了一个集合类的过程，感觉是不是很爽？其实JDK中各个类也都是这些基本的东西，加一些设计模式，再加一些优化放到一起的，只要我们把这些东西学会了，掌握好了，我们也可以写出自己的集合类，甚至框架！</P>
 <P><SPAN><STRONG>17、责任链模式（Chain of 
 Responsibility）<BR></STRONG></SPAN>接下来我们将要谈谈责任链模式，有多个对象，每个对象持有对下一个对象的引用，这样就会形成一条链，请求在这条链上传递，直到某一对象决定处理该请求。但是发出者并不清楚到底最终那个对象会处理该请求，所以，责任链模式可以实现，在隐瞒客户端的情况下，对系统进行动态的调整。先看看关系图：</P>
-<P>&nbsp;<IMG width="486" height="287" alt="" src="Java开发中的23种设计模式详解_files/729a82ce-0987-347c-a4f1-bf64dee59ddb.jpg"></P>
+<P>&nbsp;<IMG width="486" height="287" alt="" src="Java-23-_files/729a82ce-0987-347c-a4f1-bf64dee59ddb.jpg"></P>
 <P>&nbsp;</P>
 <P>Abstracthandler类提供了get和set方法，方便MyHandle类设置和修改引用对象，MyHandle类是核心，实例化后生成一系列相互持有的对象，构成一条链。</P>
 <DIV>
@@ -1705,7 +1705,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>此处强调一点就是，链接上的请求可以是一条链，可以是一个树，还可以是一个环，模式本身不约束这个，需要我们自己去实现，同时，在一个时刻，命令只允许由一个对象传给另一个对象，而不允许传给多个对象。</P>
 <P><SPAN><STRONG>&nbsp;18、命令模式（Command）</STRONG></SPAN></P>
 <P>命令模式很好理解，举个例子，司令员下令让士兵去干件事情，从整个事情的角度来考虑，司令员的作用是，发出口令，口令经过传递，传到了士兵耳朵里，士兵去执行。这个过程好在，三者相互解耦，任何一方都不用去依赖其他人，只需要做好自己的事儿就行，司令员要的是结果，不会去关注到底士兵是怎么实现的。我们看看关系图：</P>
-<P><IMG width="609" height="234" alt="" src="Java开发中的23种设计模式详解_files/98cda4fc-00b1-300d-a25b-63229f0f1cbd.jpg"></P>
+<P><IMG width="609" height="234" alt="" src="Java-23-_files/98cda4fc-00b1-300d-a25b-63229f0f1cbd.jpg"></P>
 <P>Invoker是调用者（司令员），Receiver是被调用者（士兵），MyCommand是命令，实现了Command接口，持有接收对象，看实现代码：</P>
 <DIV>
 <DIV>
@@ -1778,11 +1778,11 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>这个很哈理解，命令模式的目的就是达到命令的发出者和执行者之间解耦，实现请求和执行分开，熟悉Struts的同学应该知道，Struts其实就是一种将请求和呈现分离的技术，其中必然涉及命令模式的思想！</P></DIV>
 <DIV>
 <P>其实每个设计模式都是很重要的一种思想，看上去很熟，其实是因为我们在学到的东西中都有涉及，尽管有时我们并不知道，其实在Java本身的设计之中处处都有体现，像AWT、JDBC、集合类、IO管道或者是Web框架，里面设计模式无处不在。因为我们篇幅有限，很难讲每一个设计模式都讲的很详细，不过我会尽我所能，尽量在有限的空间和篇幅内，把意思写清楚了，更好让大家明白。本章不出意外的话，应该是设计模式最后一讲了，首先还是上一下上篇开头的那个图：</P>
-<P><IMG width="700" height="313" title="点击查看原始大小图片" class="magplus" alt="" src="Java开发中的23种设计模式详解_files/5d3c9b85-c281-3c48-999c-d27095c6ec9f.jpg"></P>
+<P><IMG width="700" height="313" title="点击查看原始大小图片" class="magplus" alt="" src="Java-23-_files/5d3c9b85-c281-3c48-999c-d27095c6ec9f.jpg"></P>
 <P>本章讲讲第三类和第四类。</P>
 <P><STRONG><SPAN>19、备忘录模式（Memento）</SPAN></STRONG></P>
 <P>主要目的是保存一个对象的某个状态，以便在适当的时候恢复对象，个人觉得叫备份模式更形象些，通俗的讲下：假设有原始类A，A中有各种属性，A可以决定需要备份的属性，备忘录类B是用来存储A的一些内部状态，类C呢，就是一个用来存储备忘录的，且只能存储，不能修改等操作。做个图来分析一下：</P>
-<P><IMG width="629" height="237" alt="" src="Java开发中的23种设计模式详解_files/853d5c5a-9b7b-3341-a72e-abd3cbc3c81f.jpg"></P>
+<P><IMG width="629" height="237" alt="" src="Java-23-_files/853d5c5a-9b7b-3341-a72e-abd3cbc3c81f.jpg"></P>
 <P>Original类是原始类，里面有需要保存的属性value及创建一个备忘录类，用来保存value值。Memento类是备忘录类，Storage类是存储备忘录的类，持有Memento类的实例，该模式很好理解。直接看源码：</P>
 <DIV>
 <DIV>
@@ -1886,7 +1886,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>简单描述下：新建原始类时，value被初始化为egg，后经过修改，将value的值置为niu，最后倒数第二行进行恢复状态，结果成功恢复了。其实我觉得这个模式叫“备份-恢复”模式最形象。</P>
 <P><SPAN><STRONG>20、状态模式（State）</STRONG></SPAN></P>
 <P>核心思想就是：当对象的状态改变时，同时改变其行为，很好理解！就拿QQ来说，有几种状态，在线、隐身、忙碌等，每个状态对应不同的操作，而且你的好友也能看到你的状态，所以，状态模式就两点：1、可以通过改变状态来获得不同的行为。2、你的好友能同时看到你的变化。看图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/006156d2-f41f-3019-a194-b872a59ca426.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/006156d2-f41f-3019-a194-b872a59ca426.jpg"></P>
 <P>State类是个状态类，Context类可以实现切换，我们来看看代码：</P>
 <P>&nbsp;</P>
 <DIV>
@@ -1987,7 +1987,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>访问者模式把数据结构和作用于结构上的操作解耦合，使得操作集合可相对自由地演化。访问者模式适用于数据结构相对稳定算法又易变化的系统。因为访问者模式使得算法操作增加变得容易。若系统数据结构对象易于变化，经常有新的数据对象增加进来，则不适合使用访问者模式。访问者模式的优点是增加操作很容易，因为增加操作意味着增加新的访问者。访问者模式将有关行为集中到一个访问者对象中，其改变不影响系统数据结构。其缺点就是增加新的数据结构很困难。—— 
 From 百科</P>
 <P>简单来说，访问者模式就是一种分离对象数据结构与行为的方法，通过这种分离，可达到为一个被访问者动态添加新的操作而无需做其它的修改的效果。简单关系图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/96bd38f3-2888-3cc5-b90f-0e7542dc5845.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/96bd38f3-2888-3cc5-b90f-0e7542dc5845.jpg"></P>
 <P>来看看原码：一个Visitor类，存放要访问的对象，</P>
 <P>&nbsp;</P>
 <DIV>
@@ -2068,7 +2068,7 @@ subject：love</SPAN>
 <P>&nbsp;</P>
 <P>该模式适用场景：如果我们想为一个现有的类增加新功能，不得不考虑几个事情：1、新功能会不会与现有功能出现兼容性问题？2、以后会不会再需要添加？3、如果类不允许修改代码怎么办？面对这些问题，最好的解决方法就是使用访问者模式，访问者模式适用于数据结构相对稳定的系统，把数据结构和算法解耦，<BR><SPAN><STRONG>22、中介者模式（Mediator）</STRONG></SPAN></P>
 <P>中介者模式也是用来降低类类之间的耦合的，因为如果类类之间有依赖关系的话，不利于功能的拓展和维护，因为只要修改一个对象，其它关联的对象都得进行修改。如果使用中介者模式，只需关心和Mediator类的关系，具体类类之间的关系及调度交给Mediator就行，这有点像spring容器的作用。先看看图：</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/f1f2cc36-ab27-32fa-9906-9cdee2c2b625.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/f1f2cc36-ab27-32fa-9906-9cdee2c2b625.jpg"></P>
 <P>User类统一接口，User1和User2分别是不同的对象，二者之间有关联，如果不采用中介者模式，则需要二者相互持有引用，这样二者的耦合度很高，为了解耦，引入了Mediator类，提供统一接口，MyMediator为其实现类，里面持有User1和User2的实例，用来实现对User1和User2的控制。这样User1和User2两个对象相互独立，他们只需要保持好和Mediator之间的关系就行，剩下的全由MyMediator类来维护！基本实现：</P>
 <P>&nbsp;</P>
 <DIV>
@@ -2191,7 +2191,7 @@ plain</A><A title="copy" href="http://blog.csdn.net/zhangerqing/article/details/
 <P>&nbsp;</P>
 <P>user1 exe!<BR>user2 
 exe!<BR><SPAN><STRONG>23、解释器模式（Interpreter）</STRONG></SPAN><BR>解释器模式是我们暂时的最后一讲，一般主要应用在OOP开发中的编译器的开发中，所以适用面比较窄。</P>
-<P><IMG alt="" src="Java开发中的23种设计模式详解_files/c87e402e-a355-3761-9ce3-7978956ba475.jpg"></P>
+<P><IMG alt="" src="Java-23-_files/c87e402e-a355-3761-9ce3-7978956ba475.jpg"></P>
 <P>Context类是一个上下文环境类，Plus和Minus分别是用来计算的实现，代码如下：</P>
 <P>&nbsp;</P>
 <DIV>
