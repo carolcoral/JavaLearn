@@ -36,7 +36,7 @@
 
 13.[反射机制、常用的设计原则和模型](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day21—反射机制、常用的设计原则和模型.java)
 
-14.[查找算法、排序算法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day22—查找算法、排序算法.java)
+14.[设计的几种模式、查找算法、排序算法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day22—查找算法、排序算法.java)
 
 * ### Code（包含 JavaSE 中 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
@@ -54,7 +54,7 @@
 
 7.[查找算法的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFind.java)
 
-8.[排序算法的几种方式]()
+8.[排序算法的几种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSortArith.java)
 
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
