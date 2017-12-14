@@ -52,9 +52,9 @@
 
 6.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
 
-7.[查找算法的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFind.java)
+7.[查找的两种算法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFind.java)
 
-8.[排序算法的四种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSortArith.java)
+8.[排序的四种算法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestSortArith.java)
 
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
