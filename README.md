@@ -50,6 +50,8 @@
 
 6.[反射机制ClassConstructor](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/ClassConstructor.java)
 
+7.[查找算法的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/TestFind.java)
+
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
 
