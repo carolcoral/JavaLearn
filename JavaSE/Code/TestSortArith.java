@@ -99,10 +99,10 @@ public class TestSortArith {
 		}
 		// 当左边元素的下标等于右边元素的下标时，把取出来的中间值重新赋值回去
 		frr[p] = pivot;
-		if ((p - i) > 1) {
+		if ((p - left) > 1) {
 			fastSort(frr, left, p - 1);
 		}
-		if ((j - p) > 1) {
+		if ((right - p) > 1) {
 			fastSort(frr, p + 1, right);
 		}
 
