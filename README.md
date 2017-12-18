@@ -1,4 +1,4 @@
-# Java
+# [Java](https://baike.baidu.com/item/java/85979)
 
 * 导语：
 
@@ -6,7 +6,7 @@
 
 >博客地址：http://blog.csdn.net/carolcoral
 
-## JavaSE
+## [JavaSE](https://baike.baidu.com/item/JAVA%20SE/4662159?fr=aladdin)
 
 * ### Arithmetic（包含学习 JavaSE 中主要需要了解和学习的内容的文本资料）
 
@@ -73,7 +73,7 @@
 
 >ViewStudent.java : 显示学生信息的类，视图层；
 
-## OracleSQL
+## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
 * ### Arithmetic（包含学习 OracleSQL 中主要需要了解和学习的内容的文本资料）
 
