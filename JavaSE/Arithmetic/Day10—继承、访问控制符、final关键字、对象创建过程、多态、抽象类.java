@@ -17,11 +17,11 @@
 
 2.2 常见访问控制符区别
 	访问控制符        访问权限       本类          本包的其他类        子类        其他包的其他类
-       ———————————————————————————————————————
-	public     		   公有的		ok 			ok		       ok                  ok
-	protected		   保护的		ok                  ok                  ok                  no
-	啥也不写		   默认的         ok                  ok                  no                  no
-	private	          私有的         ok                  no                  no                  no
+       ——————————————————————————————————————————————————————————————————————————————————————————
+	public     	公有的		ok 		ok		ok            ok
+	protected	保护的		ok              ok                            no
+	啥也不写		默认的         ok               ok              no            no
+	private	        私有的         	ok              no              no            no
 
 要求掌握内容：
 	1.public修饰的内容表示可以在任意位置访问；
