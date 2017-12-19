@@ -38,6 +38,12 @@
 
 14.[设计的几种模式、查找算法、排序算法](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Arithmetic/Day22—查找算法、排序算法.java)
 
+15.[ JavaSE 测试一](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试一.java)
+
+16.[ JavaSE 测试二](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试二.java)
+
+17.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
+
 * ### Code（包含 JavaSE 中 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
 1.[单例模式的两种方式](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/Code/Singerton.java)
