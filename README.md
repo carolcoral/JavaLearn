@@ -77,7 +77,7 @@
 
 * ### Arithmetic（包含学习 OracleSQL 中主要需要了解和学习的内容的文本资料）
 
-1.[JavaSE 总结与 select 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/day23—JavaSE总结与%20select%20语句.sql)
+1.[JavaSE 总结与 select 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JavaSE总结与%20select%20语句.sql)
 
 2.[where 语句和常用函数](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/day24—where语句和常用函数.sql)
 
