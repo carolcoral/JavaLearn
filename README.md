@@ -79,7 +79,7 @@
 
 1.[JavaSE 总结与 select 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JavaSE总结与%20select%20语句.sql)
 
-2.[where 语句和常用函数](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/day24—where语句和常用函数.sql)
+2.[where 语句和常用函数](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/where语句和常用函数.sql)
 
 * ### Code（包含 OracleSQL 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
