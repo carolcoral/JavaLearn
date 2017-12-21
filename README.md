@@ -68,6 +68,9 @@
 
 * ### [学生管理系统](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
 <table align="right">
+  <tr>
+    <th colspan="2"><a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student" style="text-decoration:none">学生管理系统</a></th>
+  </tr>
   <tr>
     <th>文件名</th>
     <th>简要描述</th>
