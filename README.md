@@ -66,7 +66,13 @@
 >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
 
 <table aligin="right">
-  <tr><h1><a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student">学生信息管理系统<h1></tr>
+  <tr>
+   <th>
+     <h1>
+       <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student">学生信息管理系统
+     </h1>
+   </th>
+  </tr>
   <tr>
     <th>文件名</th>
     <th>简要描述</th>
