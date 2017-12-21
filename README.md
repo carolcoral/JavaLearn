@@ -68,19 +68,21 @@
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
 
-      |AgeException.java         |创建的判断年龄异常的异常类；
+|          文件名          |                         描述                        |
+|：----------------------：|：-------------------------------------------------：|
+|AgeException.java         |创建的判断年龄异常的异常类；                           |
 
-      |IdException.java          |创建的判断学号是否异常的异常类；
+|IdException.java          |创建的判断学号是否异常的异常类；                       |
 
-      |DaoStudent.java           |将获取的学生信息写入到文件中；
+|DaoStudent.java           |将获取的学生信息写入到文件中；                         |
 
-      |ManagerStudent.java       |对学生信息进行增删改查操作的方法类，属于 MVC 中的 M 层；
+|ManagerStudent.java       |对学生信息进行增删改查操作的方法类，属于 MVC 中的 M 层； |
 
-      |Student.java              |创建有关学生信息的类；
+|Student.java              |创建有关学生信息的类；                                 |
 
-      |TestStudentManager.java   | 学生信息的测试类；
+|TestStudentManager.java   | 学生信息的测试类；                                   |
 
-      |ViewStudent.java          |显示学生信息的类，视图层；
+|ViewStudent.java          |显示学生信息的类，视图层；                             |
 
 ## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
