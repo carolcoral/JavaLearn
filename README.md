@@ -107,8 +107,8 @@
   </tr>
 </table>
 
-|——学生             |             |
-|——idexception             |       休息休息       |
+|-----学生             |           |
+|-----idexception             |       休息休息       |
 
 ## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
