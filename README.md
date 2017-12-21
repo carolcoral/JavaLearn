@@ -67,6 +67,7 @@
 
 
 * ### [学生管理系统](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
+<title> [学生管理系统](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)</title>
 <table align="right">
   <tr>
     <th>文件名</th>
@@ -100,7 +101,6 @@
     <th>ViewStudent.java</th>
     <th>显示学生信息的类，视图层</th>
   </tr>
-
 </table>
 
 ## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
