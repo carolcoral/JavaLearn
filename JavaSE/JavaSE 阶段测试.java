@@ -104,7 +104,7 @@ class Cat extends Animal{}
 	B) notify（）方法可以确切的唤醒某个处于等待状态的线程。
 	C) wait（）方法可以使一个线程处于等待状态，但不会释放所持有对象的锁。
 	D) sleep（）方法使一个正在运行的线程处于睡眠状态，是一个静态方法，调用此方法时，需要捕捉InterruptedException异常。
-8.下面哪个流类属于面向字符的输入流（A）
+8.下面哪个流类属于面向字符的输入流（D）
 	A) BufferedWriter           
 	B) FileInputStream          
 	C) ObjectInputStream          
