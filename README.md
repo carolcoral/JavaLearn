@@ -68,21 +68,41 @@
 
 * ### Student[（学生信息管理系统）](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
 
-|          文件名          |                         描述                        |
-|：----------------------：|：-------------------------------------------------：|
-|AgeException.java         |创建的判断年龄异常的异常类；                           |
+<table>
+  <tr>
+    <th>文件名</th>
+    <th>简要描述</th>
+  </tr>
+  <tr>
+    <th>AgeException.java</th>
+    <th>创建的判断年龄异常的异常类</th>
+  </tr>
+  <tr>
+    <th>IdException.java</th>
+    <th>创建的判断学号是否异常的异常类</th>
+  </tr>
+  <tr>
+    <th>DaoStudent.java</th>
+    <th>将获取的学生信息写入到文件中</th>
+  </tr>
+  <tr>
+    <th>ManagerStudent.java</th>
+    <th>对学生信息进行增删改查操作的方法类，属于 MVC 中的 M 层</th>
+  </tr>
+  <tr>
+    <th>Student.java</th>
+    <th>创建有关学生信息的类</th>
+  </tr>
+  <tr>
+    <th>TestStudentManager.java</th>
+    <th>学生信息的测试类</th>
+  </tr>
+  <tr>
+    <th>ViewStudent.java</th>
+    <th>显示学生信息的类，视图层</th>
+  </tr>
 
-|IdException.java          |创建的判断学号是否异常的异常类；                       |
-
-|DaoStudent.java           |将获取的学生信息写入到文件中；                         |
-
-|ManagerStudent.java       |对学生信息进行增删改查操作的方法类，属于 MVC 中的 M 层； |
-
-|Student.java              |创建有关学生信息的类；                                 |
-
-|TestStudentManager.java   | 学生信息的测试类；                                   |
-
-|ViewStudent.java          |显示学生信息的类，视图层；                             |
+</table>
 
 ## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
