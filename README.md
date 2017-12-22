@@ -117,6 +117,8 @@
 
 >3.[多表查询、DML语句、事务处理](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/多表查询、DML语句、事务处理.sql)
 
+>4.[建表、约束](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/建表、约束.sql)
+
 * ### Code（包含 OracleSQL 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
 * ### Exam（OracleSQL 阶段的练习和测试）
