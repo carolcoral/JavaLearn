@@ -71,7 +71,7 @@
 
      >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
 
-     <table align="right" style="text-align:right;">
+     <table align="right">
        <tr style="margin:0 auto;">
          <th colspan="2">
            <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student" style="text-decoration:none">
@@ -112,10 +112,8 @@
          <th>显示学生信息的类，视图层</th>
        </tr>
      </table>
-</br> 
-     
-[OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
-===========================================================================================================
+     
+## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
 * ### Arithmetic（包含学习 OracleSQL 中主要需要了解和学习的内容的文本资料）
 
