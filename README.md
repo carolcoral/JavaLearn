@@ -119,15 +119,15 @@
 
 * ### Arithmetic（包含学习 OracleSQL 中主要需要了解和学习的内容的文本资料）
 
-   >1.[JavaSE 总结与 select 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JavaSE总结与%20select%20语句.sql)
+     >1.[JavaSE 总结与 select 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JavaSE总结与%20select%20语句.sql)
 
-   >2.[where 语句和常用函数](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/where语句和常用函数.sql)
+     >2.[where 语句和常用函数](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/where语句和常用函数.sql)
 
-   >3.[多表查询、DML语句、事务处理](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/多表查询、DML语句、事务处理.sql)
+     >3.[多表查询、DML语句、事务处理](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/多表查询、DML语句、事务处理.sql)
 
-   >4.[建表、约束、库和表的设计原则](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/建表、约束、库和表的设计原则.sql)
+     >4.[建表、约束、库和表的设计原则](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/建表、约束、库和表的设计原则.sql)
 
-   >5.[分页功能和 PL/SQL 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/分页功能和%20PLSQL语句.sql)
+     >5.[分页功能和 PL/SQL 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/分页功能和%20PLSQL语句.sql)
 
 * ### Code（包含 OracleSQL 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
