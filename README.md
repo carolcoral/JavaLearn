@@ -65,11 +65,11 @@
 
 * ### Exam（JavaSE 阶段的练习和测试）
 
-     >1.[ JavaSE 测试一](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试一.java)
+     >1.[ JavaSE 测试一](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试一.java)
 
-     >2.[ JavaSE 测试二](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试二.java)
+     >2.[ JavaSE 测试二](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20测试二.java)
 
-     >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
+     >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
 
 
      <table align="right">
