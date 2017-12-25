@@ -72,7 +72,6 @@
      >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
 
 
-<div align="right">
      <table align="right">
        <tr style="margin:0 auto;">
          <th colspan="2">
@@ -114,7 +113,6 @@
          <th>显示学生信息的类，视图层</th>
        </tr>
      </table>
-</div>
 
 ## [OracleSQL](http://www.oracle.com/technetwork/cn/database/database-technologies/sql/overview/index.html)
 
