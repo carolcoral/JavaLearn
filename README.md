@@ -72,7 +72,7 @@
      >3.[ JavaSE 阶段测试](https://github.com/carolcoral/JavaLearn/blob/master/JavaSE/JavaSE%20阶段测试.java)
 
 
-     <table align="right">
+     <table align="right" style="margin-right:0;">
        <tr style="margin:0 auto;">
          <th colspan="2">
            <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student" style="text-decoration:none">
