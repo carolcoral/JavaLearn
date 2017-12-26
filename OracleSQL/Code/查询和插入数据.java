@@ -13,7 +13,7 @@ public class InsertData {
 			String url = "jdbc:oracle:thin:@localhost:1521:XE";//通过 show parameter service 查看当前数据库的 SID
 			Connection conn = DriverManager.getConnection(url,"system","123456");
 			Statement st = conn.createStatement();
-			String sql = "insert into dept values()1,'zhangfei','13'";
+			String sql = "insert into dept values(1,'zhangfei','13')";
 			String sql2 = "select empno,ename,sal from emp";
 			ResultSet rs = st.executeQuery(sql2);
 			while(rs.next()) {
