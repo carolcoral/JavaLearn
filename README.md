@@ -129,7 +129,7 @@
 
      >5.[分页功能和 PL/SQL 语句](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/分页功能和%20PLSQL语句.sql)
      
-     >6.[]()
+     >6.[异常处理、存储过程、函数和触发器](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/异常处理、存储过程、函数和触发器.sql)
 
 * ### Code（包含 OracleSQL 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
