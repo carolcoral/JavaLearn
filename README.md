@@ -136,6 +136,6 @@
 
      >1.[查询和插入数据](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Code/查询和插入数据.java)
      
-     >2.[动态读写数据（ResultSetMetaData接口）](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Code/动态读写数据（ResultSetMetaData接口）.java) 
+     >2.[动态读写数据（ResultSetMetaData接口）](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Code/动态读写数据（ResultSetMetaData接口）.java) 
 
 * ### Exam（OracleSQL 阶段的练习和测试）
