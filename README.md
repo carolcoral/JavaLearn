@@ -131,7 +131,7 @@
      
      >6.[异常处理、存储过程、函数和触发器](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/异常处理、存储过程、函数和触发器.sql)
      
-     >7.[数据库访问返回结果方法](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JDBC.sql)
+     >7.[数据库访问返回结果方法](https://github.com/carolcoral/JavaLearn/blob/master/OracleSQL/Arithmetic/JDBC.sql)
 
 * ### Code（包含 OracleSQL 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
