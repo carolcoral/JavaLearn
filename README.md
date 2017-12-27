@@ -147,7 +147,7 @@
      <table align="right" style="margin-right:0;">
        <tr style="margin:0 auto;">
          <th colspan="2">
-           <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student" style="text-decoration:none">
+           <a href="https://github.com/carolcoral/JavaLearn/tree/master/OracleSQL/StudentManger" style="text-decoration:none">
              学生管理系统(使用数据库操作)
            </a>
          </th>
