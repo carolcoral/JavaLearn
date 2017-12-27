@@ -184,25 +184,9 @@
          </th>
        </tr>
        <tr>
-         <th rowspan="7">文件名</th>
-         <th>简要描述</th>
+         <td rowspan="7" style="writing-mode:vertical-rl">服务端(ServerOnlineExamSystem)</td>
        </tr>
-       <tr>
-         <th>DBView.java</th>
-         <th>系统的展示层，用于展示系统功能以及提供操作选项</th>
-       </tr>
-       <tr>
-         <th>DBModel.java</th>
-         <th>系统的逻辑层，提供系统的操作方法</th>
-       </tr>
-       <tr>
-         <th>DBConnection.java</th>
-         <th>连接数据库的文件</th>
-       </tr>
-       <tr>
-         <th>DB.Properties</th>
-         <th>数据库配置文件</th>
-       </tr>
+       
      </table>
 
 
