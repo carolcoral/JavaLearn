@@ -176,129 +176,56 @@
 
 
 
-
-<table align="right" style="margin-right:0;">
-     <tr style="margin:0 auto;">
-          <th colspan="3">
-               <a href="" style="text-decoration:none">
-                    在线答题考试系统
-               </a>
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="4" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="4" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-     <tr>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-          <th rowspan="7" style="writing-mode:vertical-rl">
-               服务端(ServerOnlineExamSystem)
-          </th>
-     </tr>
-</table>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
-
-
-
-
-
-
-
-
-
-
+	<table border=0 cellpadding=0 cellspacing=0 width=195
+		style='border-collapse: collapse; table-layout: fixed; width: 195pt'>
+		<col width=65 span=3 style='width: 65pt'>
+		<tr height=15 style='height: 15.0pt'>
+			<td colspan=3 height=15 class=xl65 width=195
+				style='height: 15.0pt; width: 195pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td rowspan=6 height=90 class=xl65 style='height: 90.0pt'></td>
+			<td rowspan=3 class=xl65></td>
+			<td></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td rowspan=3 height=45 class=xl65 style='height: 45.0pt'></td>
+			<td></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td rowspan=6 height=90 class=xl65 style='height: 90.0pt'></td>
+			<td rowspan=3 class=xl65></td>
+			<td></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td rowspan=3 height=45 class=xl65 style='height: 45.0pt'></td>
+			<td></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+		<tr height=15 style='height: 15.0pt'>
+			<td height=15 style='height: 15.0pt'></td>
+		</tr>
+	</table>
 
 
 
