@@ -187,8 +187,9 @@
  width:293pt'>
  <col class=xl65 width=113 style='width:113pt'>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
-  <td colspan=4 height=34 class=xl68 width=690 style='height:34.0pt;width:690pt'>在线考试答题系统
-  OnlineExamSystem</td>
+  <td colspan=4 height=34 class=xl68 width=690 style='height:34.0pt;width:690pt'>
+       <a href="https://github.com/carolcoral/OnlineExamSystem">在线考试答题系统
+  OnlineExamSystem</a></td>
   <td class=xl67 width=113 style='width:113pt'></td>
  </tr>
  <tr height=83 style='mso-height-source:userset;height:83.0pt'>
@@ -201,24 +202,24 @@
   <td class=xl65 width=118 style='width:118pt'>Main入口</td>
   <td class=xl65 width=219 style='width:219pt'>ClientMain.java</td>
   <td class=xl66 width=293 style='width:293pt'>客户端入口文件</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=2 height=68 class=xl65 width=118 style='height:68.0pt;width:118pt'>Model模型层</td>
   <td class=xl65 width=219 style='width:219pt'>Test.java</td>
   <td class=xl66 width=293 style='width:293pt'>试题实体类，定义试题的内容和属性</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>User.java</td>
   <td class=xl66 width=293 style='width:293pt'>用户实体类，定义用户的内容和属性</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=118 style='height:34.0pt;width:118pt'>View视图层</td>
   <td class=xl65 width=219 style='width:219pt'>ViewUtils.java</td>
   <td class=xl66 width=293 style='width:293pt'>客户端视图文件，存储客户端所有的界面内容</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=12 height=408 class=xl65 width=60 style='height:408.0pt;
@@ -226,67 +227,67 @@
   <td rowspan=2 class=xl65 width=118 style='width:118pt'>Main 入口</td>
   <td class=xl65 width=219 style='width:219pt'>ServerMain.java</td>
   <td class=xl66 width=293 style='width:293pt'>连接客户端，创建线程</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>ServerThread.java</td>
   <td class=xl66 width=293 style='width:293pt'>服务端的线程内容，调用返回值</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=4 height=136 class=xl65 width=118 style='height:136.0pt;
   width:118pt'>DAO 数据层</td>
   <td class=xl65 width=219 style='width:219pt'>UserDao.java</td>
   <td class=xl66 width=293 style='width:293pt'>处理客户端发送的数据，包含各种需要的 sql 语句</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>UserDaoFactory.java</td>
   <td class=xl66 width=293 style='width:293pt'>工厂接口</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>UserDaoImp.java</td>
   <td class=xl66 width=293 style='width:293pt'>接口类型，具体处理内容的部分</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>UserDaoService.java</td>
   <td class=xl66 width=293 style='width:293pt'>调用处理结果并发送给服务器进而返回给客户端调用对应的结果</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=4 height=136 class=xl65 width=118 style='height:136.0pt;
   width:118pt'>Model 模型层</td>
   <td class=xl65 width=219 style='width:219pt'>Exam.java</td>
   <td class=xl66 width=293 style='width:293pt'>试卷实体类，定义试卷包含的内容和属性</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>Grade.java</td>
   <td class=xl66 width=293 style='width:293pt'>成绩实体类，包含用户成绩的内容和属性</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>User.java</td>
   <td class=xl66 width=293 style='width:293pt'>用户实体类，定义用户的内容和属性</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>Test.java</td>
   <td class=xl66 width=293 style='width:293pt'>实体实体类，定义试题的属性和内容</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=2 height=68 class=xl65 width=118 style='height:68.0pt;width:118pt'>Util
   工具层</td>
   <td class=xl65 width=219 style='width:219pt'>DBUtils.java</td>
   <td class=xl66 width=293 style='width:293pt'>数据库链接文件，链接数据库</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td height=34 class=xl65 width=219 style='height:34.0pt;width:219pt'>db_config.properties</td>
   <td class=xl66 width=293 style='width:293pt'>数据库配置文件，包含链接数据信息</td>
-  <td class=xl65 width=113 style='width:113pt'></td>
+        
  </tr>
 </table>
