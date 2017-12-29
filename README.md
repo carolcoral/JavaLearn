@@ -190,11 +190,9 @@
   <td colspan=4 height=34 class=xl68 width=690 style='height:34.0pt;width:690pt'>
        <a href="https://github.com/carolcoral/OnlineExamSystem">在线考试答题系统
   OnlineExamSystem</a></td>
-  <td class=xl67 width=113 style='width:113pt'></td>
  </tr>
  <tr height=83 style='mso-height-source:userset;height:83.0pt'>
   <td colspan=4 height=83 class=xl66 width=690 style='height:83.0pt;width:690pt'>功能包括：1.判断用户和管理员的登录；2.修改当前用户的密码；3.用户自定义考试（选择试卷的难度和题目数量）；4.用户查询成绩；5.用户导出所有已考试的成绩（后期可能修改为条件导出）；6.导出题库（根据用户自己的选择导出想要的某一场考试中的所有试题）；7.管理员对普通用户的增删改查操作；8.管理员对试题的增删改查操作；9.管理员批量导入试题；</td>
-  <td class=xl67 width=113 style='width:113pt'></td>
  </tr>
  <tr height=34 style='mso-height-source:userset;height:34.0pt'>
   <td rowspan=4 height=136 class=xl65 width=60 style='height:136.0pt;
