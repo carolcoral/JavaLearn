@@ -296,6 +296,8 @@
 
 * ### Arithmetic（包含学习 HTML 中主要需要了解和学习的内容的文本资料）
 
+     >1.[XML.md](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/XML.md)
+
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
 * ### Exam（HTML 阶段项目）
