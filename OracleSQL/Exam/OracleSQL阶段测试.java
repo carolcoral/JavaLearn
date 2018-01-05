@@ -47,7 +47,7 @@ B.6
 C.5
 D.0
 
-7.在Oracle中，删除表Student中的所有数据，可以使用的Sql是（BC）。
+7.在Oracle中，删除表Student中的所有数据，可以使用的Sql是（B）。
 A.DROP TABLE Student
 B.DELETE FROM Student
 C.DELETE * FROM Student
