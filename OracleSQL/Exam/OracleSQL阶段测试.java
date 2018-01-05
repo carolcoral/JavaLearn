@@ -198,22 +198,22 @@ end;
 Public static Connection connection = null;
 Public static Properties properties = new Properties();
 Public void Connection getConnection(){
-FileinputStream fis = new FileinputStream(“db.properties”);
-properties.load(fis);
-fis.close();
-String url = properties.getProperty(“url”);
-String username = properties.getProperty(“username”);
-String password = properties.getProperty(“password”);
-String driveClassName = properties.getProperty(“driverClassName”);
-connection = DriverManager.getConnection(url,username,password);
-Class.forname(driverClassName);
-String sql = “select * from S_DEPT”;
-PreparedStatement ps = connection.PrepareStatement(sql);
-ResultSet res = ps.executeQuery();
-while(res.next()){
-	System.out.println(res.getString(“ID”)+","+res.getString(“NAME”)+","+res.getString(“REGION_ID”));
-}
-res.close();
-ps.close();
-connection.close();
+	FileinputStream fis = new FileinputStream(“db.properties”);
+	properties.load(fis);
+	fis.close();
+	String url = properties.getProperty(“url”);
+	String username = properties.getProperty(“username”);
+	String password = properties.getProperty(“password”);
+	String driveClassName = properties.getProperty(“driverClassName”);
+	connection = DriverManager.getConnection(url,username,password);
+	Class.forname(driverClassName);
+	String sql = “select * from S_DEPT”;
+	PreparedStatement ps = connection.PrepareStatement(sql);
+	ResultSet res = ps.executeQuery();
+	while(res.next()){
+		System.out.println(res.getString(“ID”)+","+res.getString(“NAME”)+","+res.getString(“REGION_ID”));
+	}
+	res.close();
+	ps.close();
+	connection.close();
 }
