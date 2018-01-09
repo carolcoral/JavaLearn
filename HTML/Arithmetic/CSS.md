@@ -1,7 +1,6 @@
 
-<h1>CSS 02</h1>
-<p>1-8,星期一 8:58:57 </p>
-<hr />
+<h1>CSS</h1>
+<hr/>
 <h3>选择器</h3>
 <pre><code>元素名称, 类, id选择器
 </code></pre>
@@ -396,7 +395,4 @@ background-position的使用:
             -   auto    : 自适应效果, 当内容过多时, 自动添加滚动条, 内容没有溢出时, 不会出现滚动条!
 </code></pre>
 
-
-</body>
-</html>
 
