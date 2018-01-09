@@ -19,12 +19,15 @@
     更改元素名称为div ,且 class属性值为abc元素的文本颜色:
 
     HTML部分:
-        &lt;body&gt;
+    
+    <code>
+        &lt;body&gt;
             &lt;p class=&quot;abc&quot;&gt;高飞&lt;/p&gt;
             &lt;div class=&quot;abc&quot;&gt;高天&lt;/div&gt;
             &lt;span class=&quot;abc&quot;&gt;哈哈哈&lt;/span&gt;
             &lt;div&gt;一二三四五&lt;/div&gt;
         &lt;/body&gt;
+        </code>
 
     CSS部分:
         div.abc{
@@ -45,12 +48,15 @@
     更改元素名称为div 或者 class属性值为abc的元素 文本颜色
 
     HTML部分:
-        &lt;body&gt;
+    
+    <code>
+        &lt;body&gt;
             &lt;p class=&quot;abc&quot;&gt;高飞&lt;/p&gt;
             &lt;div class=&quot;abc&quot;&gt;高天&lt;/div&gt;
             &lt;span class=&quot;abc&quot;&gt;哈哈哈&lt;/span&gt;
             &lt;div&gt;一二三四五&lt;/div&gt;
         &lt;/body&gt;
+        </code>
 
     CSS部分:
         div,.abc{
@@ -71,10 +77,13 @@
 案例: 更改div中的直接子元素p文本颜色为红色;
 
     HTML部分:
-        &lt;p&gt;一二三四五&lt;/p&gt;
+    
+    <code>
+        &lt;p&gt;一二三四五&lt;/p&gt;
         &lt;div&gt;
             &lt;p&gt;六七八九十&lt;/p&gt;
         &lt;/div&gt;
+        </code>
 
     CSS部分:
 
@@ -97,7 +106,9 @@
     更改id为menu元素中的所有li , 文本颜色为白色;
 
     HTML部分:
-        &lt;div id=&quot;menu&quot;&gt;
+    
+    <code>
+        &lt;div id=&quot;menu&quot;&gt;
             &lt;ul&gt;
                 &lt;li&gt;一二三四五&lt;/li&gt;
                 &lt;li&gt;六七八九十&lt;/li&gt;
@@ -107,7 +118,9 @@
                 &lt;li&gt;山上有座庙&lt;/li&gt;
                 &lt;li&gt;从前有座山&lt;/li&gt;
             &lt;/ul&gt;
-    CSS部分:
+            </code>
+            
+    CSS部分:
 
         #menu li{
             color:#fff;
@@ -135,7 +148,7 @@
 
     HTML部分:
 
-        &lt;a href=&quot;https://www.baidu.com&quot;&gt;点击去百度一下&lt;/a&gt;
+        <code>&lt;a href=&quot;https://www.baidu.com&quot;&gt;点击去百度一下&lt;/a&gt;</code>
 
 
     CSS部分:
@@ -202,9 +215,12 @@
     给一个宽高为500的div , 设置三个大小不同的背景图片, 控制平铺为不平铺
 
     HTML部分:
-        &lt;div&gt;
+    
+    <code>
+        &lt;div&gt;
 
         &lt;/div&gt;
+        </code>
 
     CSS部分:
 
@@ -258,9 +274,9 @@ background-position的使用:
 
 案例: 
 
-    HTML部分:
-
-        &lt;div id=&quot;title&quot;&gt;
+    HTML部分:
+<pre><code>
+        &lt;div id=&quot;title&quot;&gt;
             &lt;ul&gt;
                 &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;QQ聊天&quot;&gt;&lt;span class=&quot;icon1&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;关注微博&quot;&gt;&lt;span class=&quot;icon2&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -269,6 +285,7 @@ background-position的使用:
                 &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;发送邮件&quot;&gt;&lt;span class=&quot;icon5&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
+        </code></pre>
 
     CSS部分:
 
