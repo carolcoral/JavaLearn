@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function test(uname){
+		var reg = /^(13[0-9]|15[012356789]|17[01235678]|18[0-9]|199)[0-9]{8}$/g;
+		var uname_ph = document.getElementById("uname_ph");
+		if(reg.test(uname)){
+			//用户输入的帐号符合我们的注册规则
+			uname_ph.innerHTML = "恭喜你! 帐号可用!";
+			uname_ph.style="color:#239923;font-size:12px;";
+		}else{
+			//用户输入的帐号不符合我们的注册规则
+			uname_ph.innerHTML = "恭喜你! 帐号不符合规则 !";
+			uname_ph.style="color:#f00;font-size:12px;";
+		}
+	}
+</script>
+<style type="text/css">
+	#content{
+		text-align:left;
+		width:500px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="content">
+		<h1>用户注册</h1>
+		<p><span>帐号:</span><input placeholder="请输入帐号" onblur="test(this.value)"/>&nbsp;&nbsp;<span id="uname_ph"></span></p>	
+		<p><span>密码:</span><input placeholder="请输入密码"/><span id="upass_ph"></span></p>	
+	</div>
+
+
+</body>
+</html>

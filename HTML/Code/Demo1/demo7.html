@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function update(type) {
+		switch (type) {
+		case 1: {
+			var page = document.getElementById("page");
+			var div = document.createElement("div");
+			var img = document.createElement("img");
+			img.src="images/img_2.jpg";
+			var p = document.createElement("p");
+			p.innerHTML="示例文字";
+			div.appendChild(img);
+			div.appendChild(p);
+			page.appendChild(div);
+			
+			break;
+		}
+		case 2: {
+			var page = document.getElementById("page");
+			page.removeChild(page.lastChild);
+			break;
+		}
+		}
+	}
+</script>
+<style type="text/css">
+#page div {
+	width: 200px;
+	height: 180px;
+	border: 1px solid #999;
+	box-shadow: 5px 5px 5px #999;
+	display: inline-block;
+	margin: 40px;
+}
+
+#page div img {
+	width: 200px;
+}
+
+#page div p {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	line-height: 60px;
+}
+</style>
+</head>
+<body>
+	<p>
+		<button onclick="update(1)">添加一个选项卡</button>
+		<button onclick="update(2)">删除一个选项卡</button>
+	</p>
+
+	<div id="page">
+		<div>
+			<img src="images/img_2.jpg" />
+			<p>示例文字</p>
+		</div></div>
+
+
+
+
+</body>
+</html>

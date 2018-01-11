@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var arr = new Array("images/img_1.jpg","images/img_2.jpg","images/img_3.jpg");
+	var index = 0;
+	function test(img){
+		console.info(1);
+		if(index==3){
+			index = 0;
+		}
+		console.info(1);
+		img.src=arr[index++];
+	}
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+	<img src="images/img_3.jpg" onclick="test(this)">
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function xxx(abc) {
+		
+		var reg = /^(13[0-9]|15[012356789]|17[01235678]|18[0-9]|199)[0-9]{8}$/g;
+		//alert(abc);
+		 if (reg.test(abc)) {
+			alert("您输入的手机号码可用");
+		} else {
+			alert("您输入的手机号码格式可能存在问题~ ");
+		} 
+	}
+</script>
+
+</head>
+<body>
+	<input placeholder="请输入手机号" onblur="xxx(this.value)">
+</body>
+</html>
