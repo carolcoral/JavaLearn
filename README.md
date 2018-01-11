@@ -309,7 +309,7 @@
      
      >5.[CSS3](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/CSS3.md)
      
-     >6.[JavaScript-1](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JavaScript-1.md)
+     >6.[JavaScript-1](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JavaScript-1.md)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
