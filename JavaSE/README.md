@@ -57,4 +57,4 @@
      
  * ### Program（阶段项目）
      
-     >1.[学生管理系统-简易版](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
+     >1.[学生管理系统-简易版](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE/Student)
