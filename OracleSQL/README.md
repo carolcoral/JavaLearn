@@ -29,6 +29,6 @@
  
  * ### Program（阶段项目）
      
-     >1.[学生管理系统-数据库版](https://github.com/carolcoral/JavaLearn/tree/master/OracleSQL/StudentManger)
+     >1.[学生管理系统-数据库版](https://github.com/carolcoral/JavaLearn/tree/master/OracleSQL/StudentManger)
      
-     >2.[在线考试答题系统-简易版](https://github.com/carolcoral/OnlineExamSystem)
+     >2.[在线考试答题系统-简易版](https://github.com/carolcoral/OnlineExamSystem)
