@@ -317,6 +317,6 @@
 
      >1.[省市县三级联动](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Code/省市县三级联动.html)
      
-     >2.[JavaScript-2中的练习代码](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo1)
+     >2.[JavaScript-2中的练习代码](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo1)
 
 * ### Exam（HTML 阶段项目）
