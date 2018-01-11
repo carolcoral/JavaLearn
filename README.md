@@ -316,5 +316,7 @@
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
      >1.[省市县三级联动](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Code/省市县三级联动.html)
+     
+     >2.[JavaScript-2中的练习代码](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo1)
 
 * ### Exam（HTML 阶段项目）
