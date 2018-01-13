@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1{
+		text-align: center;
+		margin-bottom: 200px;
+	}
+</style>
+<script type="text/javascript">
+	var interval = null;
+	function startShow(){
+		//开启周期性定时器, 周期性的调用showTimee
+		if(interval !=null){
+			alert("已经开始了");	
+		}else{
+		interval = setInterval("showTime()",1000);
+		}
+	}
+	function stopShow(){
+		if(interval != null){
+			clearInterval(interval);			
+		}
+	}
+	function showTime(){
+		var date = new Date();
+		var arr = document.getElementsByTagName("h1");
+		arr[0].innerHTML = date.toLocaleTimeString();
+	}
+</script>
+</head>
+<body>
+
+	<h1>00:00</h1>
+
+	<p><button onclick="startShow()">开始显示</button></p>
+	<p><button onclick="stopShow()">停止显示</button></p>
+
+</body>
+</html>

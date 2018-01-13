@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onkeydown = function(){
+	var code = window.event.keyCode;
+	switch (code) {
+	case 121:
+		//alert("外挂已开启");
+		break;
+	}
+	console.info("键盘按下了"+code);	
+}
+
+window.onkeyup = function(){
+	var code = window.event.keyCode;
+	if(code==121){
+		document.getElementById("s1").innerHTML="99999999999";
+		
+	}
+	console.info("键盘弹起了"+code);	
+}
+</script>
+</head>
+<body >
+	<p>当前游戏血量:<span id="s1">100</span></p>
+
+</body>
+</html>

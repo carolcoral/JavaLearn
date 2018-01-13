@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table,p{
+		width:1000px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	p{
+		margin-bottom: 50px;
+	}
+	td{
+		height:50px;
+	}
+	table,td,th{
+		border:1px solid red;
+	}
+</style>
+
+
+<script type="text/javascript">
+	function addFunc(){
+		var arr = document.getElementsByTagName("input");
+		var gid = arr[0].value;
+		var gname = arr[1].value;
+		var grmb = arr[2].value;
+			
+		var table1 = document.getElementById("table1");
+		var tr1 = table1.insertRow(1);
+		var td1 = tr1.insertCell(0);
+		td1.innerHTML = gid;
+		var td2 = tr1.insertCell(1);
+		td2.innerHTML = gname;
+		var td3 = tr1.insertCell(2);
+		td3.innerHTML = grmb;
+		var td4 = tr1.insertCell(3);
+		td4.innerHTML = grmb;
+		var td5 = tr1.insertCell(4);
+		td5.innerHTML = "<button>＋</button><span>1</span><button>－</button>";
+		var td6 = tr1.insertCell(5);
+		td6.innerHTML = "<button onclick='deleteRow(this.parentNode.parentNode.rowIndex)'>删除</button>";
+		
+	}
+	
+	function deleteRow(index){
+			/* var table1 = document.getElementById("table1");
+			table1.deleteRow(index); */
+			document.getElementById("table1").deleteRow(index);
+	}
+	
+
+</script>
+</head>
+<body>
+
+<p><input id="gid" type="number" placeholder="请输入商品编号"/><input id="gname" placeholder="请输入商品名称"/><input id="grmb" type="number" placeholder="请输入商品价格(人民币)"/><button onclick="addFunc()">确定添加</button></p>
+<table id="table1">
+<tr><th>商品编号</th><th>商品名称</th><th>商品单价</th><th>商品总价</th><th>商品数量</th><th>操作</th></tr>
+</table>
+
+
+</body>
+</html>

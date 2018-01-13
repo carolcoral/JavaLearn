@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+
+var index = 0;
+var arr = new Array();
+for(i=0;i<5;i++){
+	for(j=0;j<6;j++){
+		var win = window.open("https://itdage.cn",""+i+j,"width=226px,height=153px,left="+(j*226)+",top="+(i*153));
+		arr[index++] = win;
+		setTimeout("timeOut("+(index-1)+")",index*1000);
+	}
+}
+
+function timeOut(index){
+	arr[index].close();
+}
+
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

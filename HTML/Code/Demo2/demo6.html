@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	function test(){
+		var value = document.getElementById("name").value;
+		var url = "https://itdage.cn/B/imgshow?id=15&s1="+value;
+		location.href=url;
+	}
+
+</script>
+</head>
+<body>
+	<input id="name" type="text" placeholder="请输入姓名"/><button onclick="test()">提交</button>
+</body>
+</html>
