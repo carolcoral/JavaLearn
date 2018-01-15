@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+/* 	var person = new Object();
+	person.name = "高飞";
+	person.age = 18;
+	person.say = function(){
+		console.info("我是:"+this.name+",我今年"+this.age+"岁了");
+	}
+ */
+ 
+ 	/* function Person(name,age){
+		this.name = name;
+		this.age = age;
+		this.say = function(){
+			console.info("我是:"+this.name+",我今年"+this.age+"岁了");
+		}
+	}
+ 	var person = new Person("高飞",19);
+ 	 */
+ 
+ 		function Person(name , age , say){
+			this.name = name;
+			this.age = age;
+			this.say = say;
+		}
+		var p = new Person("大红",38,function(){
+			console.info("大红哈哈哈哈哈哈哈哈哈");
+		});
+ 	 
+ 	 
+
+</script>
+</head>
+<body>
+	<button onclick="p.say()">点击调用person的say方法</button>
+</body>
+</html>

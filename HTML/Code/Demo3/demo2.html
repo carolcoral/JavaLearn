@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var dom = document.getElementById("p1");
+		var $obj = $(dom);
+		$obj.css("color","red");
+		var dom2 = $obj.get(0);
+		dom2.innerHTML = "十九八七六 上山打老虎";
+	});
+</script>
+</head>
+<body >
+	<p id="p1">一二三四五 六七八九十 </p>
+</body>
+</html>
