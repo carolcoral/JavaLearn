@@ -42,13 +42,14 @@ XML具有自我描述性 , 主要应用于数据的存储 与 网络的数据传
 3.  XML文档中的节点, 允许嵌套, 不允许交叉
 
     例如: 描述一个人的通讯方式: 
-
-        &lt;comm&gt;
+    <code>
+        &lt;comm&gt;
             &lt;tel&gt;18516955565&lt;/tel&gt;
             &lt;qq&gt;123456789&lt;/qq&gt;
-        &lt;/comm&gt;
-
+        &lt;/comm&gt;
+    </code>
 4.  XML文档, 必须存在且只允许存在一个根标签
+<code>
     &lt;persons&gt;
         &lt;person&gt;
             &lt;name&gt;张大飞&lt;/name&gt;
@@ -60,7 +61,7 @@ XML具有自我描述性 , 主要应用于数据的存储 与 网络的数据传
             &lt;age&gt;14&lt;/age&gt;
         &lt;/person&gt;
     &lt;/persons&gt;
-
+</code>
 5.  XML文档属性 
 
     属性名与属性值之间使用英文等号连接 , 
