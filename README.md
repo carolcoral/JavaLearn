@@ -144,6 +144,8 @@
      >2.[JavaScript-2中的练习代码](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo1)
      
      >3.[JavaScript-3中的练习代码](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo2)
+     
+     >4.[Jquery-1](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo3)
 
 * ### Exam（HTML 阶段测试）
 
