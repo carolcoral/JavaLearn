@@ -4,9 +4,9 @@
 
      >开始学习JavaEE开发了，从JavaSE部分开始做记录。适合于有一点编程基础的同学共同学习和了解。若有任何疑问可以在我的博客上私信我或给我留言，收到后会第一时间回复，谢谢。望共勉！
 
-     >博客地址：[http://blog.csdn.net/carolcoral](http://blog.csdn.net/carolcoral)
+     >博客地址：[http://blog.csdn.net/carolcoral](http://blog.csdn.net/carolcoral)
      
-     >联系邮箱：[lxw@cnkj.site](lxw@cnkj.site)
+     >联系邮箱：[lxw@cnkj.site](lxw@cnkj.site)
 
 * 相关手册
 
