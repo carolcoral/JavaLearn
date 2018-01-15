@@ -6,8 +6,7 @@
 
      >博客地址：[http://blog.csdn.net/carolcoral](http://blog.csdn.net/carolcoral)
 
-
-     >联系邮箱：<a mailto="lxw@cnkj.site">lxw@cnkj.site</a>
+     >联系邮箱：<a mailto="lxw@cnkj.site">lxw@cnkj.site</a>
 
 * 相关手册
 
