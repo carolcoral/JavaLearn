@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	function test(type){
+		var img = $("img");
+		switch (type) {
+		case 1:{
+			img.attr("src","images/xdl3.jpg");
+		}
+			break;
+		case 2:{
+			var src = img.attr("src");
+			console.info(src);
+		}
+			break;
+		case 3:{
+			img.removeAttr("src");
+		}
+			break;
+		}
+	}
+</script>
+</head>
+<body>
+	<img>
+	<p>
+		<button onclick="test(1)">添加src属性</button>
+		<button onclick="test(2)">获取src属性</button>
+		<button onclick="test(3)">移除src属性</button>
+	</p>
+
+</body>
+</html>

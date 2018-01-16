@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p{
+		position: fixed;
+		left:-250px;
+		top:50%;
+		/* transform:rotate(180deg) */
+	}
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		test1();
+	});
+	
+	var test1 = function(){
+		$("p").animate({"left":"600px","font-size":"14px"},500,test2);;
+	}
+	
+	var test2 = function (){
+		//当右移动画执行完毕, 设置文字大小发生变化
+		$("p").animate({"left":"100px","font-size":"80px"},500,test1);;
+	}
+
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+	<p>高飞飞飞飞: 我有一只小小小小鸟</p>
+
+</body>
+</html>

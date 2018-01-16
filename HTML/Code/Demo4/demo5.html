@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	/* function test(){
+		$("img").removeClass("min");
+		$("img").addClass("max");
+	} */
+	function test(){
+		$("img").toggleClass("max");
+	}
+</script>
+<style type="text/css">
+	.min{
+		width:100px;
+	}
+	.max{
+		width:800px;
+	}
+</style>
+</head>
+<body>
+	<button onclick="test()"> 查看大图 </button><br><br>
+	<img class="min" src="images/xdl1.jpg">
+</body>
+</html>

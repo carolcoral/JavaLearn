@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	function unametest(input){
+		var text = $(input).val();		
+		var reg = /^(13[0-9]|15[012356789]|17[01235678]|18[0-9]|199)[0-9]{8}$/g;
+		if(reg.test(text)){
+			$("#uname_ph").css({'font-size':'12px','color':'#393'});
+			$("#uname_ph").html("恭喜你 , 帐号可用 !");
+		}else{
+			$("#uname_ph").css({'font-size':'12px','color':'#933'});
+			$("#uname_ph").html("很遗憾, 帐号不可用 ~ ");
+		}
+	}
+</script>
+</head>
+<body>
+
+	<input type="text" placeholder="请输入注册的帐号"  onblur="unametest(this)"/><span id="uname_ph"></span>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	function show(){
+		$("img").show();
+	}
+	function hide(){
+		$("img").hide();
+	}
+	function toggle(){
+		$("img").toggle();
+	}
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+	<p>
+		<button onclick="show()">显示</button>
+		<button onclick="hide()">隐藏</button>
+		<button onclick="toggle()">切换</button>
+	</p>
+	<img src="images/xxx.jpg" style="width:500px">
+</body>
+</html>
