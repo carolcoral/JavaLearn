@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		 $("body").on("click","img",function(){
+			 $(this).remove();
+		 });
+		
+	});
+	
+	function test(){
+		var $obj = $("<img src='images/xdl1.jpg'/>");
+		$("body").append($obj);
+	}
+	
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+	<button onclick="test()">添加元素</button><br>
+</body>
+</html>

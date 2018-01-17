@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("button").bind("click",clickFunc);
+	});
+	var count = 1;
+	function clickFunc(){
+		if(count==10){
+			alert("您的点击次数用完了, 再点就花钱了~ ");
+			$("button").unbind("click");
+		}else{
+			console.info(count++);
+		}
+	}
+</script>
+</head>
+<body>
+	<button>点击啊</button>
+</body>
+</html>

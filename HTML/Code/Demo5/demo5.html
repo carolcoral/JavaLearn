@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#but1").click(function(){
+/*  			var $newObj = $(this).clone();*/
+			var $newObj = $(this).clone(true);
+			$("body").append($newObj);
+		});
+		
+		
+	});
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+	<button id="but1">添加一个按钮</button>
+</body>
+</html>
