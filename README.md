@@ -141,7 +141,7 @@
      
      >10.[JQuery-2](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JQuery-2.md)
      
-     >11.[JQuery-3](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JQuery-3.md)
+     >11.[JQuery-3](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JQuery-3.md)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
@@ -155,8 +155,7 @@
      
      >5.[JQuery-2](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo4)
      
-     .[](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JQuery-3.md)
-     >5.[JQuery-2](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo4)
+     >6.[JQuery-3](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo5)
 
 * ### Exam（HTML 阶段测试）
 
