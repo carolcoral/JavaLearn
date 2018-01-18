@@ -145,7 +145,7 @@
      
      >12.[Servlet 和 Tomcat 服务器安装](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Servlet和%20Tomcat%20安装.md)
      
-     
+     >13.[Servlet-2](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Servlet-2.md)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
@@ -160,6 +160,8 @@
      >5.[JQuery-2](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo4)
 
      >6.[JQuery-3](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo5)
+     
+     >7.[Servlet-2](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo6)
 
 * ### Exam（HTML 阶段测试）
 
