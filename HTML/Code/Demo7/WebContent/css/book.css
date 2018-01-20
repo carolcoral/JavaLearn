@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.book{
+	display: inline-block;
+	width:200px;
+	
+}
+.book>img{
+	width:200px;
+}
+
+.book_p1{
+	text-align: center;
+}
+.book_p2{
+	padding: 0 20%;
+}
+.book_p2 span{
+	display: inline-block;
+}
+.book_rmb{
+	text-align: left;
+	width:40%;
+}
+
+.book_buy{
+	text-align: right;
+	width:60%
+}
