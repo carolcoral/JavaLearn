@@ -129,7 +129,7 @@
      
      >4.[盒模型、文字样式、表格样式、列表样式、定位、HTML5部分新增属性](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/CSS02.md)
      
-     >5.[CSS3中边框阴影、颜色渐变、过渡效果、动画效果](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/CSS3.md)
+     >5.[CSS3中边框阴影、颜色渐变、过渡效果、动画效果](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/CSS3.md)
      
      >6.[JavaScript 的使用、提示框、注释、定义变量、常见数据类型、控制台输出](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JavaScript-1.md)
      
