@@ -175,9 +175,9 @@
      
      >9.[Cookie、Session](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo8)
      
-     >10.[从数据库获取商品信息并展示](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo9)
+     >10.[从数据库获取商品信息并展示](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo9)
      
-     >11.[统计网站访问量、商品购物车功能](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo10)
+     >11.[统计网站访问量、商品购物车功能](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo10)
 
 * ### Exam（HTML 阶段测试）
 
