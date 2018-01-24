@@ -152,6 +152,8 @@
      >15.[Servlet 的会话跟踪和状态管理、Cookie、Session、线程安全](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Servlet-4.md)
      
      >16.[初识 jsp、jsp 语法结构和内置对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP01.md)
+     
+     >17.[JSP 的九大内置对象和 MVC 设计思路](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP02.md)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
