@@ -8,13 +8,13 @@
 	
 
 #一、初识ＪＳＰ
-###<1>概念
+### <1>概念
 	JSP:Java Server Page,java 服务器 页面
 	动态的生成HTML响应（写HTML标签的方式，CSS样式标签，JS标签）
 	可以在HTML文件嵌入java程序和jsp标记，形成JSP文件（.jsp）
 	本质上就是一个Servlet
 	
-###<2>特点
+### <2>特点
 	HTML: JSP处理动态的内容	
 	JavaScript: JSP可以和服务器交互，能够提供复杂的服务
 	Servlet: JSP可以很方便编写或者修改HTML页面
@@ -25,7 +25,7 @@
 	后续的JSP请求，服务器会直接调用.class生成HTML响应。
 	
 # 二、JSP的语法（重点）
-###<1>申明定义区（会被放置到转译的Servlet的成员位置）（重点）
+### <1>申明定义区（会被放置到转译的Servlet的成员位置）（重点）
 	格式：
        <%!
 			定义全局属性
@@ -34,7 +34,7 @@
 
 	作用：在此申明全局变量和方法
 
-###<2>java代码区（会被放置到转译的Servlet的_jspService()方法中）（重点）
+### <2>java代码区（会被放置到转译的Servlet的_jspService()方法中）（重点）
 	格式：
 		<%
 			任何java的代码
@@ -42,7 +42,7 @@
 
 	作用：编写任何的java代码
 
-###<3>输出表达式（会被放置到转译的Servlet的_jspService()方法中）（重点）
+### <3>输出表达式（会被放置到转译的Servlet的_jspService()方法中）（重点）
 	格式：
        <%= 表达式%>	
 	
@@ -55,18 +55,18 @@
 	在java代码区调用getTime()方法将结果赋值给dataStr	
 	在输出表达式中输出结果
 
-###<4>注释
+### <4>注释
 	//单行注释
 	/*多行注释*/
 
 	<!--外部注释1 ，客户端可以查看-->
 	<%--外部注释2--%>
 
-###<5>指令和动作
+### <5>指令和动作
 	指定的语法格式：
 		<%@指令名称 属性1=值1  属性2=值2  ... %>
 
-#####1. Page指令
+##### 1. Page指令
 	作用：描述并配置页面的配置信息和导包的操作
 	
 	语法格式：		<%@page import="java.text.SimpleDataFormat"%>
@@ -85,19 +85,19 @@
 			contentType=“contentTyepInfo” | 描述当前页面的内容类型和编码格式（）
 	%>
 	
-#####2.taglib指令
+##### 2.taglib指令
 	作用：扩展JSP程序的标签元素，引入其他功能的标签库文件。
 
 	语法格式：<%@taglib uri="tabLibary" prefix="prefix"%>
 
 	(最终的jsp页面中，尽量少使用java代码，将if/for等功能，使用标签的方式来实现)
 
-#####3. include指令
+##### 3. include指令
 	作用：引入另一个JSP程序或者HTML文件等,将复杂的页面模块化处理
 	
 	语法格式：<%@include file="fileURL"%>
 	
-#####4. include动作
+##### 4. include动作
 	语法格式：
 		<jsp:include page="跳转的页面"/>	
 	
@@ -105,7 +105,7 @@
 			<jsp:param value="v" name="k"/>		
 		</jsp:include>	
 
-#####5. forward动作	
+##### 5. forward动作	
 	语法格式：
 		<jsp:forward page="跳转的页面"/>	
 	
