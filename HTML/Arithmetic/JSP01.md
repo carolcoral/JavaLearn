@@ -7,7 +7,7 @@
 	三、内置对象
 	
 
-#一、初识ＪＳＰ
+# 一、初识ＪＳＰ
 ### <1>概念
 	JSP:Java Server Page,java 服务器 页面
 	动态的生成HTML响应（写HTML标签的方式，CSS样式标签，JS标签）
