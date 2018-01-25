@@ -153,7 +153,9 @@
      
      >16.[初识 jsp、jsp 语法结构和内置对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP01.md)
      
-     >17.[JSP 的九大内置对象（ 1 ）](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP02.md)
+     >17.[JSP 的九大内置对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP02.md)
+     
+     >18.[MVC 设计模式、EL/JSTL、JavaBean 对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP03.md)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
@@ -178,6 +180,8 @@
      >10.[从数据库获取商品信息并展示](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo9)
      
      >11.[统计网站访问量、商品购物车功能、商品增删改](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo10)
+     
+     >12.[书城网站完善【3】](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo11)
 
 * ### Exam（HTML 阶段测试）
 
