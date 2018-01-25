@@ -156,7 +156,7 @@
      >17.[JSP 的九大内置对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP02.md)
      
      >18.[详解 JSP 九大内置对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/详解JSP九大内置对象.md)
-     
+     
      >19.[MVC 设计模式、EL/JSTL、JavaBean 对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP03.md) 
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
