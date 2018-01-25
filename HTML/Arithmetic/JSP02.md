@@ -77,6 +77,63 @@
 	预习EL+JSTL
 		jsp  前端显示
 
+### 购物车模块
+	总金额：product_list.jsp----->CarServlet(选购的商品信息和总金额存储到session)---->product_car.jsp
+	
+	删除一条清单：product_car.jsp---->删除---->DeleteCarProductServlet(从session移除此商品)---->product_car.jsp
+												获取session	
+												获取需要移除项的id，移除操作
+												跳转购物车列表
+
+	更改清单中的数量：-  +（传输1/-1）  ----->UpdateCarProductNumServlet(从session更新此商品)
+												获取session	
+												获取需要更新项的id，更新操作（carProduct.getNum()+数值）
+												跳转购物车列表
+	
+### <6>exception对象
+	概念：处理JSP页面发生的错误和异常
+
+##### 把所有的错误都集中到某个页面进行处理
+
+	配置：发生错误的页面：page指令中配置，errorPage="指定产生异常时处理异常的页面"
+		 处理错误的页面：page指令中配置，isErrorPage=true|false ,当前页面才可以使用exception
+	
+	常用方法：和java中异常一致
+
+##### 自定义处理404错误500异常
+		1.web.xml错误页面的配置
+			<error-page>
+				<error-code>404</error-code>
+				<location>/page404.html</location>
+			</error-page>
+		2.编写需要展示自定义页面
+			创建page404.html页面
+	
+### <7>pageContext对象
+	概念：表示当前页面的上下文
+		 使用当前的对象访问page,request,session,application范围内的数据。	
+		 本身也可以存储数据
+		
+	常用方法：getAttribute(key)/setAttribute,获取的是当前page范围内的数据
+			 getAttribute(String key,int scope)	
+					参数二：指定获取数据的范围
+						   PageContext.PAGE_SCOPE:	对应page范围
+						   PageContext.REQUEST_SCOPE: 对应request范围
+						   PageContext.SESSION_SCOPE:  对应session范围
+						   PageContext.APPLICATION_SCOPE:  对应application范围
+### <8/9>page,config对象
+		
+### 作用范围，四个域
+	page范围： 一个页面，仅在当前页面有效
+	request范围：一次请求，在同一次请求中有效
+	session范围：一次会话，可以包含多个请求，在一个用户的多次请求中有效
+	application范围：一次服务，可以在多个用户的多次会话中有效
+	
+	存储数据：范围不同，数据的交互
+
+	常用方法：
+			getAttribute/setAttribute
+
 
 
 
