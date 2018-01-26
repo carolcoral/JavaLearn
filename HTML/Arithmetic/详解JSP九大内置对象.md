@@ -608,90 +608,72 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 
 # jsp内置对象总结：
 
-<table border=0 cellpadding=0 cellspacing=0 width=1508 style='border-collapse:
 <table>
- <col>
- <col>
- <col >
  <col >
  <tr >
   <td >Jsp内置对象</td>
-  <td >功能</td>
-  <td class=xl65 width=491 style='width:491pt;box-sizing: border-box'>主要方法</td>
+  <td>功能</td>
+  <td >主要方法</td>
  </tr>
- <tr height=19 style='height:19.0pt;box-sizing: border-box'>
-  <td height=19 class=xl66 style='height:19.0pt;box-sizing: border-box'>out</td>
-  <td class=xl66 style='box-sizing: border-box'>向客户端输出数据</td>
-  <td class=xl66 colspan=2 style='mso-ignore:colspan;box-sizing: border-box'>print()
-  println() flush() clear() isAutoFlush() getBufferSize()<font class="font7">&nbsp;&nbsp;</font><font
-  class="font5"><span style="mso-spacerun:yes">&nbsp;</span>close() …………</font></td>
+ <tr >
+  <td >out</td>
+  <td>向客户<span >端输出数据</span></td>
+  <td >print()
+  println() flush() clear() isAutoFlush() getBufferSize()<font class="font7">&nbsp;&nbsp;</font><font><span>&nbsp;</span>close() …………</font></td>
  </tr>
- <tr height=18 style='height:18.0pt;box-sizing: border-box'>
-  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>request</td>
-  <td class=xl66 style='box-sizing: border-box'>向客户端请求数据</td>
-  <td class=xl66 colspan=6 style='mso-ignore:colspan;box-sizing: border-box'>getAttributeNames()
+ <tr >
+  <td>request</td>
+  <td >向客户<span style='display:none'>端请求数据</span></td>
+  <td>getAttributeNames()
   getCookies() getParameter() getParameterValues() setAttribute()
   getServletPath() …………..</td>
  </tr>
- <tr height=18 style='height:18.0pt;box-sizing: border-box'>
-  <td rowspan=3 class=xl66 style='box-sizing: border-box'>封装了jsp产生的响应,然后被发送到客户端以响应客户的请求</td>
-  <td class=xl66 style='box-sizing: border-box'>addCookie() sendRedirect()
-  setContentType()</td>
- </tr>
- <tr height=18 style='height:18.0pt'>
-  <td height=18 class=xl66 style='height:18.0pt'>flushBuffer() getBufferSize()
-  getOutputStream()</td>
- </tr>
- <tr height=18 style='height:18.0pt'>
-  <td height=18 class=xl66 style='height:18.0pt'>sendError()
+ <tr >
+  <td >response</td>
+  <td>封装了jsp产生的响应,然后被发送到客户端以响应客户的请求</td>
+  <td>addCookie()
+  sendRedirect() setContentType()flushBuffer()
+  getBufferSize() getOutputStream()sendError()
   containsHeader()……………</td>
  </tr>
- <tr height=18 style='height:18.0pt;box-sizing: border-box'>
-  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>application</td>
+ <tr >
+  <td>application</td>
+  <td ></td>
+  <td ></td>
  </tr>
- <tr height=19 style='height:19.0pt;box-sizing: border-box'>
-  <td height=19 class=xl66 style='height:19.0pt;box-sizing: border-box'>config</td>
-  <td class=xl66 style='box-sizing: border-box'>表示Servlet的配置,当一个Servlet初始化时,容器把某些信息通过此对象传递给这<span
-  style='display:none'>个Servlet</span></td>
-  <td class=xl66 colspan=4 style='mso-ignore:colspan;box-sizing: border-box'>getServletContext()
+ <tr>
+  <td >config</td>
+  <td >表示Ser<span style='display:none'>vlet的配置,当一个Servlet初始化时,容器把某些信息通过此对象传递给这个Servlet</span></td>
+  <td >getServletContext()
   getServletName() getInitParameter()<font class="font7">&nbsp;&nbsp;</font><font
   class="font5"><span
   style="mso-spacerun:yes">&nbsp;</span>getInitParameterNames()……………</font></td>
  </tr>
- <tr height=18 style='height:18.0pt;box-sizing: border-box'>
-  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>page</td>
-  <td class=xl66 style='box-sizing: border-box'>Jsp实现类的实例,它是jsp本身,通过这个可以对它进行访问</td>
+ <tr >
+  <td>page</td>
+  <td >Jsp实现<span style='display:none'>类的实例,它是jsp本身,通过这个可以对它进行访问</span></td>
   <td class=xl66 style='box-sizing: border-box'>flush()………</td>
  </tr>
- <tr height=19 style='height:19.0pt;box-sizing: border-box'>
-  <td rowspan=3 height=55 class=xl66 style='height:55.0pt;box-sizing: border-box'>pagecontext</td>
-  <td rowspan=3 class=xl66 style='box-sizing: border-box'>为JSP页面包装页面的上下文。管理对属于JSP中特殊可见部分中己经命名对象的该问</td>
-  <td class=xl66 colspan=5 style='mso-ignore:colspan;box-sizing: border-box'>forward()
-  getAttribute() getException() getRequest() getResponse()<font class="font7">&nbsp;&nbsp;</font><font
-  class="font5"><span style="mso-spacerun:yes">&nbsp;</span>getServletConfig()</font></td>
- </tr>
- <tr height=18 style='height:18.0pt'>
-  <td height=18 class=xl66 style='height:18.0pt'>getSession()
-  getServletContext() setAttribute()</td>
- </tr>
- <tr height=18 style='height:18.0pt'>
-  <td height=18 class=xl66 style='height:18.0pt'>removeAttribute()
+ <tr >
+  <td >pagecontext</td>
+  <td >为JSP页面包装页面的上下文。管理对属于JSP中特殊可见部分中己经命名对象的该问</td>
+  <td >forward()
+  getAttribute() getException() getRequest() getResponse() getServletConfig() getSession()
+  getServletContext() setAttribute() removeAttribute()
   findAttribute() ……………</td>
+ <tr >
+  <td >session</td>
+  <td >用来保存每个用户的信息,以便跟踪每个用户的操作状态</td>
+  <td >getAttribute()
+  getId() getAttributeNames() getCreateTime()
+  getMaxInactiveInterval() invalidate()
+  isNew()</td>
  </tr>
- <tr height=19 style='height:19.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=37 class=xl66 style='height:37.0pt;box-sizing: border-box'>session</td>
-  <td rowspan=2 class=xl66 style='box-sizing: border-box'>用来保存每个用户的信息,以便跟踪每个用户的操作状态</td>
-  <td class=xl66 colspan=4 style='mso-ignore:colspan;box-sizing: border-box'>getAttribute()
-  getId()<font class="font7">&nbsp;&nbsp;</font><font class="font5"><span
-  style="mso-spacerun:yes">&nbsp;</span>getAttributeNames() getCreateTime()
-  getMaxInactiveInterval()</font></td>
- </tr>
- <tr height=18 style='height:18.0pt'>
-  <td height=18 class=xl66 style='height:18.0pt'>invalidate() isNew()</td>
- </tr>
- <tr height=18 style='height:18.0pt;box-sizing: border-box'>
-  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>exception</td>
-  <td class=xl66 style='box-sizing: border-box'>反映运行的异常</td>
-  <td class=xl66 style='box-sizing: border-box'>getMessage()…………</td>
+ <tr >
+  <td >exception</td>
+  <td >反映运行的异常</td>
+  <td >getMessage()…………</td>
+  <td ></td>
  </tr>
 </table>
+
