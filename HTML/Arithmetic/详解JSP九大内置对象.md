@@ -1,5 +1,3 @@
-### 原文：http://blog.csdn.net/icarus_wang/article/list/3
-
 ## JSP有九个内置对象（又叫隐含对象），不需要预先声明就可以在脚本代码和表达式中随意使用
 ## JSP九大内置对象分为四类：
 		输入输出对象：out对象、response对象、request对象
