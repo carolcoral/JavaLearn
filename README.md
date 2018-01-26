@@ -16,8 +16,7 @@
      
      >3.[w3school](http://www.w3school.com.cn)
      
-* 相关 JAR 包]
-     >3.[w3school](http://www.w3school.com.cn)
+* 相关 JAR 包](https://github.com/carolcoral/JavaLearn/tree/master/JAR)
 
 ## [JavaSE](https://github.com/carolcoral/JavaLearn/tree/master/JavaSE)
 
