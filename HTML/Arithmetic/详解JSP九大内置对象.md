@@ -673,7 +673,6 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
   <td >exception</td>
   <td >反映运行的异常</td>
   <td >getMessage()…………</td>
-  <td ></td>
  </tr>
 </table>
 
