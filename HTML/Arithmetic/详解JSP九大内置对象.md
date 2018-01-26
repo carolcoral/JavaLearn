@@ -604,3 +604,118 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
   <td class=xl65 style='box-sizing: border-box'>返回当前页面的会话对象</td>
  </tr>
 </table>
+
+
+# jsp内置对象总结：
+
+<table border=0 cellpadding=0 cellspacing=0 width=1508 style='border-collapse:
+ collapse;table-layout:fixed;width:1508pt;box-sizing: border-box;border-spacing: 0px;
+ max-width: 100%;font-variant-caps: normal;orphans: auto;text-align:start;
+ widows: auto;-webkit-text-size-adjust: auto;-webkit-text-stroke-width: 0px'>
+ <col width=119 style='mso-width-source:userset;mso-width-alt:5077;width:119pt'>
+ <col width=573 style='mso-width-source:userset;mso-width-alt:24448;width:573pt'>
+ <col width=491 style='mso-width-source:userset;mso-width-alt:20949;width:491pt'>
+ <col width=65 span=5 style='width:65pt'>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td height=18 class=xl65 width=119 style='height:18.0pt;width:119pt;
+  box-sizing: border-box'>Jsp内置对象</td>
+  <td class=xl65 width=573 style='width:573pt;box-sizing: border-box'>功能</td>
+  <td class=xl65 width=491 style='width:491pt;box-sizing: border-box'>主要方法</td>
+  <td width=65 style='width:65pt'></td>
+  <td width=65 style='width:65pt'></td>
+  <td width=65 style='width:65pt'></td>
+  <td width=65 style='width:65pt'></td>
+  <td width=65 style='width:65pt'></td>
+ </tr>
+ <tr height=19 style='height:19.0pt;box-sizing: border-box'>
+  <td height=19 class=xl66 style='height:19.0pt;box-sizing: border-box'>out</td>
+  <td class=xl66 style='box-sizing: border-box'>向客户端输出数据</td>
+  <td class=xl66 colspan=2 style='mso-ignore:colspan;box-sizing: border-box'>print()
+  println() flush() clear() isAutoFlush() getBufferSize()<font class="font7">&nbsp;&nbsp;</font><font
+  class="font5"><span style="mso-spacerun:yes">&nbsp;</span>close() …………</font></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>request</td>
+  <td class=xl66 style='box-sizing: border-box'>向客户端请求数据</td>
+  <td class=xl66 colspan=6 style='mso-ignore:colspan;box-sizing: border-box'>getAttributeNames()
+  getCookies() getParameter() getParameterValues() setAttribute()
+  getServletPath() …………..</td>
+ </tr>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td rowspan=3 height=54 class=xl66 style='height:54.0pt;box-sizing: border-box'>response</td>
+  <td rowspan=3 class=xl66 style='box-sizing: border-box'>封装了jsp产生的响应,然后被发送到客户端以响应客户的请求</td>
+  <td class=xl66 style='box-sizing: border-box'>addCookie() sendRedirect()
+  setContentType()</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl66 style='height:18.0pt'>flushBuffer() getBufferSize()
+  getOutputStream()</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl66 style='height:18.0pt'>sendError()
+  containsHeader()……………</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>application</td>
+  <td class=xl66 style='box-sizing: border-box'></td>
+  <td class=xl66 style='box-sizing: border-box'></td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:19.0pt;box-sizing: border-box'>
+  <td height=19 class=xl66 style='height:19.0pt;box-sizing: border-box'>config</td>
+  <td class=xl66 style='box-sizing: border-box'>表示Servlet的配置,当一个Servlet初始化时,容器把某些信息通过此对象传递给这<span
+  style='display:none'>个Servlet</span></td>
+  <td class=xl66 colspan=4 style='mso-ignore:colspan;box-sizing: border-box'>getServletContext()
+  getServletName() getInitParameter()<font class="font7">&nbsp;&nbsp;</font><font
+  class="font5"><span
+  style="mso-spacerun:yes">&nbsp;</span>getInitParameterNames()……………</font></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>page</td>
+  <td class=xl66 style='box-sizing: border-box'>Jsp实现类的实例,它是jsp本身,通过这个可以对它进行访问</td>
+  <td class=xl66 style='box-sizing: border-box'>flush()………</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:19.0pt;box-sizing: border-box'>
+  <td rowspan=3 height=55 class=xl66 style='height:55.0pt;box-sizing: border-box'>pagecontext</td>
+  <td rowspan=3 class=xl66 style='box-sizing: border-box'>为JSP页面包装页面的上下文。管理对属于JSP中特殊可见部分中己经命名对象的该问</td>
+  <td class=xl66 colspan=5 style='mso-ignore:colspan;box-sizing: border-box'>forward()
+  getAttribute() getException() getRequest() getResponse()<font class="font7">&nbsp;&nbsp;</font><font
+  class="font5"><span style="mso-spacerun:yes">&nbsp;</span>getServletConfig()</font></td>
+  <td></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl66 style='height:18.0pt'>getSession()
+  getServletContext() setAttribute()</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl66 style='height:18.0pt'>removeAttribute()
+  findAttribute() ……………</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:19.0pt;box-sizing: border-box'>
+  <td rowspan=2 height=37 class=xl66 style='height:37.0pt;box-sizing: border-box'>session</td>
+  <td rowspan=2 class=xl66 style='box-sizing: border-box'>用来保存每个用户的信息,以便跟踪每个用户的操作状态</td>
+  <td class=xl66 colspan=4 style='mso-ignore:colspan;box-sizing: border-box'>getAttribute()
+  getId()<font class="font7">&nbsp;&nbsp;</font><font class="font5"><span
+  style="mso-spacerun:yes">&nbsp;</span>getAttributeNames() getCreateTime()
+  getMaxInactiveInterval()</font></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl66 style='height:18.0pt'>invalidate() isNew()</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=18 style='height:18.0pt;box-sizing: border-box'>
+  <td height=18 class=xl66 style='height:18.0pt;box-sizing: border-box'>exception</td>
+  <td class=xl66 style='box-sizing: border-box'>反映运行的异常</td>
+  <td class=xl66 style='box-sizing: border-box'>getMessage()…………</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+</table>
