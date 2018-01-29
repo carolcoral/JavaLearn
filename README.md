@@ -162,6 +162,10 @@
      >19.[MVC 设计模式、EL/JSTL、JavaBean 对象](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP03.md)
      
      >20.[JSTL 使用、filter 过滤器、listener 监听器](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP04.md)
+     
+     >21.[Ajax 异步通信技术](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Ajax.md)
+     
+     >22.[Ajax 异步通信技术相关 PPT](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/AJAX.pptx)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
@@ -190,6 +194,8 @@
      >12.[书城网站完善【3】](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo11)
      
      >13.[filter 过滤器和 listener 监听器](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo12)
+     
+     >14.[Ajax 异步通信在商城购物车的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo13)
 
 * ### Exam（HTML 阶段测试）
 
