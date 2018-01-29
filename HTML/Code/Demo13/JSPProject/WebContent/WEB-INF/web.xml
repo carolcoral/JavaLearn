@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>JSPProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>ProductServlet</display-name>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>cn.xdl.servlet.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/ProductServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>CarServlet</display-name>
+		<servlet-name>CarServlet</servlet-name>
+		<servlet-class>cn.xdl.servlet.CarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarServlet</servlet-name>
+		<url-pattern>/CarServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>DeleteCarProductServlet</display-name>
+		<servlet-name>DeleteCarProductServlet</servlet-name>
+		<servlet-class>cn.xdl.servlet.DeleteCarProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCarProductServlet</servlet-name>
+		<url-pattern>/DeleteCarProductServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UpdateCarProductNumServlet</display-name>
+		<servlet-name>UpdateCarProductNumServlet</servlet-name>
+		<servlet-class>cn.xdl.servlet.UpdateCarProductNumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCarProductNumServlet</servlet-name>
+		<url-pattern>/UpdateCarProductNumServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- 配置过滤器对象 -->
+	<filter>
+		<filter-name>checklogin</filter-name>
+		<filter-class>cn.xdl.filter.MyFilter</filter-class>
+	</filter>
+	
+	<!-- 指定需要拦截的请求 -->
+	<filter-mapping>
+		<filter-name>checklogin</filter-name>
+		<url-pattern>/product_list.jsp</url-pattern>
+	</filter-mapping>
+	
+	
+</web-app>
