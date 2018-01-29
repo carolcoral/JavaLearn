@@ -124,59 +124,59 @@ Session创建事件发生在每次一个新的session创建的时候，类似地
 
 * 1、监听应用的启动和停止 ServletContextListener ：
 
-接口包括如下两个方法：
+	接口包括如下两个方法：
 
 		public void contextInitialized(ServletContextEvent sce); 
 		public void contextDestroyed(ServletContextEvent sce); 
 
-如果你实现了一个接口，那你就必须实现它所有的方法。因此，如果你想利用应用的启动和停止事件，你就需要创建一个Java类并实现ServletContextListener接口。下边是这样的一个类的例子：
+	如果你实现了一个接口，那你就必须实现它所有的方法。因此，如果你想利用应用的启动和停止事件，你就需要创建一个Java类并实现ServletContextListener接口。下边是这样的一个类的例子：
 
 		import javax.servlet.ServletContextListener;
 		import javax.servlet.ServletContextEvent;
 		public class ApplicationWatch implements ServletContextListener {
-		public static long applicationInitialized = 0L;
-		/* 应用启动事件 */
-		public void contextInitialized(ServletContextEvent ce) {
-		applicationInitialized = System.currentTimeMillis();
-		//这里还可以添加你需要的业务处理
-		}
-		/*应用停止事件 */
-		public void contextDestroyed(ServletContextEvent ce) {}
+			public static long applicationInitialized = 0L;
+			/* 应用启动事件 */
+			public void contextInitialized(ServletContextEvent ce) {
+				applicationInitialized = System.currentTimeMillis();
+				//这里还可以添加你需要的业务处理
+			}
+			/*应用停止事件 */
+			public void contextDestroyed(ServletContextEvent ce) {}
 		}
 
-在上边的代码中，ApplicationWatch类实现了ServletContextListener接口。它实现了接口中的两个方法，但只用了其中的一个方法，另一个方法中没有写任何代码。这个类把应用启动的时间记录在一个可以从其它应用类中存取应用启动时间的public static变量中，当然你也可以根据系统的需要在contextInitialized方法中添加一些自己的业务处理，以达到系统启动即加载的需求。
+	在上边的代码中，ApplicationWatch类实现了ServletContextListener接口。它实现了接口中的两个方法，但只用了其中的一个方法，另一个方法中没有写任何代码。这个类把应用启动的时间记录在一个可以从其它应用类中存取应用启动时间的public static变量中，当然你也可以根据系统的需要在contextInitialized方法中添加一些自己的业务处理，以达到系统启动即加载的需求。
  
 * 2、Session的创建和失效HttpSessionListener：
 
-首先让我们看看HttpSessionListener接口有什么不同的方法，这个接口也只包含两个方法，分别对应于Session的创建和失效：
+	首先让我们看看HttpSessionListener接口有什么不同的方法，这个接口也只包含两个方法，分别对应于Session的创建和失效：
 
 		· public void sessionCreated(HttpSessionEvent se); 
 		· public void sessionDestroyed(HttpSessionEvent se);
 
-如上边的ApplicationWatch例子那样，我们也创建了一个实现HttpSessionListener接口的类。如下：
+	如上边的ApplicationWatch例子那样，我们也创建了一个实现HttpSessionListener接口的类。如下：
 
 		import javax.servlet.http.HttpSessionListener;
 		import javax.servlet.http.HttpSessionEvent;
 		public class SessionCounter implements HttpSessionListener {
-		private static int activeSessions =0;
-		/* Session创建事件 */
-		public void sessionCreated(HttpSessionEvent se) {
-		       activeSessions++;
+			private static int activeSessions =0;
+			/* Session创建事件 */
+			public void sessionCreated(HttpSessionEvent se) {
+			       activeSessions++;
+			}
+			/* Session失效事件 */
+			public void sessionDestroyed(HttpSessionEvent se) {
+				if(activeSessions>0)activeSessions--;
+			}
+
+			public static int getActiveSessions() {
+				return activeSessions;
+			}
 		}
-		/* Session失效事件 */
-		public void sessionDestroyed(HttpSessionEvent se) {
-		if(activeSessions>0)activeSessions--;
-		}
 
-		public static int getActiveSessions() {
-		return activeSessions;
-		    }
-		}
-
-在上边的代码中，SessionCounter类实现了HttpSessionListener接口，其目的是计算活动会话的数量。
+	在上边的代码中，SessionCounter类实现了HttpSessionListener接口，其目的是计算活动会话的数量。
 
 
-以上两个监听类写好后，还需要告诉应用服务器有这些监听类，这就需要在web.xml文件中声明，下面我们看看web.xml的配置。
+	以上两个监听类写好后，还需要告诉应用服务器有这些监听类，这就需要在web.xml文件中声明，下面我们看看web.xml的配置。
 
 * Web.xml 配置:
    
@@ -198,7 +198,7 @@ Session创建事件发生在每次一个新的session创建的时候，类似地
 			</listener>
 		</web-app>
 
-如上所示，在web.xml文件中声明监听类是非常简单的。现在，每次的服务器的启动和停止，会话的创建和失效，配置好的监听类的相应的方法就会被调用。就这么简单！
+	如上所示，在web.xml文件中声明监听类是非常简单的。现在，每次的服务器的启动和停止，会话的创建和失效，配置好的监听类的相应的方法就会被调用。就这么简单！
 
 
 
