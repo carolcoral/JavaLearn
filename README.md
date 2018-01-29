@@ -163,9 +163,9 @@
      
      >20.[JSTL 使用、filter 过滤器、listener 监听器](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/JSP04.md)
      
-     >21.[Ajax 异步通信技术和 JSON ](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Ajax.md)
+     >21.[Ajax 异步通信技术和 JSON ](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Ajax.md)
      
-     >22.[Ajax 异步通信和 JSON 的 PPT (删除最后的那个后缀名.xx) ](https://raw.githubusercontent.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/AJAX.pptx.xx)
+     >22.[Ajax 异步通信和 JSON 的 PPT (删除最后的那个后缀名.xx) ](https://raw.githubusercontent.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/AJAX.pptx.xx)
 
 * ### Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）
 
