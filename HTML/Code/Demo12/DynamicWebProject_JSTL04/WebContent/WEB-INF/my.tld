@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+  <!-- 对整个标签库进行描述 -->  
+  <description>hehe</description>
+  <display-name>haha</display-name> 
+  <tlib-version>1.5</tlib-version><!-- 标签库的版本 -->
+  <short-name>my</short-name><!-- 前缀 -->
+  <uri>http://hehe.haha.heihei.com/jsp/jstl/core</uri><!-- 当前标签库的一个唯一的表示  -->
+
+  <!-- 描述一个具体 标签-->
+  <tag>
+    <description><!-- 对当前的标签进行描述 -->
+        Catches any Throwable that occurs in its body and optionally
+        exposes it.
+    </description>
+    <name>heihei</name><!-- 标签的名称 -->
+    <tag-class>cn.xdl.tag.MyTag</tag-class><!-- 标签所对应的java类,类全称 -->
+    <body-content>empty</body-content><!-- jsp/empty 标签的内容是否为空 -->
+  </tag>
+  
+  
+   <!-- 描述一个具体 标签-->
+  <tag>
+    <description><!-- 对当前的标签进行描述 -->
+        Catches any Throwable that occurs in its body and optionally
+        exposes it.
+    </description>
+    <name>yingying</name><!-- 标签的名称 -->
+    <tag-class>cn.xdl.tag.MyTag2</tag-class><!-- 标签所对应的java类,类全称 -->
+    <body-content>JSP</body-content><!-- jsp/empty 标签的内容是否为空 -->
+  </tag>
+   <!-- 描述一个具体 标签-->
+  <tag>
+    <description><!-- 对当前的标签进行描述 -->
+        Catches any Throwable that occurs in its body and optionally
+        exposes it.
+    </description>
+    <name>countNum</name><!-- 标签的名称 -->
+    <tag-class>cn.xdl.tag.MyTag3</tag-class><!-- 标签所对应的java类,类全称 -->
+    <body-content>JSP</body-content><!-- jsp/empty 标签的内容是否为空 -->
+ 	
+  </tag>
+  
+  
+   <!-- 描述一个具体 标签-->
+  <tag>
+    <description><!-- 对当前的标签进行描述 -->
+        Catches any Throwable that occurs in its body and optionally
+        exposes it.
+    </description>
+    <name>diviPage</name><!-- 标签的名称 -->
+    <tag-class>cn.xdl.tag.MyTag4</tag-class><!-- 标签所对应的java类,类全称 -->
+    <body-content>empty</body-content><!-- jsp/empty 标签的内容是否为空 -->
+ 	
+ 	 <attribute>
+        <description><!-- 对属性的描述 -->
+			每页显示的条数
+        </description>
+        <name>pageLength</name><!-- 属性的名称 -->
+        <required>true</required><!-- 是否一定得具备的属性 -->
+        <rtexprvalue>true</rtexprvalue><!-- EL表达式-->
+        <type>false</type><!-- 描述属性值的类型 -->
+    </attribute>
+ 	
+ 	
+  </tag>
+  
+  
+</taglib>

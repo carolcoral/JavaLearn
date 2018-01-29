@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;font-family:"宋体",sans-serif,Arial,"Times New Roman";font-size:12px;border:0px;}
+/*快捷通栏*/
+#shortcut{
+	background: url("../images/bg_shortcut.gif") repeat-x 0 -134px;
+    height:30px;width:100%;overflow:hidden;
+}
+/*固定页面居中显示、宽度*/
+.page_width{margin:auto;width:980px;}
+#shortcut ul{float:right;height:30px;position:relative;}
+ul{list-style:none;}
+#shortcut .welcome{background:none;}
+#shortcut .link_reg{color:#FF6600;}
+a:link,a:visited{color:#666666;text-decoration:none;}
+#shortcut li{
+    background:url("../images/bg_shortcut.gif") no-repeat -260px -100px;
+    color:#ACACAC;float:left;height:26px;
+    line-height:26px;padding:2px 10px;
+}
+#shortcut .my_order{background: url("../images/bg_shortcut.gif") no-repeat -130px -165px;padding-left:50px;}
+#shortcut .sub{width:65px;}
+
+/*清除浮动*/
+.clear{clear:both;display:block;font-size:0px;height:0px;line-height:0px;}
+
+/*头部导航*/
+#header{margin-bottom:7px;}
+#logo{float:left;margin-right:8px;padding:8px 10px 0px;}
+#nav{float:left;overflow:hidden;margin-bottom:-3px;padding-top:35px;text-align:center;overflow:hidden;}
+#nav a{font-size:14px;font-weight:bold;text-align:center;height:27px;line-height:29px;}
+#nav li{float:left;}
+#nav_index{float:left;background:url("../images/bg_booknav_0913.gif") no-repeat -216px -200px;width:57px;height:29px;margin-right:2px;}
+#nav_curr{float:left;background:url("../images/bg_booknav_0913.gif") no-repeat -216px -167px;width:57px;height:29px;margin-right:2px;}
+#nav_curr a{color:#FFFFFF;}
+#nav_ext{float:left;background:url("../images/bg_booknav_0913.gif") 0px -82px;height:29px;padding-left:2px;}
+#nav_ext a{color:#993300;}
+#nav_ext li{background:url("../images/bg_booknav_0913.gif") no-repeat -422px -210px;}
+#nav_ext .ext_first{background:none;}
+#nav_ext ul{background:url("../images/bg_booknav_0913.gif") repeat-y right -272px;padding:0px 4px 2px 0px;height:29px;width:180px;}
+#nav_ext #nav_brand{width:81px;}
+#nav_ext #nav_tuan{width:61px;}
+#nav_ext #nav_auction{width:75px;}
+#nav_ext #nav_read{width:81px;}
+#nav_ext #nav_club{width:81px;}
+#nav_ext #nav_category{width:81px;}
+
+/*头部搜索 */
+#book_search{background:url("../images/bg_booknav_0913.gif") repeat-x 0 -115px;height:50px;overflow:hidden;}
+#allsort{background:url("../images/bg_booknav_0913.gif") repeat-x 0 -217px;height:50px;width:211px;float:left;margin-right:5px;}
+#more_sort{height:24px;line-height:24px;padding:14px 12px 12px 16px;}
+#more_sort strong{float:left;font-size:14px;color:#663300;}
+#more_sort #extra{background:url("../images/bg_booknav_0913.gif") no-repeat -274px -167px;width:22px;height:22px;float:right;overflow:hidden;}
+#search{background:url("../images/bg_booknav_0913.gif") no-repeat 0px 0px;height:29px;width:422px;float:left;margin:9px 10px 0px 0px;padding:1px 0px 1px 1px;overflow:hidden;}
+#keyword{float:left;height:15px;line-height:15px;font-size:14px;padding:8px 5px 6px 0px;margin-left:24px;background:url("../images/bg_booknav_0913.gif") no-repeat -24px -1px;color:#999999;width:319px;}
+#btn_search{float:left;color:#993300;font-size:14px;font-weight:bold;line-height:29px;background:none;width:72px;text-align:center;}
+#advance{height:20px;float:left;color:#ffffff;margin-top:15px;}
+#mycart{background:url("../images/bg_booknav_0913.gif") no-repeat right -31px;height:36px;width:218px;float:right;line-height:28px;padding-top:11px;}
+#mycart li{float:left;}
+#cart_info{width:89px;padding:0px 25px 0px 34px;}
+#left_corner{background:url("../images/bg_hotwords.jpg") no-repeat -11px -3px;height:28px;width:10px;overflow:hidden;float:left;}
+#left_corner{background:url("../images/bg_hotwords.jpg") no-repeat 0px -3px;height:28px;width:10px;overflow:hidden;float:right;}
+#hot_words{background:url("../images/bg_hotwords.jpg") repeat-x 0px -35px;height:28px;width:980px;overflow:hidden;text-align:center;}
+#words{color:#666666;height:28px;line-height:27px;}
+
+/*主体部分css*/
