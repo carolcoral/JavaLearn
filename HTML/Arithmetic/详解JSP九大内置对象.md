@@ -380,13 +380,9 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 在欢迎界面使用getAttribute获取当前的用户名：
 		
 		<%if(session.getAttribute("userName")!=null){%>
-
 			<%--getAttribute方法是使用指定的key获取session中的value值。获取到的是一个object对象
-
 			在使用的时候需要根据具体的类型进行类型转换。
-
 			这里取出的是一个字符串，直接调用会使用他的toString方法，因此不用进行转换--%>
-
 			欢迎 <%=session.getAttribute("userName")%>
 			<a href="logout.jsp">注销</a>
 		<%}else{%>
