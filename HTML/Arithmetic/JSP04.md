@@ -105,7 +105,8 @@
 		<url-pattern>/product_list.jsp</url-pattern>
 	</filter-mapping>
 								
-	
+# 三、Listener 监听器
+
 Java WEB项目制作过程中，在web.xml中巧用Listener可以实现一些特定的需求，可以监听 Web应用事件，能最大程度地控制你的Web应用，这里介绍两个比较重要的 WEB应用事件：
 
 应用启动事件发生在你的应用第一次被servlet容器装载和启动的时候；停止事件发生在Web应用停止的时候。 
