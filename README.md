@@ -3,9 +3,9 @@
     <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 160px;">
         <a href="#java" style="text-decoration: none;display: block;">Java 简介</a>
         <ul style="display: block;margin-top: -16px;margin-top: -20px;">
-            <li>导语</li>
-            <li>手册</li>
-            <li>JAR包</li>
+            <li style="padding: 4px;"><a href="#daoyu" style="text-decoration: none;display: block;">导语</a></li>
+            <li style="padding: 4px;"><a href="#shouce" style="text-decoration: none;display: block;">手册</a></li>
+            <li style="padding: 4px;"><a href="#jarbao" style="text-decoration: none;display: block;">JAR包</a></li>
         </ul>
     </li>
     <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 80px;">
@@ -40,7 +40,7 @@
 
 # <a href="https://baike.baidu.com/item/java/85979" name="java">Java</a>
 
-* 导语：
+* <a name="daoyu">导语：</a>
 
      >开始学习JavaEE开发了，从JavaSE部分开始做记录。适合于有一点编程基础的同学共同学习和了解。若有任何疑问可以在我的博客上私信我或给我留言，收到后会第一时间回复，谢谢。望共勉！
 
@@ -48,7 +48,7 @@
 
      >联系邮箱：<a mailto="lxw@cnkj.site" target="_blank">lxw@cnkj.site</a>
 
-* 相关手册
+* <a name="shouce">相关手册</a>
 
      >1.[JDK1.6 中文版手册](http://tool.oschina.net/apidocs/apidoc?api=jdk-zh)
 
@@ -56,7 +56,7 @@
      
      >3.[w3school](http://www.w3school.com.cn)
      
-* [相关 JAR 包](https://github.com/carolcoral/JavaLearn/tree/master/JAR)
+* <a h ref="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包</a>
 
 
 ## <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE" name="JavaSE">JavaSE</a>
