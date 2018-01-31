@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="js/jquery.js"></script>
+<script type="text/javascript">
+function  checkName(){
+	var username = $("#username").val();
+	/* $.post("checkName2.do",{"username":username},
+	function(data){
+       $("#sp1").html(data);		
+	}); */
+	//$("#sp1").load("checkName2.do",{"username":username});
+	$("#sp1").load("demo1.jsp");
+}
+</script>
+<script type="text/javascript">
+function   changeCode(){
+	//alert('gg');
+	$("#img1").attr("src","checkCode.do?r="+Math.random());
+}
+function  validCode(){
+	// 获取页面输入的验证码 
+	var code = $("#code").val();
+	// 发送ajax 请求
+	$("#sp2").load("validCode.do",{"code":code});
+}
+</script>
+</head>
+<body>
+<form action="">
+    名字:<input   type="text"   id="username"  name="username" 
+      onblur="checkName()"> <span  id="sp1"></span><br>
+   密码:<input   type="password"   id="password"  name="password" ><br>
+  验证码:<input type="text"   id="code"  onblur="validCode()" /><span id="sp2"></span>
+  <img  id="img1" src="checkCode.do"  onclick="changeCode()"/> 
+  <a  href="javascript:" onclick="changeCode()">切换验证码</a> 
+</form>
+</body>
+</html>

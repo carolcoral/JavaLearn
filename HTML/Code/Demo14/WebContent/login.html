@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="js/jquery.js"></script>
+<script type="text/javascript">
+function  checkName(){
+	var username = $("#username").val();
+	/* $.ajax({
+		url:"checkName.do",
+		type:"post",
+		success:function(data){
+			if(data){
+				$("#sp1").html("名字可用");
+			}else{
+				$("#sp1").html("名字不可用");
+			}
+		},
+		data:{"username":username},
+		dataType:"json"
+	}); */
+	/* $.get("checkName.do?username="+username,
+      function(data){
+		if(data){
+			$("#sp1").html("名字可用");
+		}else{
+			$("#sp1").html("名字不可用");
+		}
+	  },"json"); */
+	  $.getJSON("checkName.do",{"username":username},
+		 function(data){
+			if(data){
+				$("#sp1").html("名字可用");
+			}else{
+				$("#sp1").html("名字不可用");
+			}
+		  });
+}
+</script>
+</head>
+<body>
+<form action="">
+    名字:<input   type="text"   id="username"  name="username" 
+      onblur="checkName()"> <span  id="sp1"></span><br>
+  密码:<input   type="password"   id="password"  name="password" ><br>
+  
+</form>
+</body>
+</html>

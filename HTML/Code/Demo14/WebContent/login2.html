@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="js/jquery.js"></script>
+<script type="text/javascript">
+function  checkName(){
+	var username = $("#username").val();
+	/* $.post("checkName2.do",{"username":username},
+	function(data){
+       $("#sp1").html(data);		
+	}); */
+	//$("#sp1").load("checkName2.do",{"username":username});
+	$("#sp1").load("demo1.jsp");
+}
+</script>
+</head>
+<body>
+<form action="">
+    名字:<input   type="text"   id="username"  name="username" 
+      onblur="checkName()"> <span  id="sp1"></span><br>
+  密码:<input   type="password"   id="password"  name="password" ><br>
+  
+</form>
+</body>
+</html>
