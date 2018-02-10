@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="easyui/jquery.min.js"></script>
+<script type="text/javascript"  src="easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript"  src="easyui/locale/easyui-lang-zh_CN.js"></script>
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/default/easyui.css" />
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/icon.css" />
+</head>
+<body>
+    <div  title="基础面板"   class="easyui-panel"  width="400" 
+        data-options="height:300,iconCls:'icon-edit'">
+           hello  panel
+    </div>
+    <input  type="button"  value="关闭"  onclick="$('#p1').panel('close')">
+    <input  type="button"  value="打开"  onclick="$('#p1').panel('open')">
+    <input  type="button"  value="展开"  onclick="$('#p1').panel('expand')">
+    <input  type="button"  value="折叠"  onclick="$('#p1').panel('collapse')">
+    <div id="p1" title="面板工具"   class="easyui-panel"  width="400" 
+        data-options="height:300,iconCls:'icon-edit',collapsible:true,minimizable:true">
+           hello  panel
+    </div>
+    
+</body>
+</html>

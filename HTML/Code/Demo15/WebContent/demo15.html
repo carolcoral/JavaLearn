@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="easyui/jquery.min.js"></script>
+<script type="text/javascript"  src="easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript"  src="easyui/locale/easyui-lang-zh_CN.js"></script>
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/default/easyui.css" />
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/icon.css" />
+<script type="text/javascript">
+function  changeDate(newDate,oldDate){
+	//alert(oldDate+':'+newDate);
+}
+function  selectDate(date){
+	//alert(date);
+	$("#d1").val(date);
+}
+</script>
+</head>
+<body>
+    你选择的日期是:<input  type="text"  id="d1" /> <br>
+    <div  class="easyui-calendar"   
+      data-options="onChange:changeDate,onSelect:selectDate">
+    
+    </div>
+</body>
+</html>

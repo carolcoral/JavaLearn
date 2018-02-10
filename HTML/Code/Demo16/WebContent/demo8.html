@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link  rel="stylesheet"  type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript"  src="js/jquery.min.js"></script>
+<script type="text/javascript"  src="js/bootstrap.min.js"></script>
+</head>
+<body>
+   <h3> 独占式表单 </h3>
+   <form action="#">
+            账号:<input type="text" class="form-control" name="ano" />
+            密码:<input type="password" class="form-control" name="password"/>
+   </form>   
+   
+    <h3> 内联式表单 </h3>
+   <form action="#"  class="form-inline">
+            账号:<input type="text" class="form-control" name="ano" />
+            密码:<input type="password" placeholder="请输入密码" class="form-control" name="password"/>
+   </form>
+   
+    <h3> 组合输入框 </h3>
+   <form action="#"  class="form-group form-inline">
+            <div class="input-group">
+               <label class="input-group-addon">账号:</label>
+                <input type="text"  placeholder="请输入账号"
+                  class="form-control" name="ano" />
+                <label class="input-group-addon">后置</label>   
+            </div>  
+   </form>  
+   
+   <h3> 组合输入框 --- 下拉列表  </h3>
+       <form action="#"  class="form-group form-inline">
+            <div class="input-group">
+               <label class="input-group-addon">邮箱:</label>
+                <input type="text"  placeholder="请输入邮箱"
+                  class="form-control" name="email" />
+                <label class="input-group-addon">
+                     <select  >
+                         <option>@163.com</option>
+                         <option>@sina.com</option>
+                         <option>@qq.com</option>
+                         <option>@126.com</option>
+                     </select>
+                </label>   
+            </div>  
+        </form> 
+</body>
+</html>
+
+
+
+

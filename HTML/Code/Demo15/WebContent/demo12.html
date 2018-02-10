@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="easyui/jquery.min.js"></script>
+<script type="text/javascript"  src="easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript"  src="easyui/locale/easyui-lang-zh_CN.js"></script>
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/default/easyui.css" />
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/icon.css" />
+<script type="text/javascript">
+    $(document).on('contextmenu',function(event){
+    	event.preventDefault();
+    	$("#m1").menu('show',{left:event.pageX,top:event.pageY});
+    });
+    function  itemClick(item){
+    	alert(item.text);
+    }
+</script>
+</head>
+<body>
+    <div  id="m1" class="easyui-menu" style="width:150px" 
+        data-options="onClick:itemClick">
+         <div>新建</div> 
+         <div>
+              <span>打开</span>
+              <div  style="width:150px">
+                   <div>word</div>
+                   <div>excel</div>
+                   <div>pdf</div>
+              </div>
+         </div> 
+         <div>保存</div> 
+         <div>退出</div>    
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="easyui/jquery.min.js"></script>
+<script type="text/javascript"  src="easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript"  src="easyui/locale/easyui-lang-zh_CN.js"></script>
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/default/easyui.css" />
+<link  type="text/css"  rel="stylesheet"  href="easyui/themes/icon.css" />
+<script type="text/javascript">
+function  remove(){
+	alert('hehe');
+}
+
+function  createDialog(){
+	$("#div1").html('湖南卫视--天天向上');
+	$("#div1").dialog({
+		title:'js对话框',
+		iconCls:'icon-save',
+		width:400,
+		height:300,
+		tools:[{iconCls:'icon-save',handler:function(){alert('gg')}},
+		       {iconCls:'icon-cut',handler:remove}],
+		modal:true
+	});
+}
+</script>
+</head>
+<body>
+ <div  class="easyui-dialog"  title="对话框"  
+ data-options="iconCls:'icon-save',width:400,height:300,
+ tools:[{iconCls:'icon-save',handler:function(){alert('gg')}},
+ {iconCls:'icon-cut',handler:remove}],modal:false">
+      好好学习  天天向上 
+ </div> 
+ <input  type="button"  value="使用js生成对话框"  onclick="createDialog()"><br>
+ <div  id="div1"> </div>  
+</body>
+</html>
+
+
+

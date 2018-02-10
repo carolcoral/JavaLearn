@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link  rel="stylesheet"  type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript"  src="js/jquery.min.js"></script>
+<script type="text/javascript"  src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function  checkAccountNo(ano){
+    	// 发送ajax 请求
+    	//alert(ano);
+    	$.ajax({
+    		url:'checkAccountNoAJAX.do',
+    		type:'post',
+    		success:function(data){
+    			//alert(data);
+    			$("#ano_id").removeClass();
+    			if(data){
+    				$("#ano_id").addClass("has-success");	
+    			}else{
+    				$("#ano_id").addClass("has-error");
+    			}
+    		},
+    		dataType:'json',
+    		data:{"ano":ano}
+    	});
+    }
+</script>
+</head>
+<body>
+    <form  class="form-inline">
+    <!-- 服务器上有这个账号就代表合法  -->
+    <span  id="ano_id" >
+         <label class="control-label">账号:</label> 
+         <input  type="text" class="form-control" id="ano" 
+            onblur="checkAccountNo(this.value)">
+    </span>     
+         密码: <input  type="text"  class="form-control" id="ano" >      
+    </form>
+</body>
+</html>
+
