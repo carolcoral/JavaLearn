@@ -209,6 +209,10 @@
      >22.[Ajax 异步通信和 JSON 的 PPT (删除最后的那个后缀名.xx) ](https://raw.githubusercontent.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/AJAX.pptx.xx)
      
      >23.[Ajax for JQuery ](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/Ajax%20for%20JQuery.md)
+     
+     >24.[EasyUI](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/easyui.md)
+     
+     >25.[Bootstrap.js](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrapJS.md)
 
 * ### <a name="html_code">Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
@@ -241,6 +245,10 @@
      >14.[Ajax 异步通信在商城购物车的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo13)
      
      >15.[Ajax for JQuery](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo14)
+     
+     >16.[EasyUI 的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo15)
+     
+     >17.[Bootstrap框架的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo16)
 
 * ### <a name="html_exam">Exam（HTML 阶段测试）</a>
 
