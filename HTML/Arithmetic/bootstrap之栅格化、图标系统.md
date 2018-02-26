@@ -96,7 +96,7 @@
             折叠和展开
         </button>
         <div  id="content" class="collapse">
-            <pre></pre>
+            /<pre></pre>
         </div>
     
 ## 10.图片轮播 (跑马灯)
