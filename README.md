@@ -214,6 +214,8 @@
      
      >25.[Bootstrap.js](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrapJS.md)
 
+     >26.[Bootstrap.js 之栅格化、图标系统](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrap之栅格化、图标系统.md)
+
 * ### <a name="html_code">Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
      >1.[省市县三级联动](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Code/省市县三级联动.html)
