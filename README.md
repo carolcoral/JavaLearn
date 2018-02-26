@@ -214,7 +214,7 @@
      
      >25.[Bootstrap.js](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrapJS.md)
 
-     >26.[Bootstrap.js 之栅格化、图标系统](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrap之栅格化、图标系统.md)
+     >26.[Bootstrap之栅格化网格、导航菜单、轮播图等](https://github.com/carolcoral/JavaLearn/blob/master/HTML/Arithmetic/bootstrap之栅格化、图标系统.md)
 
 * ### <a name="html_code">Code（包含 HTML 学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
@@ -251,6 +251,8 @@
      >16.[EasyUI 的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo15)
      
      >17.[Bootstrap框架的使用](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo16)
+
+     >18.[Bootstrap之栅格化网格、导航菜单、轮播图等](https://github.com/carolcoral/JavaLearn/tree/master/HTML/Code/Demo16)
 
 * ### <a name="html_exam">Exam（HTML 阶段测试）</a>
 
