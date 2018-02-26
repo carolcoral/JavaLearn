@@ -56,7 +56,7 @@
      
      >3.[w3school](http://www.w3school.com.cn)
      
-* <a href="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包</a>
+* <a href="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包与其他三方工具包</a>
 
 
 ## <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE" name="JavaSE">JavaSE</a>
