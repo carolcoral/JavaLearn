@@ -81,25 +81,25 @@
                  </div>
             </form>
         </div>
-    
-  ## 8.缩略图
+    
+## 8.缩略图
   
         写一个栅格系统  要求每一列中 显示有图片 
         图片的显示 要求 在大屏幕下 一行显示6张   中等屏幕下显示 4 张  小屏幕下 显示3张  
         超小屏幕下 显示 2 张。
         栅格系统 +  class="thumbnail" 
-    
-  ## 9.折叠和展开
+    
+## 9.折叠和展开
   
-       <button   class="btn btn-primary"  data-toggle="collapse" 
+        <button   class="btn btn-primary"  data-toggle="collapse" 
         data-target="#content">
             折叠和展开
         </button>
         <div  id="content" class="collapse">
-        <pre></pre>
+            <pre></pre>
         </div>
     
-  ## 10.图片轮播 (跑马灯)
+## 10.图片轮播 (跑马灯)
   
           <div id="imgs" data-ride="carousel"  class="carousel slide" 
               style="width: 544px" data-interval="3000">
