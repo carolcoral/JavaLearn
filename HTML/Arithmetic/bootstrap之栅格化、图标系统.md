@@ -89,15 +89,16 @@
         超小屏幕下 显示 2 张。
         栅格系统 +  class="thumbnail" 
     
-  ##9.折叠和展开
+  ## 9.折叠和展开
   
        <button   class="btn btn-primary"  data-toggle="collapse" 
         data-target="#content">
             折叠和展开
         </button>
         <div  id="content" class="collapse">
-        <pre>
-    
+        <pre></pre>
+        </div>
+    
   ## 10.图片轮播 (跑马灯)
   
           <div id="imgs" data-ride="carousel"  class="carousel slide" 
