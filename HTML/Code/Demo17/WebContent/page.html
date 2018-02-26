@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/> 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+</head>
+<body>
+    <div id="page"></div>
+
+    <script type="text/javascript">
+        $(function(){
+            var options={
+                bootstrapMajorVersion:1,    //版本
+                currentPage:1,    //当前页数
+                numberOfPages:10,    //最多显示Page页
+                totalPages:100,    //所有数据可以显示的页数
+                onPageClicked:function(e,originalEvent,type,page){
+                    console.log("page");
+                    console.log(page);
+                }
+            }
+            $("#page").bootstrapPaginator(options);
+        })
+    </script>
+</body>
+</html>

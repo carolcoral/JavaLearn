@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="js/jquery.min.js"></script>
+<script type="text/javascript"  src="js/bootstrap.min.js"></script>
+<link  rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
+</head>
+<body>
+    <button   class="btn btn-primary"  data-toggle="collapse" 
+    data-target="#content">
+        折叠和展开
+    </button>
+    <div  id="content" class="collapse">
+<pre>    
+package com.xdl.util;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public class Md5Util {
+    public static  String  md5Str(String data){
+    	StringBuffer  strBuf = new StringBuffer();
+    	try {
+			MessageDigest   md = MessageDigest.getInstance("MD5");
+			byte[]  databytes = data.getBytes();
+			md.update(databytes);
+			// 获取经过md5 算法处理之后的字节码
+			byte[]   md5Bytes = md.digest();
+			System.out.println(md5Bytes.length);
+			// 如何把 一个 16 长度的byte 数组 变成32 位长度的16进制形式
+			
+			for(int i=0;i&lt;md5Bytes.length;i++){
+				byte b = md5Bytes[i];
+				// 一个byte 等于 8bit  4bit 可以表达成一个位16进制 
+				// 变成16进制形式时 最长是两位 
+				String  tempStr = Integer.toHexString(b&0xff); 
+				//System.out.println(tempStr);
+				if(tempStr.length() &lt; 2){
+					tempStr = "0"+tempStr;
+				}
+				strBuf.append(tempStr);
+			}
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	return  strBuf.toString();
+    	
+    }  
+    /* 加盐 */
+    public static  String  md5StrSalt(String data,String salt){
+    	//"abcd"
+    	data = data + salt;
+    	StringBuffer  strBuf = new StringBuffer();
+    	try {
+			MessageDigest   md = MessageDigest.getInstance("MD5");
+			byte[]  databytes = data.getBytes();
+			md.update(databytes);
+			// 获取经过md5 算法处理之后的字节码
+			byte[]   md5Bytes = md.digest();
+			System.out.println(md5Bytes.length);
+			// 如何把 一个 16 长度的byte 数组 变成32 位长度的16进制形式
+			
+			for(int i=0;i&lt;md5Bytes.length;i++){
+				byte b = md5Bytes[i];
+				// 一个byte 等于 8bit  4bit 可以表达成一个位16进制 
+				// 变成16进制形式时 最长是两位 
+				String  tempStr = Integer.toHexString(b&0xff); 
+				//System.out.println(tempStr);
+				if(tempStr.length() &lt; 2){
+					tempStr = "0"+tempStr;
+				}
+				strBuf.append(tempStr);
+			}
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	return  strBuf.toString();
+    	
+    }  
+}
+ </pre>      
+    </div>
+</body>
+</html>
