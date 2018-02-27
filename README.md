@@ -281,7 +281,7 @@
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
 
-* ### <a name="spring_exam">Exam（OracleSQL 阶段项目）</a>
+* ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
  
 * ### <a name="spring_program">Program（阶段项目）</a>
