@@ -1,4 +1,4 @@
-# 1.Spring 的框架的构成
+# 1.Spring 框架的构成
 
         IOC   控制反转  构成Spring框架的核心
         DAO   Spring 对JDBC的封装和支持 
