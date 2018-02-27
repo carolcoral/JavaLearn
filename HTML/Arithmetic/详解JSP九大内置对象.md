@@ -385,7 +385,7 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 			这里取出的是一个字符串，直接调用会使用他的toString方法，因此不用进行转换 -->
 			欢迎 <%=session.getAttribute("userName") %>
 			<a href="logout.jsp">注销</a>
-		<% }else{%>
+		<% }else{ %>
 			请先登陆
 			<a href="login.jsp">登陆</a>
 		<% } %>
