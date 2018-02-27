@@ -392,15 +392,15 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 
 判断session对象是否是新创建
 
-		<%if (session.isNew()){%>
-		<br/>
-		<br/>
-		欢迎新用户
-		<%}else{%>
-		<br/>
-		<br/>
-		欢迎老用户
-		<%}%>
+		<% if (session.isNew()){ %>
+			<br/>
+			<br/>
+			欢迎新用户
+			<% }else{ %>
+			<br/>
+			<br/>
+			欢迎老用户
+		<% } %>
 
 在登出界面里清除session对象信息，并跳转到欢迎界面中去：
 
@@ -410,13 +410,16 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 
 
 ## 五.application对象
+
 	application对象代表当前的应用程序。存在于服务器的内存空间中。
 	应用一旦启动便会自动生成一个application对象。如果应用没有被关闭，
 	此application对象便一直会存在。直到应用被关闭
 	application的生命周期比session更长。
 
 ### 应用：
+
 	为多个用户共享全局信息。比如当前的在线人数等。
+	
 ### application对象方法：
 <table >
  <col >
@@ -464,11 +467,13 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 		%>
 
 ## 六.config对象
+
 	config对象表示当前jsp程序的配置信息
 	一般项目中，jsp被用作模版技术，也就是位于表示层
 	而位于表示层的jsp文件一般是不需要配置信息的
 	所以此对象在jsp程序中其实很少使用
 	config对象是servletConfig类的一个实例。
+	
 ### config对象方法：
 
 <table >
@@ -508,7 +513,7 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 		    return getClass().getName() + "@" + Integer.toHexString(hashCode());
 		}
 		
-包名+类名+@+hashcode值
+> 包名+类名+@+hashcode值
 
 ### page对象的方法：
 <table>
@@ -537,6 +542,7 @@ getparameter方法用于接收服务器通过set和post方法传输的数据
 </table>
 
 ## 八.exception对象
+
 	exception对象表示jsp引擎在执行代码时抛出的异常
 	如果想要使用exception对象，那么需要配置编译指令的isErrorPage属性为true
 	即在页面指令中设置:<%@page isErrorPage=“true”%>
