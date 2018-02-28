@@ -271,7 +271,7 @@
 
      >1.[ESMS 电子商务网站（仿 JD 书城）](https://github.com/carolcoral/JD_Books_Market)
      
-## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Spring" name="SPRING"> Spring 三件套</a>
+## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Spring" name="SPRING"> Spring 框架</a>
 
 * ### <a name="spring_arithmetic">Arithmetic（包含学习 Spring 框架中主要需要了解和学习的内容的文本资料）</a>
 
