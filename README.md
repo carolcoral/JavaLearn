@@ -278,11 +278,15 @@
      >1.[Spring的基本概念、容器、实例化、bean对象的创建和销毁、bean对象的延迟实例化](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/Spring基本概念、容器、实例化、bean对象的创建和销毁、bean对象的延迟实例化.md)
      
      >2.[DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/DI依赖注入、Spring的%20EL表达式、组件扫描.md)
+     
+     >3.[Spring使用数据库的方法](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/Spring使用数据库的方法.md)
 
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
      >1.[DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo1/)
+     
+     >2.[Spring使用数据库的方法](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo2/)
 
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
