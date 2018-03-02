@@ -279,14 +279,14 @@
      
      >2.[DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/DI依赖注入、Spring的%20EL表达式、组件扫描.md)
      
-     >3.[继承的方式使用 SpringDao（操作数据库）的方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/继承的方式使用SpringDao的方式.md)
+     >3.[继承的方式使用 SpringDao（操作数据库）](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/继承的方式使用SpringDao.md)
 
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
      >1.[DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo1/)
 
-     >2.[继承的方式使用 SpringDao（操作数据库）的方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo2/)
+     >2.[继承的方式使用 SpringDao（操作数据库）](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo2/)
 
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
