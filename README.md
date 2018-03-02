@@ -52,6 +52,8 @@
 * <a name="daoyu">导语：</a>
 
      >开始学习JavaEE开发了，从JavaSE部分开始做记录。适合于有一点编程基础的同学共同学习和了解。若有任何疑问可以在我的博客上私信我或给我留言，收到后会第一时间回复，谢谢。望共勉！
+     
+     ><b>如果觉得不错，请 star！你的 star 是我的动力。</b>
 
      >博客地址：<a src="http://blog.csdn.net/carolcoral" target="_blank">http://blog.csdn.net/carolcoral</a>
 
