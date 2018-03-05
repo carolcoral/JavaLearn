@@ -308,7 +308,7 @@
 
      >4.[SpringMVC 工作流程](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo4/)
 
-     >5.[SpringMVC 标注方式实现登录和查询列表功能](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo5/)
+     >5.[SpringMVC 标注方式实现用户的登录和查询列表功能](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo5/)
 
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
