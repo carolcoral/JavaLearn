@@ -20,28 +20,28 @@
 		Oracle
 	
 # 一、Ajax的概述
-####<1>概念
+#### <1>概念
 	异步的JavaScript和XML技术
 	不是新的编程语言，是几项技术的综合运用
 				
-###<2>组成
+### <2>组成
 	涉及的技术：XMLHttpRequest,JavaScript,HTML,CSS,XML,JSON 等技术	XMLHttpRequest为核心，发送请求和接收响应结果数据
 		以JavaScript语言为基础
 		以XML,JSON作为数据传输格式
 		动态的更改HTML元素和CSS样式		
 ![](ajax1.png)	
 	
-###<3>优点
+### <3>优点
 	异步请求和响应处理
 	页面的局部刷新	
 	
 	使用页面局部刷新，减少了交互的数据量，提升了程序的性能，提升用户的体验感受
 	以异步模式处理请求，减少了用户等待的时间，提高用户操作的连续性，提升用户的体验感受
 	
-###<4>工作流程
+### <4>工作流程
 ![](ajax2.png)			
 
-###<5>核心的API(XMLHttpRequest)(重点)
+### <5>核心的API(XMLHttpRequest)(重点)
 	1. 创建XMLHttpRequest对象
 		注意浏览器的兼容性
 	2. 调用open方法，创建一个ajax请求
@@ -80,7 +80,7 @@
 	对购物车中的商品进行移除
 
 # 三、Ajax+Json
-###在服务端将一个java对象转换成JSON字符串
+### 在服务端将一个java对象转换成JSON字符串
 	使用jar包
 	
 	JSONObject ：将单个java对象转换成json字符串
@@ -89,7 +89,7 @@
 	JSONArray  ：将一个java集合转换成json字符串
 			JSONArray.fromObject(java集合).toString()
 
-###在js中如何将一个JSON字符串转换成js对象		
+### 在js中如何将一个JSON字符串转换成js对象		
 	var obj = 使用eval("("  + json字符串 + ")");
 	var obj  = JSON.parse("json字符串");
 
