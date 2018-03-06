@@ -297,6 +297,8 @@
 
      >6.[基于标注的SpringMVC实现](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/基于标注的SpringMVC实现.md)
 
+     >7.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/重定向、拦截器、异常处理.md)
+
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
@@ -310,6 +312,7 @@
 
      >5.[SpringMVC 标注方式实现用户的登录和查询列表功能](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo5/)
 
+     >6.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo6/)
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
