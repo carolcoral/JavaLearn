@@ -29,7 +29,7 @@
 ## 2.4 直接定义控制器中的参数为 对象类型 (要求成员变量和页面中的参数中保持一致)   
 # 3.如何把控制器的数据 传递给jsp 页面 
 ## 3.1 借助HttpServletRequest  或者 HttpSession 
-##3.2 借助 ModelAndView 对象 传递数据信息和 页面信息
+## 3.2 借助 ModelAndView 对象 传递数据信息和 页面信息
 
         mav.getModel().put("key","信息"); 
       
