@@ -1,0 +1,105 @@
+1.写出Spring标注形式的事务管理实现的步骤  
+2.写出标注形式 Spring  MVC 实现的步骤 
+3.如何在Spring MVC 的控制器中获取数据 
+4.Spring MVC 中如何向页面传递数据 
+5.Spring 中如何实现重定向  
+------------------------------------------------------------
+1.Spring 中的重定向
+  1.1 当控制器返回 字符串时 
+   "redirect:路径"     
+    toLogin.do     /toLogin.do 
+    / 在这里代表 项目名以及项目名前面的部分 
+  1.2 当控制器中返回  ModelAndView
+     RedirectView  rv =  new  RedirectView("路径");
+     toLogin.do     /toLogin.do 
+     /  在这里代表 项目名前面的部分 不包含项目名
+2.中文乱码问题 
+  2.1  之前的方式依然可用 
+      get  和 post 的处理方式
+  2.2  使用Spring 提供的编码过滤器  
+            只针对post 方式
+3.拦截器 
+  3.1 作用
+      可以实现 日志记录   权限检查  和 控制   性能监控   
+  3.2 如何实现?
+    a.自定义拦截器 实现 HandlerInterceptor 接口 
+            在对应的方法中编写业务逻辑
+      preHandle  控制器调用之前
+      postHandle  控制器调用之后  视图处理器调用之前
+      afterCompletion  视图处理器之后 响应之前
+    b.在Spring 的配置文件 配置拦截器 
+      <mvc:interceptors>
+          <mvc:interceptor>
+              <mvc:mapping path="/user/*" />
+              <mvc:exclude-mapping path="/user/*" />
+              <bean  class="" />
+          </mvc:interceptor>
+      </mvc:interceptors>
+   3.3 写三个请求 分别是 /user/userInfo.do   /user/toLogin.do  /user/login.do  
+      要求拦截器只拦截/user/userInfo.do  放行/user/toLogin.do  /user/login.do 
+      注意拦截的条件是 用户是否登录(看session中的username是不是null)  登录则放行 
+      否则提示用户登录。 
+   
+   3.4 多个自定义拦截器的执行顺序 
+   preHandle 和 配置顺序一致  其它方法 和配置顺序相反
+   
+   4.Spring 中的异常处理   
+     4.1  使用Spring 提供的 SimpleMappingExceptionResolver  全局异常处理 
+      <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+         <property name="exceptionMappings">
+              <props>
+                    <prop key="java.lang.Exception">error1</prop>
+                    <prop key="java.lang.RuntimeException">error2</prop>
+              </props>
+         </property>
+    </bean>
+     4.2  自定义异常处理器   处理全局异常
+           实现   HandlerExceptionResolver
+     public ModelAndView resolveException(HttpServletRequest arg0,
+		HttpServletResponse arg1, Object arg2,
+		Exception e) {
+		ModelAndView mav = new ModelAndView();
+		if( e  instanceof RuntimeException){
+			 mav.setViewName("error2");
+		}else if(e instanceof Exception){
+			 mav.setViewName("error1");
+		}
+		return  mav;
+	}       
+     4.3  局部异常处理 (针对某一个具体的控制器 )
+      @ExceptionHandler
+      public  String execute(Exception e){
+	      return  "error3";
+      }
+     
+     
+     
+     
+   
+   
+   
+   
+   
+    
+   
+   
+     
+   
+   
+   
+  
+  
+  
+            
+  
+  
+  
+  
+  
+              
+       
+       
+       
+       
+       
+       
