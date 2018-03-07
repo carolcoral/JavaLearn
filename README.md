@@ -314,6 +314,8 @@
 
      >6.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo6/)
 
+     >7.[文件上传、Ajax 传输](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo7/)
+
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
  
