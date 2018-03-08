@@ -299,6 +299,8 @@
 
      >7.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/重定向、拦截器、异常处理.md)
 
+     >8.[REST编程规范和方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/REST编程规范和方式.md)
+
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
@@ -315,6 +317,8 @@
      >6.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo6/)
 
      >7.[文件上传、Ajax 传输](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo7/)
+
+     >8.[REST方式对用户进行增删改](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo8/)
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
