@@ -301,6 +301,8 @@
 
      >8.[REST编程规范和方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/REST编程规范和方式.md)
 
+     >9.[AOP 面向切面编程 简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/AOP面向切面编程的简介和使用.md)
+
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
@@ -319,6 +321,8 @@
      >7.[文件上传、Ajax 传输](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo7/)
 
      >8.[REST方式对用户进行增删改](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo8/)
+
+     >9.[AOP 面向切面编程的使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo9/)
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
