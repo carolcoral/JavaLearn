@@ -281,27 +281,29 @@
 
      >1.[ESMS 电子商务网站（仿 JD 书城）](https://github.com/carolcoral/JD_Books_Market)
      
-## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Spring" name="SPRING"> Spring 框架</a>
+## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Spring" name="SPRING">框 架</a>
 
 * ### <a name="spring_arithmetic">Arithmetic（包含学习 Spring 框架中主要需要了解和学习的内容的文本资料）</a>
 
      >1.[Spring的基本概念、容器、实例化、bean对象的创建和销毁、bean对象的延迟实例化](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/Spring基本概念、容器、实例化、bean对象的创建和销毁、bean对象的延迟实例化.md)
      
-     >2.[DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/DI依赖注入、Spring的%20EL表达式、组件扫描.md)
+     >2.[Spring DI依赖注入、Spring的EL表达式、组件扫描](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/DI依赖注入、Spring的%20EL表达式、组件扫描.md)
      
-     >3.[继承的方式使用 SpringDao（操作数据库）](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/继承的方式使用SpringDao.md)
+     >3.[Spring 继承的方式使用 SpringDao（操作数据库）](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/继承的方式使用SpringDao.md)
 
-     >4.[不继承JdbcDaoSupport方式使用 SpringDao和事务处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/不继承JdbcDaoSupport方式使用%20SpringDao和事务处理.md)
+     >4.[Spring 不继承JdbcDaoSupport方式使用 SpringDao和事务处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/不继承JdbcDaoSupport方式使用%20SpringDao和事务处理.md)
 
-     >5.[SpringMVC简介与工作流程](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/SpringMVC简介与工作流程.md)
+     >5.[SpringMVC 简介与工作流程](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/SpringMVC简介与工作流程.md)
 
-     >6.[基于标注的SpringMVC实现](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/基于标注的SpringMVC实现.md)
+     >6.[Spring 基于标注的SpringMVC实现](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/基于标注的SpringMVC实现.md)
 
-     >7.[重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/重定向、拦截器、异常处理.md)
+     >7.[Spring 重定向、拦截器、异常处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/重定向、拦截器、异常处理.md)
 
-     >8.[REST编程规范和方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/REST编程规范和方式.md)
+     >8.[Spring REST编程规范和方式](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/REST编程规范和方式.md)
 
-     >9.[AOP 面向切面编程 简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/AOP面向切面编程的简介和使用.md)
+     >9.[Spring AOP 面向切面编程 简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/AOP面向切面编程的简介和使用.md)
+
+     >10.[Mybatis的简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/Mybatis的简介和使用.md)
 
 
 * ### <a name="spring_code">Code（包含 Spring 框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
@@ -323,6 +325,8 @@
      >8.[REST方式对用户进行增删改](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo8/)
 
      >9.[AOP 面向切面编程的使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo9/)
+
+     >10.[Mybatis的简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Code/Demo10/)
 
 * ### <a name="spring_exam">Exam（Spring 阶段测试）</a>
 
