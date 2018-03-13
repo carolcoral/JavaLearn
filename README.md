@@ -42,7 +42,7 @@
 </li>
 </br>    
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#SPRING" style="text-decoration: none;display: block;">四、Spring 框架</a>
+<a href="#SPRING" style="text-decoration: none;display: block;">四、框 架</a>
 <ul style="display: block;margin-top: 5px;">
 <li style="display: block;padding: 4px;"><a href="#spring_arithmetic" style="text-decoration: none;display: block;">Arithmetic 资料</a></li>
 <li style="display: block;padding: 4px;"><a href="#spring_code" style="text-decoration: none;display: block;">Code 代码</li>
@@ -291,7 +291,7 @@
 
      >3.[Spring 继承的方式使用 SpringDao（操作数据库）](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/继承的方式使用SpringDao.md)
 
-     4.[Spring 不继承JdbcDaoSupport方式使用 SpringDao和事务处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/不继承JdbcDaoSupport方式使用%20SpringDao和事务处理.md)
+     >4.[Spring 不继承JdbcDaoSupport方式使用 SpringDao和事务处理](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/不继承JdbcDaoSupport方式使用%20SpringDao和事务处理.md)
 
      >5.[SpringMVC 简介与工作流程](https://github.com/carolcoral/JavaLearn/blob/master/Spring/Arithmetic/SpringMVC简介与工作流程.md)
 
