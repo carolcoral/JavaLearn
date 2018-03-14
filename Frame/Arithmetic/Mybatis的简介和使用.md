@@ -61,14 +61,18 @@
     
 # 9.分页的实现
 
-           sql 语句 
+           sql 语句
+           
               按照money 排序 显示 bank_account 的一页显示pageSize条数据  显示第pageNumber页数据
+              
                select * from  (select rownum r,t.* from 
-                   (select * from bank_account  order by money) t
-                   where  rownum < (pageSize*pageNumber)+1) 
-               where r > (pageNumber-1)*pageSize
+                        (select * from bank_account  order by money) t
+                                  where  rownum < (pageSize*pageNumber)+1) 
+                                               where r > (pageNumber-1)*pageSize
+               
               按照money 排序 显示 bank_account 的一页显示3条数据  显示第2页数据 
+              
                select * from  (select rownum r,t.* from 
-                   (select * from bank_account  order by money) t
-                    where  rownum < (3*2)+1) 
-               where r > (2-1)*3
+                       (select * from bank_account  order by money) t
+                                 where  rownum < (3*2)+1) 
+                                         where r > (2-1)*3
