@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- namespace指定和哪个Mapper映射器接口对应 -->
+<mapper namespace="com.xdl.dao.BankAccountDAO">
+	<!-- 定义SQL语句 -->	
+    <select id="bankAccountCount"  resultType="int">
+         select count(*) from bank_account
+    </select>
+    <!--  根据账户的账号 来查询账户的名字  -->
+    <select id="bankAccountName"  parameterType="string" 
+          resultType="java.lang.String">
+         select  aname  from bank_account where ano = #{n}
+    </select>
+    <!-- 根据银行账户的账号  返回一个银行账户对象  -->
+    <select id="bankAccountByAno"  parameterType="string" 
+          resultType="com.xdl.bean.BankAccount">
+         select  *  from bank_account where ano = #{n}
+    </select>
+    <!--  查询所有的账户信息  -->
+    <select id="bankAccountList" 
+          resultType="com.xdl.bean.BankAccount">
+         select  *  from bank_account
+    </select>
+    <!-- 根据银行账户的账号 删除银行账户  -->    
+    <delete id="bankAccountDeteleByAno"  parameterType="string" >
+         delete  from bank_account where ano = #{n}
+    </delete>
+    <!--  根据银行账户信息 进行增加数据  -->
+    <insert id="bankAccountAdd"  parameterType="com.xdl.bean.BankAccount" >
+         insert into  bank_account values(#{ano},#{aname},#{apassword},#{money})
+    </insert>
+    <!--  根据银行账号 查询BankAccount2 
+    <select id="bankAccount2ByAno" parameterType="string" 
+        resultType="com.xdl.bean.BankAccount2">
+        select  ano "uid",aname,apassword,money from bank_account where ano = #{n} 
+    </select>
+     -->
+    <!--  根据银行账号 查询BankAccount2 使用resultMap解决字段名不一致的问题 -->
+    <select id="bankAccount2ByAno" parameterType="string" 
+        resultMap="accountMap">
+        select  * from bank_account where ano = #{n} 
+    </select>
+    
+    <resultMap type="com.xdl.bean.BankAccount2" id="accountMap">
+        <!-- 把对象中的属性 和  数据库中的字段 做对应  -->
+        <result  property="uid"  column="ano"/>
+    </resultMap>
+</mapper>
+
+
+
