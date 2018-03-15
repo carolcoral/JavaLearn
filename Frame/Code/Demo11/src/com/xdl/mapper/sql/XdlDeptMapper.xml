@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- namespace指定和哪个Mapper映射器接口对应 -->
+<mapper namespace="com.xdl.mapper.dao.XdlDeptMapper">
+	<!-- 定义SQL语句 -->	
+    <select id="findDeptById" parameterType="int" 
+      resultType="com.xdl.bean.XdlDept">
+         select * from xdl_dept_2018 where id = #{id}
+    </select>
+    <select id="listAll"  
+      resultType="com.xdl.bean.XdlDept">
+         select * from xdl_dept_2018
+    </select>
+    <!--  增加部门  -->
+    <insert id="addDept"  parameterType="com.xdl.bean.XdlDept">
+         insert into  xdl_dept_2018 values(#{id},#{name,jdbcType=VARCHAR},
+         #{loc_addr,jdbcType=VARCHAR})
+    </insert>    
+</mapper>
+
+
+
+
