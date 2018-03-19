@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: boot_02
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: cn.xdl
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/boot_02/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
