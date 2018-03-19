@@ -281,7 +281,7 @@
 
      >1.[ESMS 电子商务网站（仿 JD 书城）](https://github.com/carolcoral/JD_Books_Market)
      
-## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Spring" name="SPRING">框 架</a>
+## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Frame" name="SPRING">框 架</a>
 
 * ### <a name="spring_arithmetic">Arithmetic（包含框架学习中主要需要了解和学习的内容的文本资料）</a>
 
@@ -307,6 +307,8 @@
 
      >11.[Spring和Mybatis的三种集成方式](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/Spring和Mybatis的三种集成方式.md)
 
+     >12.[SpringBoot 和 Maven 的使用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/SpringBoot和%20Maven使用.md)
+
 
 * ### <a name="spring_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
@@ -331,6 +333,8 @@
      >10.[Mybatis的简介和使用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo10/)
 
      >11.[Spring和Mybatis的三种集成方式](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo11/)
+
+     >12.[ SpringBoot 和 Maven 的使用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo12/)
 
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
