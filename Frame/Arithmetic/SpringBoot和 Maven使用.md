@@ -1,8 +1,6 @@
-##梁建全、liangjianquan@itxdl.cn、微信号：oakljq、公众号：西二旗程序员
-
 ![](spring.png)
 
-#SpringBoot框架
+# SpringBoot框架
 
 SpringBoot主要用于快速开发Spring应用程序。特点如下：
 
@@ -20,14 +18,14 @@ SpringBoot主要用于快速开发Spring应用程序。特点如下：
 		mybatis: mybatis-spring-boot-starter
 
 
-#MAVEN安装和使用
+# MAVEN安装和使用
 
-##简介
+## 简介
 MAVEN是用于项目构建的工具，参与项目创建、代码编译、jar包管理、创建发布包等一系列过程。
 
 MAVEN目的：一种标准化的方式构建项目，一个清晰的方式定义项目的组成，一个容易的方式发布项目的信息，以及一种简单的方式在多个项目中共享JARs。
 
-##maven安装
+## maven安装
 
 1. 下载maven工具包
 
@@ -53,7 +51,7 @@ MAVEN目的：一种标准化的方式构建项目，一个清晰的方式定义
 
 
 
-##maven使用
+## maven使用
 
 ![](maven-project-1.png)
 
@@ -131,7 +129,7 @@ MAVEN目的：一种标准化的方式构建项目，一个清晰的方式定义
 
 
 	
-##SpringBoot实现Hello案例
+## SpringBoot实现Hello案例
 
 1. 创建maven project，在pom.xml添加boot包
 
@@ -180,7 +178,7 @@ MAVEN目的：一种标准化的方式构建项目，一个清晰的方式定义
 
 
 
-##SpringBoot工程搭建
+## SpringBoot工程搭建
 
 1. 工程jar包引入(pom.xml)
 
@@ -216,7 +214,7 @@ MAVEN目的：一种标准化的方式构建项目，一个清晰的方式定义
 		}
 
 
-##@SpringBootApplication
+## @SpringBootApplication
 
 @SpringBootApplication标记是一个集合，包含以下元素
 
