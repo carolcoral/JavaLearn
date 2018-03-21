@@ -25,13 +25,4 @@ public class TemplateController {
 		return mav;
 	}
 	
-	@RequestMapping("/template/view.do")
-	public ModelAndView view(int no){
-		Dept dept = deptDao.loadById(no);
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("view");
-		mav.getModel().put("dept", dept);
-		return mav;
-	}
-	
 }
