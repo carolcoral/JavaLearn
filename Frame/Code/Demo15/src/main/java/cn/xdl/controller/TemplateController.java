@@ -1,0 +1,37 @@
+package cn.xdl.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import cn.xdl.dao.DeptDao;
+import cn.xdl.entity.Dept;
+
+@Controller
+public class TemplateController {
+	
+	@Autowired
+	private DeptDao deptDao;
+	
+	@RequestMapping("/template/list.do")
+	public ModelAndView list(){
+		List<Dept> list = deptDao.loadAll();
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("list");
+		mav.getModel().put("depts", list);
+		return mav;
+	}
+	
+	@RequestMapping("/template/view.do")
+	public ModelAndView view(int no){
+		Dept dept = deptDao.loadById(no);
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("view");
+		mav.getModel().put("dept", dept);
+		return mav;
+	}
+	
+}

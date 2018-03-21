@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>部门详情(thymeleaf模板)</h1>
+	编号：<span th:text="${dept.deptno}"></span><br/>
+	名称：<span th:text="${dept.dname}"></span><br/>
+	地址：<span th:text="${dept.loc}"></span><br/>
+	<a href="list.do">返回</a>
+</body>
+</html>
