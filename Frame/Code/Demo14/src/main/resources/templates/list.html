@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>部门列表(thymeleaf模板)</h1>
+	<table>
+		<tr>
+			<td>编号</td>
+			<td>名称</td>
+			<td>地址</td>
+			<td>操作</td>
+		</tr>
+		<tr th:each="dept:${depts}">
+			<td th:text="${dept.deptno}"></td>
+			<td th:text="${dept.dname}"></td>
+			<td th:text="${dept.loc}"></td>
+			<td>
+			<a th:href="@{view.do(no=${dept.deptno})}">查看</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
