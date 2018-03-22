@@ -317,6 +317,8 @@
 
      >16.[SpringBootMVC异常处理、拦截器、AOP、静态资源处理](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/SpringBootMVC异常处理、拦截器、AOP、静态资源处理.md)
 
+     >17.[SpringBoot任务调用和Redis的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/SpringBoot任务调用和%20Redis的应用.md)
+
 
 * ### <a name="spring_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
      
@@ -349,6 +351,8 @@
      >14.[阿里Druid连接池、SpringBootMVC的三种应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo14/)
 
      >15.[SpringBootMVC异常处理、拦截器、AOP、静态资源处理](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo15/)
+
+     >16.[Redis在 java 中的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo16/)
 
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
