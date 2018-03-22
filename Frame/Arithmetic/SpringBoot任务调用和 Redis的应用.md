@@ -1,8 +1,8 @@
 ![](springboot.png)
 
-##SpringBoot任务调用
+## SpringBoot任务调用
 
-###服务器启动时自动执行某个任务
+### 服务器启动时自动执行某个任务
 
 SpringBoot提供了两种方法，编写一个组件实现ApplicationRunner或CommandLineRunner。
 
@@ -34,7 +34,7 @@ SpringBoot提供了两种方法，编写一个组件实现ApplicationRunner或Co
 
 	提示：可以利用@Order指定任务触发顺序，1、2、3..
 
-###服务器启动后定时自动执行某个任务
+### 服务器启动后定时自动执行某个任务
 
 案例：每隔5S调用任务打印输出当前时间。
 
@@ -58,9 +58,9 @@ SpringBoot提供了两种方法，编写一个组件实现ApplicationRunner或Co
 
 
 
-#Redis
+# Redis
 
-##Redis简介
+## Redis简介
 
 Redis是完全基于内存的存储（内存数据库），存储结构为key-value键值对模式，value可以是字符串、列表、集合、有序集合、哈希类型。
 
@@ -76,7 +76,7 @@ Redis优点：
 
 
 
-##Redis常用命令
+## Redis常用命令
 
 1. 字符串操作
 
@@ -135,9 +135,9 @@ Redis优点：
 
 
 
-##Java访问Redis
+## Java访问Redis
 
-###原始API Jedis对象操作
+### 原始API Jedis对象操作
 
 1. 测试连接
 
@@ -185,7 +185,7 @@ Redis优点：
 			jedis.close();
 		}
 
-###封装API RedisTemplate（spring-data）
+### 封装API RedisTemplate（spring-data）
 
 1. 在pom.xml添加spring-boot-starter-redis定义
 
