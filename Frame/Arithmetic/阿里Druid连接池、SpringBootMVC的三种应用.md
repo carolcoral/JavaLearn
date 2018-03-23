@@ -3,42 +3,42 @@
 <ol>
 <li>
 <p>在pom.xml追加druid定义</p>
-<pre><code>&lt;parent&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
-    &lt;version&gt;1.4.7.RELEASE&lt;/version&gt;
-&lt;/parent&gt;
+<pre><code><parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.7.RELEASE</version>
+</parent>
 
-&lt;dependencies&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;
-    &lt;/dependency&gt;
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
 
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.oracle&lt;/groupId&gt;
-        &lt;artifactId&gt;ojdbc6&lt;/artifactId&gt;
-        &lt;version&gt;11.2.0.3&lt;/version&gt;
-    &lt;/dependency&gt;
+    <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>ojdbc6</artifactId>
+        <version>11.2.0.3</version>
+    </dependency>
 
-    &lt;dependency&gt;
-        &lt;groupId&gt;junit&lt;/groupId&gt;
-        &lt;artifactId&gt;junit&lt;/artifactId&gt;
-    &lt;/dependency&gt;
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+    </dependency>
 
-    &lt;dependency&gt;
-      &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
-      &lt;artifactId&gt;druid&lt;/artifactId&gt;
-      &lt;version&gt;1.1.6&lt;/version&gt;
-    &lt;/dependency&gt;
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.6</version>
+    </dependency>
 
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;
-        &lt;version&gt;1.2.2&lt;/version&gt;
-    &lt;/dependency&gt;
+    <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>1.2.2</version>
+    </dependency>
 
-&lt;/dependencies&gt;
+</dependencies>
 </code></pre>
 
 </li>
@@ -90,10 +90,10 @@ public class DruidDataSourceConfiguration {
 <ol>
 <li>
 <p>在pom.xml添加spring-boot-starter-web定义</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
-&lt;/dependency&gt;
+<pre><code><dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
 </code></pre>
 
 </li>
@@ -106,7 +106,7 @@ public class DeptController {
     private DeptDao deptDao;
 
     @RequestMapping(value=&quot;/dept&quot;,method=RequestMethod.GET)
-    public List&lt;Dept&gt; loadAll(){
+    public List<Dept> loadAll(){
         return deptDao.loadAll();
     }
 
@@ -144,8 +144,8 @@ public class DeptController {
 </li>
 </ol>
 <h3>开发JSP应用（PC网站应用）</h3>
-<p>/dept/list.do--&gt;DispatcherServlet--&gt;HandlerMapping--&gt;ListController--&gt;DeptDao
---&gt;ModelAndView--&gt;ViewResolver--&gt;/list.jsp</p>
+<p>/dept/list.do-->DispatcherServlet-->HandlerMapping-->ListController-->DeptDao
+-->ModelAndView-->ViewResolver-->/list.jsp</p>
 <ol>
 <li>
 <p>编写ListController</p>
@@ -157,7 +157,7 @@ public class ListController {
 
     @RequestMapping(&quot;/dept/list.do&quot;)
     public ModelAndView list(){
-        List&lt;Dept&gt; list = deptDao.loadAll();
+        List<Dept> list = deptDao.loadAll();
         ModelAndView mav = new ModelAndView();
         mav.setViewName(&quot;list&quot;);
         mav.getModel().put(&quot;depts&quot;, list);
@@ -177,48 +177,48 @@ spring.mvc.view.suffix=.jsp
 </li>
 <li>
 <p>在pom.xml中追加jstl和tomcat-embed-jasper引擎</p>
-<pre><code>&lt;dependency&gt;
-  &lt;groupId&gt;jstl&lt;/groupId&gt;
-  &lt;artifactId&gt;jstl&lt;/artifactId&gt;
-  &lt;version&gt;1.2&lt;/version&gt;
-&lt;/dependency&gt;
+<pre><code><dependency>
+  <groupId>jstl</groupId>
+  <artifactId>jstl</artifactId>
+  <version>1.2</version>
+</dependency>
 
-&lt;dependency&gt;
-  &lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt;
-  &lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt;
-&lt;/dependency&gt;
+<dependency>
+  <groupId>org.apache.tomcat.embed</groupId>
+  <artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
 </code></pre>
 
 </li>
 <li>
 <p>编写list.jsp，使用JSTL和EL表达式显示</p>
-<pre><code>&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;
-pageEncoding=&quot;UTF-8&quot;%&gt;
-&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot; %&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+<pre><code><%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;
+pageEncoding=&quot;UTF-8&quot;%>
+<%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot; %>
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;>
+<html>
+<head>
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;>
+<title>Insert title here</title>
+</head>
+<body>
 
-    &lt;h1&gt;部门列表&lt;/h1&gt;
-    &lt;table&gt;
-        &lt;tr&gt;
-            &lt;td&gt;编号&lt;/td&gt;
-            &lt;td&gt;部门名&lt;/td&gt;
-            &lt;td&gt;地址&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;c:forEach items=&quot;${depts}&quot; var=&quot;dept&quot;&gt;
-        &lt;tr&gt;
-            &lt;td&gt;${dept.deptno}&lt;/td&gt;
-            &lt;td&gt;${dept.dname}&lt;/td&gt;
-            &lt;td&gt;${dept.loc}&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/c:forEach&gt;
-    &lt;/table&gt;
-&lt;/body&gt;
+    <h1>部门列表</h1>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>部门名</td>
+            <td>地址</td>
+        </tr>
+        <c:forEach items=&quot;${depts}&quot; var=&quot;dept&quot;>
+        <tr>
+            <td>${dept.deptno}</td>
+            <td>${dept.dname}</td>
+            <td>${dept.loc}</td>
+        </tr>
+        </c:forEach>
+    </table>
+</body>
 </code></pre>
 
 <p></html></p>
@@ -231,15 +231,15 @@ pageEncoding=&quot;UTF-8&quot;%&gt;
 <p>velocity技术： *.vm+VTL表达式</p>
 <p>freemarker技术： *.ftl+FTL表达式</p>
 <p>thymeleaf技术： *.html+TH表达式</p>
-<p>/template/list.do--&gt;DispatcherServlet--&gt;HandlerMapping--&gt;TemplateController--&gt;DeptDao--&gt;返回ModelAndView--&gt;thymeleaf模板文件
+<p>/template/list.do-->DispatcherServlet-->HandlerMapping-->TemplateController-->DeptDao-->返回ModelAndView-->thymeleaf模板文件
 （src\main\resources\templates）</p>
 <ol>
 <li>
 <p>在pom.xml追加thymeleaf定义</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;
-&lt;/dependency&gt;
+<pre><code><dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
 </code></pre>
 
 </li>
@@ -253,7 +253,7 @@ public class TemplateController {
 
     @RequestMapping(&quot;/template/list.do&quot;)
     public ModelAndView list(){
-        List&lt;Dept&gt; list = deptDao.loadAll();
+        List<Dept> list = deptDao.loadAll();
         ModelAndView mav = new ModelAndView();
         mav.setViewName(&quot;list&quot;);
         mav.getModel().put(&quot;depts&quot;, list);
@@ -266,29 +266,29 @@ public class TemplateController {
 </li>
 <li>
 <p>在src/main/resources/templates添加模板文件</p>
-<p>注意：html模板文件，开始和结束标记必须匹配；给&lt; html&gt;元素添加xmlns:th=&quot;http://www.thymeleaf.org&quot;定义。</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html xmlns:th=&quot;http://www.thymeleaf.org&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;/&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;部门列表(thymeleaf模板)&lt;/h1&gt;
-    &lt;table&gt;
-        &lt;tr&gt;
-            &lt;td&gt;编号&lt;/td&gt;
-            &lt;td&gt;名称&lt;/td&gt;
-            &lt;td&gt;地址&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr th:each=&quot;dept:${depts}&quot;&gt;
-            &lt;td th:text=&quot;${dept.deptno}&quot;&gt;&lt;/td&gt;
-            &lt;td th:text=&quot;${dept.dname}&quot;&gt;&lt;/td&gt;
-            &lt;td th:text=&quot;${dept.loc}&quot;&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<p>注意：html模板文件，开始和结束标记必须匹配；给< html>元素添加xmlns:th=&quot;http://www.thymeleaf.org&quot;定义。</p>
+<pre><code><!DOCTYPE html>
+<html xmlns:th=&quot;http://www.thymeleaf.org&quot;>
+<head>
+<meta charset=&quot;UTF-8&quot;/>
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>部门列表(thymeleaf模板)</h1>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>名称</td>
+            <td>地址</td>
+        </tr>
+        <tr th:each=&quot;dept:${depts}&quot;>
+            <td th:text=&quot;${dept.deptno}&quot;></td>
+            <td th:text=&quot;${dept.dname}&quot;></td>
+            <td th:text=&quot;${dept.loc}&quot;></td>
+        </tr>
+    </table>
+</body>
+</html>
 </code></pre>
 
 </li>
