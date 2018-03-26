@@ -1,7 +1,7 @@
 <h2>Redis(补充)</h2>
 <h3>Redis缓存</h3>
 <p>Redis作为系统的缓存，介于业务和关系型数据库之间。</p>
-<p><img src="cache.png" /></p>
+<p><img src="https://github.com/carolcoral/JavaLearn/blob/master/Cache/WechatIMG2.png" /></p>
 <p>案例：利用Redis优化部门列表显示</p>
 <ol>
 <li>
