@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+<link rel="stylesheet" href="/bootstrap.min.css"/>
+<script type="text/javascript" src="/jquery.min.js"></script>
+<script type="text/javascript" src="/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<h1>部门列表(thymeleaf模板)</h1>
+	<table class="table table-striped">
+		<tr class="success">
+			<td>编号</td>
+			<td>名称</td>
+			<td>地址</td>
+			<td>操作</td>
+		</tr>
+		<tr th:each="dept:${depts}">
+			<td th:text="${dept.deptno}"></td>
+			<td th:text="${dept.dname}"></td>
+			<td th:text="${dept.loc}"></td>
+			<td>
+			<a class="btn btn-info" th:href="@{view.do(no=${dept.deptno})}">查看</a>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
