@@ -52,6 +52,11 @@
 </li>
 </br>
 
+<li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
+<a href="#buchong" style="text-decoration: none;display: block;">五、补  充</a>
+</li>
+</br>
+
 </ul>
 
 
@@ -363,4 +368,9 @@
 
      >1.[OVLS 在线学习平台](https://github.com/carolcoral/OVLS)
  
+## <a href="javascript:" name="buchong">补   充</a>
+
+>1.[SVN 集中式版本控制工具的讲解和使用](https://www.imooc.com/learn/109)
+
+>2.[Git 分布式版本控制工具的讲解和使用](https://www.imooc.com/learn/208)
 
