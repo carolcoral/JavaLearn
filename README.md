@@ -83,7 +83,7 @@
 * <a href="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包与其他三方工具包</a>
 
 
-<h1><p align="center" style="text-decoration: none;">正  文</p></h1>
+<h1 style="text-decoration: none;"><p align="center">正  文</p></h1>
 
 
 ## <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE" name="JavaSE">JavaSE</a>
