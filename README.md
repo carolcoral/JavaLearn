@@ -3,7 +3,7 @@
 <ul style="display:block;line-height:18px;text-decoration: none;padding: 18px;width: 200px;height: auto;margin-top: -25px;">
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 30px;">
-<a href="#java" style="text-decoration: none;display: block;">Java 简介</a>
+<a href="#java" style="text-decoration: none;display: block;">序  言</a>
 <ul style="display: block;margin-top: -16px;margin-top: -20px;">
 <li style="display: block;padding: 4px;"><a href="#daoyu" style="text-decoration: none;display: block;">导语</a></li>
 <li style="display: block;padding: 4px;"><a href="#shouce" style="text-decoration: none;display: block;">手册</a></li>
@@ -60,7 +60,7 @@
 </ul>
 
 
-# <a href="https://baike.baidu.com/item/java/85979" name="java">Java</a>
+# <a href="https://baike.baidu.com/item/java/85979" name="java">序言</a>
 
 * <a name="daoyu">导语：</a>
 
@@ -81,6 +81,9 @@
      >3.[w3school](http://www.w3school.com.cn)
      
 * <a href="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包与其他三方工具包</a>
+
+
+<p align="center">正  文</p>
 
 
 ## <a href="https://github.com/carolcoral/JavaLearn/tree/master/JavaSE" name="JavaSE">JavaSE</a>
