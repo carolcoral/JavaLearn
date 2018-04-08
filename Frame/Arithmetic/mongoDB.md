@@ -1,10 +1,10 @@
-##MongoDB简介
+## MongoDB简介
 
 1. 属于NoSQL之一，分布式文档数据库
 2. 存储结构灵活，适应多变的表单数据
 3. 提供灵活的查询方法
 
-##MongoDB基本操作命令
+## MongoDB基本操作命令
 
 1. 库
 
@@ -56,7 +56,7 @@
 
 		show collections
 
-##Java访问MongoDB
+## Java访问MongoDB
 
 1. 利用mongo-java-driver.jar
 
