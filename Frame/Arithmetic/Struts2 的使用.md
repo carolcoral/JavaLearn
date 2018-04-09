@@ -5,11 +5,11 @@
 <ul>
 <li>springmvc</li>
 </ul>
-<p><img src="springmvc.png" /></p>
+<p><img src="https://github.com/carolcoral/SaveImg/blob/master/5.jpeg?raw=true" /></p>
 <ul>
 <li>struts2</li>
 </ul>
-<p><img src="struts2.png" /></p>
+<p><img src="https://github.com/carolcoral/SaveImg/blob/master/4.jpeg?raw=true" /></p>
 <h2>基本使用</h2>
 <p>/hello.action--&gt;Filter控制器--&gt;HelloAction--&gt;Result--&gt;/hello.jsp</p>
 <ol>
