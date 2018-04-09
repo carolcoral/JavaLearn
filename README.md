@@ -370,7 +370,7 @@
 
      >16.[Redis在 java 中的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/Demo16/)
 
-     >17.[Struts2 的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/SSH-01/)
+     >17.[Struts2 的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/SSH-01/)
 
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
