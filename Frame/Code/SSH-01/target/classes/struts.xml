@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+		
+	<!-- 覆盖请求扩展名类型 -->
+	<constant name="struts.action.extension" value="do"></constant>
+		
+	<package name="demo1" namespace="/day01" extends="struts-default">
+		
+		<!-- 定义请求和action对应;
+			name指定请求名、class指定Action类、method指定Action中方法名,默认execute 
+		-->
+		<action name="hello" class="cn.xdl.action.HelloAction">
+			<!-- 根据Action返回的String值调用result响应
+				name与Action返回值对应;type指定result类型
+			 -->
+			<result name="success" type="dispatcher">
+				/WEB-INF/hello.jsp
+			</result>
+		</action>
+		
+		<action name="list" class="cn.xdl.action.ListAction">
+			<result name="success" type="dispatcher">
+				/WEB-INF/list.jsp
+			</result>
+		</action>
+	
+	</package>
+
+	<package name="demo2" namespace="/user" extends="struts-default">
+	
+		<!-- class属性默认值为ActionSupport -->
+		<action name="tologin">
+			<!-- name默认值为success、type默认值为dispatcher -->
+			<result>
+			/WEB-INF/login.jsp
+			</result>
+		</action>
+	
+		<action name="login" class="cn.xdl.action.LoginAction">
+			<result name="success" type="dispatcher">/WEB-INF/ok.jsp</result>
+			<result name="login" type="dispatcher">/WEB-INF/login.jsp</result>
+		</action>
+	
+	</package>
+
+</struts>
