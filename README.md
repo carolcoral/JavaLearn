@@ -389,3 +389,5 @@
 
 >2.[Git 分布式版本控制工具的讲解和使用](https://www.imooc.com/learn/208)
 
+>3.[GitHub 的使用](https://www.imooc.com/learn/390)
+
