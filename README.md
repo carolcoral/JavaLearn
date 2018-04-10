@@ -372,6 +372,8 @@
 
      >17.[Struts2 的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/SSH-01/)
 
+     >18.[Struts2 的拦截器、Result、注解配置、ValueStack](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-02)
+
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
  
