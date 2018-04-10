@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  <filter>
+  	<filter-name>strutsmvc</filter-name>
+  	<filter-class>
+  	org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter
+  	</filter-class>
+  	<!-- 默认请求类型为.action或没有扩展名 -->
+  	<!-- 默认找src/struts.xml配置文件 -->
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>strutsmvc</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+</web-app>
