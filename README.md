@@ -391,3 +391,6 @@
 
 >3.[GitHub 的使用](https://www.imooc.com/learn/390)
 
+>4.[WebPack 前端打包工具](https://www.imooc.com/learn/802)
+
+>5.[Gulp 前端自动化构建工具](https://www.imooc.com/learn/802)
