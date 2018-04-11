@@ -1,6 +1,6 @@
 # Hibernate框架
 
-##简介
+## 简介
 
   Hibernate是一个持久层框架，用于实现对数据库操作（关系型数据库）。
 
@@ -15,11 +15,11 @@
   - Hibernate自动生成SQL，自动映射SQL参数；MyBatis采用#{key}映射SQL参数。
 
 
-##结构
+## 结构
 
 ![](https://github.com/carolcoral/JavaLearn/blob/master/Cache/hibernate.png?raw=true)
 
-##入门示例
+## 入门示例
 
 1. 搭建环境
 
