@@ -336,7 +336,11 @@
      >21.[Struts2 的使用.md](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/Struts2%20的使用.md)
 
      >22.[Struts2 的拦截器、Result、注解配置、ValueStack](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/Struts2的拦截器、Result、注解配置、ValueStack.md)
-     
+
+     >23.[Struts2 整合 Spring 使用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/Struts2%2BSpring.md)
+
+     >24.[使用 hibernate](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/hibernate%20使用.md)
+     
      
 
 * ### <a name="spring_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
@@ -376,6 +380,8 @@
      >17.[Struts2 的应用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Code/SSH-01/)
 
      >18.[Struts2 的拦截器、Result、注解配置、ValueStack](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-02)
+
+     >19.[hibernate 使用](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-03)
 
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
