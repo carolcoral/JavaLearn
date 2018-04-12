@@ -16,10 +16,11 @@ public class TestEmp {
 	@Test
 	public void test1(){
 		Emp emp = new Emp();
-		emp.setEname("jack");
+		emp.setEname("rose");
 		emp.setAge(22);
-		emp.setSex("ÄÐ");
+		emp.setSex("Å®");
 		emp.setBirthday(Date.valueOf("2000-05-08"));
+		emp.setDeptno(22);
 		
 		Session session = HibernateUtil.getSession();
 		Transaction tx = session.beginTransaction();

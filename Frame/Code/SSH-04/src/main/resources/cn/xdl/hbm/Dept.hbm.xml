@@ -9,5 +9,11 @@
 		</id>
 		<property name="name" column="DNAME" type="string"></property>
 		<property name="loc" column="LOC" type="string"></property>
+		<set name="emps">
+			<!-- 指定外键字段名 -->
+			<key column="deptno"></key>
+			<!-- 指定关联映射对象 -->
+			<one-to-many class="cn.xdl.entity.Emp"/>
+		</set>
 	</class>
 </hibernate-mapping>

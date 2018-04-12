@@ -31,6 +31,15 @@ public class Emp implements Serializable{
 	@Column(name="BIRTHDAY")
 	private Date birthday;
 	
+	@Column(name="DEPTNO")
+	private int deptno;
+	
+	public int getDeptno() {
+		return deptno;
+	}
+	public void setDeptno(int deptno) {
+		this.deptno = deptno;
+	}
 	public int getId() {
 		return id;
 	}
