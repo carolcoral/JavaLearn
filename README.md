@@ -340,6 +340,8 @@
      >23.[Struts2 整合 Spring 使用](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/Struts2%2BSpring.md)
 
      >24.[使用 hibernate](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/hibernate%20使用.md)
+
+     >25.[hibernate 添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/hibernate%20添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native.md)
      
      
 
@@ -382,6 +384,8 @@
      >18.[Struts2 的拦截器、Result、注解配置、ValueStack](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-02)
 
      >19.[hibernate 使用](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-03)
+
+     >20.[hibernate 添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-04)
 
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
