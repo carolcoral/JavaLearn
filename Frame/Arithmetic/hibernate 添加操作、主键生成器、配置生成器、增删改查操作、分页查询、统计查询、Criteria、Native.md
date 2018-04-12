@@ -244,3 +244,17 @@ public void test11(){
 </code></pre>
 
 <h3>NativeSQL操作</h3>
+<pre><code>@Test
+	public void test15(){
+		String sql = "select deptno,dname,loc from dept where dname like :name";
+		Session session = HibernateUtil.getSession();
+		NativeQuery<Dept> query = session.createNativeQuery(sql,Dept.class);
+		query.setParameter("name", "%java%");
+		List<Dept> list = query.getResultList();
+		for(Dept dept:list){
+			System.out.println(dept.getNo()+" "+dept.getName()+" "+dept.getLoc());
+		}
+		session.close();
+	}
+</code></pre>
+
