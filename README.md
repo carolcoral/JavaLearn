@@ -53,7 +53,7 @@
 </br>
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#zongjie" style="text-decoration: none;display: block;">五、整理总结</a>
+<a href="#zongjie" style="text-decoration: none;display: block;">五、扩展总结</a>
 </li>
 </br>
 
@@ -347,6 +347,8 @@
      >24.[使用 hibernate](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/hibernate%20使用.md)
 
      >25.[hibernate 添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/hibernate%20添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native.md)
+
+     >26.[注解映射、关联映射、多对多映射、Hibernate 延迟加载（懒加载）、对象持久化、缓存、Spring和Hibernate整合](https://github.com/carolcoral/JavaLearn/blob/master/Frame/Arithmetic/%E6%B3%A8%E8%A7%A3%E6%98%A0%E5%B0%84%E3%80%81%E5%85%B3%E8%81%94%E6%98%A0%E5%B0%84%E3%80%81%E5%A4%9A%E5%AF%B9%E5%A4%9A%E6%98%A0%E5%B0%84%E3%80%81Hibernate%20%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%EF%BC%88%E6%87%92%E5%8A%A0%E8%BD%BD%EF%BC%89%E3%80%81%E5%AF%B9%E8%B1%A1%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81%E7%BC%93%E5%AD%98%E3%80%81Spring%E5%92%8CHibernate%E6%95%B4%E5%90%88.md)
      
      
 
@@ -392,6 +394,8 @@
 
      >20.[hibernate 添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-04)
 
+     >21.[注解映射、关联映射、多对多映射、Hibernate 延迟加载（懒加载）、对象持久化、缓存、Spring和Hibernate整合](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-05)
+
 * ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
 
  
@@ -399,7 +403,8 @@
 
      >1.[OVLS 在线学习平台](https://github.com/carolcoral/OVLS)
      
-## <a href="javascript:" name="zongjie">整理总结</a>
+## <a href="javascript:" name="zongjie">扩展总结</a>
+
 
 >1.[综合测试题](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
