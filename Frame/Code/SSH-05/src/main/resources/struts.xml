@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	
+	<package name="demo1" extends="json-default">
+		
+		<!-- StrutsSpringObjectFactory根据class名做id查找Spring容器的Action对象 -->
+		<action name="hello" class="helloAction">
+			<result>/WEB-INF/hello.jsp</result>
+		</action>
+		
+		<action name="list" class="listAction">
+			<result>/WEB-INF/list.jsp</result>
+		</action>
+		
+		<action name="list1" class="listAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="add">
+			<result>/WEB-INF/add.jsp</result>
+		</action>
+		
+		<action name="addDept" class="addAction">
+			<result name="success" type="redirectAction">
+				<param name="actionName">list</param>
+			</result>
+		</action>
+		
+		<action name="view" class="viewAction">
+			<result>/WEB-INF/view.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>
