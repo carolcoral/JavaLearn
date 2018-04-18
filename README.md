@@ -406,7 +406,7 @@
 ## <a href="javascript:" name="zongjie">扩展总结</a>
 
 
->1.[综合测试题](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
+>1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
 ## <a href="javascript:" name="buchong">补   充</a>
 
