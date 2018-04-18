@@ -405,6 +405,10 @@
      
 ## <a href="javascript:" name="zongjie">扩展总结</a>
 
+>1.[Linux 下安装配置 JAVA 环境](https://blog.csdn.net/carolcoral/article/details/79964843)
+
+>2.[Linux 部署Tomcat、开发工具搭建、Maven使用、DEBUG使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%20%E9%83%A8%E7%BD%B2Tomcat%E3%80%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA%E3%80%81Maven%E4%BD%BF%E7%94%A8%E3%80%81DEBUG%E4%BD%BF%E7%94%A8.md)
+
 
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
