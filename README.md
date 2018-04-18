@@ -409,6 +409,8 @@
 
 >2.[Linux 部署Tomcat、开发工具搭建、Maven使用、DEBUG使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%20%E9%83%A8%E7%BD%B2Tomcat%E3%80%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA%E3%80%81Maven%E4%BD%BF%E7%94%A8%E3%80%81DEBUG%E4%BD%BF%E7%94%A8.md)
 
+>3.[企业类型、项目类型、企业IT组成](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E4%BC%81%E4%B8%9A%E7%B1%BB%E5%9E%8B%E3%80%81%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E4%BC%81%E4%B8%9AIT%E7%BB%84%E6%88%90.md)
+
 
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
