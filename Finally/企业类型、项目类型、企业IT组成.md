@@ -200,7 +200,4 @@ B/S：
 <p><img src="https://i.imgur.com/PgTUw19.png" /></p>
 <h2>层次架构（技术选型）</h2>
 <p><img src="https://i.imgur.com/zRmUkNF.png" /></p>
-<h2>技术架构</h2>
-<h2>负载架构</h2>
-<h2>二维码工具类</h2>
 
