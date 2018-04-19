@@ -403,7 +403,7 @@
 
      >1.[OVLS 在线学习平台](https://github.com/carolcoral/OVLS)
      
-## <a href="javascript:" name="zongjie">扩展总结</a>
+## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Finally" name="zongjie">扩展总结</a>
 
 >1.[Linux 下安装配置 JAVA 环境](https://blog.csdn.net/carolcoral/article/details/79964843)
 
