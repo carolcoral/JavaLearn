@@ -13,6 +13,7 @@
 
 3.使用 wget 安装 java 环境（这里安装的是 jdk1.8 版本，根据个人需要可以去官网复制不同的下载链接）
 > wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.rpm"
+
 > rpm 文件请使用 rpm -ivh ...rpm 来操作
 
 4.解压 java 压缩包并移动文件到新创建的文件夹中
