@@ -113,11 +113,124 @@
 
 ### 11.DI有几种方式，分别是什么，你常用的是哪种？
 
+        1.Setter 方法
+        2.构造器
+        3.接口注入
+        注解实现注入（常用）
+
 ### 12.Mybatis 中 $ 和 # 在 xml 中取值有什么不同？
+
+        mybatis 为我们提供了两种支持动态 sql 的语法：#{} 以及 ${}
+        #方式能够很大程度防止 sql 注入，$方式无法防止 sql 注入
+        $方式一般用于传入数据库对象，例如传入表名
+        #{}将传入的数据都当成一个字符串，会对自动传入的数据加一个双引号
+        一般能用#就别用$
 
 ### 13.Session 和 Cookie 有什么区别？
 
+        Cookie 存在客户端，Session 数据放在服务器上
+        cookie 不是很安全，别人可以分析存放在本地的 cookie 并进行修改
+        session 会在一定时间内保存在服务器上，当访问增多，会比较占用你服务器的性能
+        单个 cookie 在客户端的限制是3k，就是说一个站点在客户端存放的 cookie 不能大于3k
+
 ### 14.GET 和 POST 请求的区别？
+
+        GET：
+            1.从服务器上获取数据，一般不能使用在写操作接口
+            2.有 URL 所限制，GET 方式传输的大小有所限制，传输的数据量不超过2kb
+            3.请求的数据会附加在 URL 之后，以？分隔 URl 和传输数据，多个参数用 & 连接
+            4.安全性差
+        POST：
+            1.向服务器提交数据，一般处理写业务
+            2.POST 方式传送的数据量比较大，一般被默认为没有限制，但是实际中会出现限制，主要与 http 协议有关
+            3.安全性高
+            4.请求的数据内容放在 HTML HEADER 中
 
 ### 15.转发（forword）和重定向（redirect）的区别？
 
+        1.效率上：
+            转发（forward） > 重定向（redirect）
+        2.显示上：
+            重定向（redirect）：显示新的 URL
+            转发（forward）：地址栏不变
+        3.数据上：
+            转发（forward）：可以共享 request 里面的数据
+            重定向（redirect）：不能共享数据
+        4.请求次数：
+            重定向（redirect）：两次
+            转发（forward）：一次
+
+### 16.&和&&有什么区别？
+
+        & 是按位与的意思，表示把前后的数据转换成二进制后进行操作
+        && 是逻辑与，需要前后的条件必须同同时满足才能成立
+
+### 17.需求：有一张表 scoreInfo，字段和数据如下：
+
+        表结构和数据：
+            id     subject     score
+            1       语文        70
+            2       数学        80
+            3       英语        50
+            4       java        100
+        问题：
+            请用一条 sql 语句查询出这四条记录并按以下条件显示出来
+            （大于或等于80表示优秀，大于或等于60表示及格，小于60分表示不及格）
+        结果：
+            1     语文     及格
+            2     数学     优秀
+            3     英语     不及格
+            4     java     优秀
+        解答：
+            select 
+                s.id,s.name,
+                case when s.score >=80 then '优秀'
+                     when s.score >=60 then '及格'
+                     when s.score <60 then '不及格'
+                     end as scopes
+            from scoreinfo s
+    
+### 18.Hibernate 与 Mybatis 区别？
+
+        1.hibernate 的扩展性和一致性比 mybatis 强
+        2.hibernate 不需要写 sql 语句，会自动生成，而 mybatis 则需要写 sql 语句
+        3.hibernate 支持事务，一级缓存、二级缓存、查询缓存等
+        4.hibernate 自己提供分页功能（setfirst，setmax），mybatis 需要配置分页插件（pagehelper）
+
+### 19.列举 struts2常见的组件有哪些？常见的配置标签有哪些？返回值类型有哪些？
+
+        组件：
+            strutsParperAndExcuteFilter
+            Action
+            Result
+            Interceptor
+        标签：
+            package
+            action
+            result
+            param
+            interceptor
+        返回值类型：
+            dispatcher
+            redirect
+            redirectAction
+            stream
+            json
+
+### 20.用最有效率的方法计算出2乘以8等于多少？
+
+        2 << 3
+
+### 21.Spring 常见的注解有哪些？
+
+### 22.Debug 模式下，快捷键有哪些，分别代表什么？
+
+### 23.Tomcat 如何修改端口号？如何清除项目缓存？默认并发量是多少？
+
+### 24.final、finally、finalize 的区别？
+
+### 25.一个汉字几个字节？一个 char 类型的变量，可以存储一个汉字吗？为什么可以或不可以。
+
+### 26.列举至少9个 linux 系统操作命令，并给出汉字解释？
+
+### 27.谈谈 Spring AOP 的原理？
