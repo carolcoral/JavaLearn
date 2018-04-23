@@ -411,6 +411,7 @@
 
 >3.[企业类型、项目类型、企业IT组成](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E4%BC%81%E4%B8%9A%E7%B1%BB%E5%9E%8B%E3%80%81%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E4%BC%81%E4%B8%9AIT%E7%BB%84%E6%88%90.md)
 
+>4.[技术架构、负载架构、二维码工具类、CRM客户管理系统](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E3%80%81%E8%B4%9F%E8%BD%BD%E6%9E%B6%E6%9E%84%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B7%A5%E5%85%B7%E7%B1%BB%E3%80%81CRM%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.md)
 
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
