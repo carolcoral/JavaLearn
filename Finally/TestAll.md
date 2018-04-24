@@ -223,23 +223,42 @@
 
 ### 21.Spring 常见的注解有哪些？
 
-
+        @Autowired -- 自动装配
+        @Component -- 自动支持自动装配
+        @Respository -- DAO 层实现
+        @Service -- Service 层实现
+        @Controller -- WEB 层实现
 
 ### 22.Debug 模式下，快捷键有哪些，分别代表什么？
 
-
+        F5：进入方法内
+        F6：执行下一步
+        F7：跳出方法外
+        F8：执行到下一个断点
 
 ### 23.Tomcat 如何修改端口号？如何清除项目缓存？默认并发量是多少？
 
-
+        端口修改：server.xml
+        项目缓存：删除 work 文件夹下的文件
+        并发：150-200之间
 
 ### 24.final、finally、finalize 的区别？
 
-
+        final - 修饰符（关键字）
+            如果一个类被声明为 final，意味着它不能再派生出新的子类，不能作为父类被继承
+            一个类不能既被声明为 abstract 的，又被声明为 final 的
+            被声明为 final 的方法也同样只能使用，不能重载
+            
+        finally - 异常处理时提供 finally 块来执行操作
+            finally 块则是无论异常是否发生，都会执行 finally 块的内容
+        
+        finalize - 方法名
+            finalize() 方法是在垃圾收集器删除对象之前对这个对象调用的
+            它是在 object 内中定义的，所有的类都继承了它
 
 ### 25.一个汉字几个字节？一个 char 类型的变量，可以存储一个汉字吗？为什么可以或不可以。
 
-
+        两个字节，可以存储，前提是汉字必须是 Unicode 编码
 
 ### 26.列举至少9个 linux 系统操作命令，并给出汉字解释？
 
