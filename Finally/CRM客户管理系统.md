@@ -763,5 +763,258 @@
             </select>
 
 ### 增加、修改
+* 开发步骤：
+    * 1：通过前端获取增加、修改的接口地址
+    * 2：添加查询所有部门信息接口
+    * 3：添加根据部门ID查询当前部门下所有角色信息的接口
+    * 4：添加保存、修改的方法controller
+    * 5：根据是否存在用户主键ID，来区分到底是修改还是增加
+    * 6：增加和修改无需写sql语句
+
+* 示例代码：
+    * DeptController.java:
+
+            /**
+            * 部门管理模块
+            * @author likang
+            * @date   2018-4-24 上午9:06:29
+            */
+            @Controller
+            public class DeptController extends BaseController{
+            
+                @Autowired
+                private IDeptService deptService;
+            
+                /**
+                 * 查询所有部门信息
+                 * @param request
+                 * @return
+                 */
+                @RequestMapping(value = "/dept/queryDept.do",method = RequestMethod.GET)
+                public @ResponseBody String queryAllDepts(HttpServletRequest request){
+                    List<Dept> list = deptService.queryAllDepts();
+                    return jsonToPage(list);
+                }
+            
+                /**
+                 * 根据部门ID，查询当前部门下的角色信息列表
+                 * @param request
+                 * @param deptid 部门ID
+                 * @return
+                 */
+                @RequestMapping(value = "/role/queryRoleByDeptid.do",method =RequestMethod.GET)
+                public @ResponseBody String queryRolesByDeptId(HttpServletRequest request,String deptid){
+                    List<Role> list = deptService.queryRolesByDeptId(deptid);
+                    return jsonToPage(list);
+                }
+            }
+
+    * IDeptService.java:
+
+            /**
+            * 部门信息接口
+            * @author likang
+            * @date   2018-4-24 上午9:08:04
+            */
+            public interface IDeptService {
+            
+                /**
+                 * 查询所有的部门信息
+                 * @return
+                 */
+                public List<Dept> queryAllDepts();
+            
+                /**
+                 * 根据部门ID，查询角色信息
+                 * @param deptid 部门ID
+                 * @return
+                 */
+                public List<Role> queryRolesByDeptId(String deptid);
+            }
+
+    * DeptServiceImpl.java:
+
+            @Service
+            @Transactional(rollbackFor = Exception.class)
+            public class DeptServiceImpl implements IDeptService{
+            
+                @Autowired
+                IDataAccess<Dept> deptDao;
+                @Autowired
+                IDataAccess<Role> roleDao;
+            
+                public List<Dept> queryAllDepts() {
+                    List<Dept> list = deptDao.queryByStatment("queryAllDepts", null, null);
+                    return list;
+                }
+            
+                public List<Role> queryRolesByDeptId(String deptid) {
+                    Map<String, Object> param = new HashMap<String, Object>();
+                    param.put("deptid", deptid);
+                    List<Role> list = roleDao.queryByStatment("queryRolesByDeptId", param, null);
+                    return list;
+                }
+            }
+
+    * DeptMapper.xml:
+
+            <mapper namespace="com.hjcrm.entity">
+            
+                <!-- 查询所有部门 -->
+                <select id="queryAllDepts" parameterType="java.util.Map" resultType="com.hjcrm.system.entity.Dept">
+                      select
+                        d.deptid,d.deptname,d.deptparaid
+                     from hj_dept d
+                </select>
+            
+                <!-- 根据部门ID，查询角色信息 -->
+                <select id="queryRolesByDeptId" parameterType="java.util.Map" resultType="com.hjcrm.system.entity.Role">
+                       select
+                        r.roleid,r.rolename,r.deptid
+                     from hj_role r where r.deptid = #{deptid}
+                </select>
+            </mapper>
+
+    * mybatis-config.xml:
+
+            <mappers>
+                <mapper resource="commonsqlmappings/CommonMapper.xml" />
+                <mapper resource="mybatis/UserMapper.xml"/>
+                <mapper resource="mybatis/DeptMapper.xml"/>
+            </mappers>
+
+    * UserController.java:
+
+            /**
+            * 增加\修改用户信息
+            * @param request
+            * @param user
+            * @return
+            */
+            @RequestMapping(value = "/system/saveOrUpdate.do",method = RequestMethod.POST)
+            public @ResponseBody String saveOrUpdateUser(HttpServletRequest request,User user){
+                if (user != null) {
+                    userService.saveOrUpdateUser(user);
+                    return ReturnConstants.SUCCESS;
+                }
+                return ReturnConstants.PARAM_NULL;
+            }
+
+    * IUserService.java:
+
+            /**
+            * 增加、修改用户信息
+            * @param user
+            */
+            public void saveOrUpdateUser(User user);
+            </code></pre>
+            
+            <p>UserServiceImpl.java:</p>
+            <pre><code>public void saveOrUpdateUser(User user) {
+                if (user != null) {
+                    if (user.getUserid() != null) {//修改
+                        user.setUpdate_id(UserContext.getLoginUser().getUserid());
+                        user.setUpdate_time(new Timestamp(System.currentTimeMillis()));
+                        userDao.update(user);
+                    }else{//增加
+                        user.setCreate_id(UserContext.getLoginUser().getUserid());
+                        user.setCreate_time(new Timestamp(System.currentTimeMillis()));
+                        userDao.insert(user);
+                    }
+                }
+            }
+
 ### 删除
+* 开发步骤：
+    * 1：通过前端找到删除的接口地址(支持批量删除，真正企业做的时候，接口是后台来定义)
+    * 2：增加删除的接口和方法
+
+* 示例代码：
+    * UserController.java:
+
+            /**
+            * 删除用户信息，支持批量删除
+            * @param request
+            * @param ids 用户主键ID，多个用逗号隔开
+            * @return
+            */
+            @RequestMapping(value = "/system/deleteUser.do",method = RequestMethod.POST)
+            public @ResponseBody String deleteUsers(HttpServletRequest request,String ids){
+                if (StringUtils.isNotBlank(ids)) {
+                    userService.deleteUserByIds(ids);
+                    return ReturnConstants.SUCCESS;
+                }
+                return ReturnConstants.PARAM_NULL;
+            }
+
+    * IUserService.java:
+
+            /**
+            * 删除用户信息，批量删除
+            * @param ids 用户主键ID，多个用逗号隔开
+            */
+            public void deleteUserByIds(String ids);
+
+
+    * UserServiceImpl.java:
+    
+            public void deleteUserByIds(String ids) {
+                if (StringUtils.isNotBlank(ids)) {
+                    userDao.deleteByIds(User.class, ids);
+                }
+            }
+
+* 提示：
+    * 1：回顾mysql的删除别名问题
+    * 2：练习mybatis中的for标签
+
 ### 页面展示
+![](https://i.imgur.com/rUyy9qq.png)
+
+## 测试环境项目部署过程
+* 系统环境：
+    * linux-CentOS7
+
+* 使用工具：
+    * CRT\SCP
+
+* 部署步骤：
+    * 1：首先确认本地访问运行没有任何问题
+    * 2：导出本地的数据库脚本，将脚本文件在虚拟机服务器的数据库中执行
+    * 3：使用scp工具连接服务器，将本地tomcat的webapps目录下的项目，拖到虚拟机服务器tomcat的webapps目录下(可选：修改项目访问名称，ROOT在访问时，不需要输入)
+    * 4：修改虚拟机服务器中项目的jdbc配置文件，修改为虚拟机数据库的连接信息
+    * 5：使用crt工具，启动tomcat
+    * 6：本地访问服务器项目信息
+
+* 注意事项：
+    * 1：本地连接服务器的数据库，需要开启3306端口号(防火墙允许3306端口允许)
+    
+            命令：/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
+
+    * 2：需要开启tomcat访问的端口号，命令如下：
+    
+            /sbin/iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+
+    * 3：如果新增增量补丁，如下地方是需要重启tomcat服务的
+    
+            - 接口代码
+            - 配置文件、属性文件
+            - xml对应的sql语句
+            
+    * 4：查看服务器mysql是否开启的命令
+    
+                ps -ef|grep mysql
+
+<h2>菜单管理</h2>
+<h3>跳转页面</h3>
+<h3>查询</h3>
+<h3>增加、修改</h3>
+<h3>删除</h3>
+<h2>角色管理</h2>
+<h3>跳转页面</h3>
+<h3>查询</h3>
+<h3>增加、修改</h3>
+<h3>删除</h3>
+<h3>权限分配</h3>
+
+
