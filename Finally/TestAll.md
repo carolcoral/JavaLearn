@@ -364,6 +364,7 @@
 
             Redis：数据量比较小的侧重性能操作和运算上
             MongoDB：主要解决海量数据的访问效率问题
+            [NoSQL | Redis、Memcache、MongoDB特点、区别以及应用场景](https://mp.weixin.qq.com/s?__biz=MzIxMjg4NDU1NA==&mid=2247484268&idx=1&sn=5431c00c451ebeca8aa99ae59f05a3a2&chksm=97be0e49a0c9875fa918412aa0d2544c8dbb02b8875382b08217b1e7818e7ae913d72ae4107c&scene=21#wechat_redirect)
 
 ### 39.Java 如何连接 MongoDB，写出逻辑代码？
 
