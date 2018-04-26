@@ -343,16 +343,45 @@
 
 ### 34.Redis 支持哪些数据类型的存储？
 
+            string、list、set、zset、hash
+
 ### 35.Java 如何调用 Redis 进行数据操作，并列举增删改查操作？
+
+            - 导包
+            - Jedis jd = new Jedis(IP);
+            - jd.ping();//PONG
 
 ### 36.NoSQL 主要支持哪两种数据存储系统？
 
+            Redis:key-value
+            MongoDB:文档存储
+
 ### 37.MongDB 的体系逻辑结构，主要由什么组成？
+
+            文档（document）、集合（collection）、数据库（database）
 
 ### 38.Redis 和 MongoDB 分别应用于哪些应用场景？
 
+            Redis：数据量比较小的侧重性能操作和运算上
+            MongoDB：主要解决海量数据的访问效率问题
+
 ### 39.Java 如何连接 MongoDB，写出逻辑代码？
 
-### 40.
+            导包
+            //建立连接
+            MongoClient mc = new MongoClient("192.168.0.1",27017);
+            MongoDatabase db = mc.getDatabase("db1");//数据库名称
 
-### 41.
+### 40.如何给一张表增加一个字段，写出 sql 语句？
+
+### 41.==与 equals 有什么区别？
+
+### 42.++i与i++的区别？
+
+### 42.List 和 Map 有什么区别？
+
+### 42.Integer 与 int 的区别？
+
+### 45.ArrayList 和 LinkedList 的区别？
+
+### 46.分别写出 OracleSQL、MySQL 的分页关键词？
