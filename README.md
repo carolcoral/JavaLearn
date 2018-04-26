@@ -413,7 +413,7 @@
 
 >4.[技术架构、负载架构、二维码工具类](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E3%80%81%E8%B4%9F%E8%BD%BD%E6%9E%B6%E6%9E%84%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
 
->5.[CRM 客户管理系统](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CRM%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.md)
+>5.[CRM 客户管理系统](https://github.com/carolcoral/CRM-customer-management-system)
 
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
