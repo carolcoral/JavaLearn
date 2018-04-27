@@ -415,6 +415,8 @@
 
 >5.[CRM 客户管理系统](https://github.com/carolcoral/CRM)
 
+>6.[P2P 金融借贷平台](https://github.com/carolcoral/P2P)
+
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
 ## <a href="javascript:" name="buchong">补   充</a>
