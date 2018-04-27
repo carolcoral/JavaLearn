@@ -29,12 +29,12 @@
 ### 4.接口和抽象类有什么区别
 
         1.定义抽象类的关键字是class，而定义接口的关键字是intenface；
-        2.继承抽象类使用extends，而实现接口使用implements；
-        3.抽象类支持单继承，而接口支持多实现；
-        4.抽象类可以有构造方法，而接口中不可以有；
-        5.接口中只允许出现常量，而抽象类中可以有变量；
-        6.接口中只允许有抽象方法，而抽象类可以有非抽象方法；
-        7.接口中增加方法一定会影响实现类，而抽象类可以不影响；
+    	2.继承抽象类使用extends，而实现接口使用implements；
+    	3.抽象类支持单继承，而接口支持多实现；
+    	4.抽象类可以有构造方法，而接口中不可以有；
+    	5.接口中只允许出现常量，而抽象类中可以有变量；
+    	6.接口中只允许有抽象方法，而抽象类可以有非抽象方法；
+    	7.接口中增加方法一定会影响实现类，而抽象类可以不影响；
 
 
 ### 5.写出 JDBC 操作数据库的步骤
@@ -284,105 +284,155 @@
 
 ### 28.简要说明 SSH 框架搭建步骤？
 
-            1.Struts2
-                - 导包
-                - 加载 struts.xml
-                - 配置 web.xml
-                    - filter
-            2.Struts2+Spring
-                - 导中间包、Spring 包
-                - 增加 spring 的配置文件 ApplicationContext.xml
-                - 配置 web.xml
-                    - context 和监听
-            3.Hibernate
-                - 导包
-                - 增加 hibernate 的配置文件 hibernate.hbm.cfg 和表的映射文件
-                    - 配置数据库的方言（SQLServer、MySQL、OracleSQL）和连接、加载映射文件
-            4.Hibernate+Spring
-                - 导中间包
-                - 在spring 的配置文件中加载 Hibernate 的配置信息
+        1.Struts2
+            - 导包
+            - 加载 struts.xml
+            - 配置 web.xml
+                - filter
+        2.Struts2+Spring
+            - 导中间包、Spring 包
+            - 增加 spring 的配置文件 ApplicationContext.xml
+            - 配置 web.xml
+                - context 和监听
+        3.Hibernate
+            - 导包
+            - 增加 hibernate 的配置文件 hibernate.hbm.cfg 和表的映射文件
+            - 配置数据库的方言（SQLServer、MySQL、OracleSQL）和连接、加载映射文件
+        4.Hibernate+Spring
+            - 导中间包
+            - 在spring 的配置文件中加载 Hibernate 的配置信息
 
 ### 29.简要说明 SSM 框架搭建步骤？
 
-            1.Spring
-                - 导包
-                - 增加 spring 的配置文件 ApplicationContext.xml
-                - 配置 web.xml
-            2.SpringMVC（建议优先导入 SpringMVC 的包避免和 Spring 的包冲突）
-                - 导包
-                - 增加 SpringMVC 的配置文件 context-dispatcher.xml（在包中可以找到头部信息）
-                - 配置 web.xml
-            3.mybatis
-                - 导包
-                - 增加 mybatis 的配置文件 mybatis-config.xml
-                - 将 mybatis 的配置文件在 Spring 和  SpringMVC 中进行引用和配置
+        1.Spring
+            - 导包
+            - 增加 spring 的配置文件 ApplicationContext.xml
+            - 配置 web.xml
+        2.SpringMVC（建议优先导入 SpringMVC 的包避免和 Spring 的包冲突）
+            - 导包
+            - 增加 SpringMVC 的配置文件 context-dispatcher.xml（在包中可以找到头部信息）
+            - 配置 web.xml
+        3.mybatis
+            - 导包
+            - 增加 mybatis 的配置文件 mybatis-config.xml
+            - 将 mybatis 的配置文件在 Spring 和  SpringMVC 中进行引用和配置
 
 ### 30.多线程中 run 和 start 方法有什么区别？
 
-            Thread 的 start 才是正在开启线程
-            Run 只是调用了一个普通方法，并没有启动另一个线程，程序还是会按照顺序执行相应的代码
-            Start 则表示重新开启一个线程，不必等待其他线程运行完，只要得到 CPU 就可以运行该线程
+        Thread 的 start 才是正在开启线程
+        Run 只是调用了一个普通方法，并没有启动另一个线程，程序还是会按照顺序执行相应的代码
+        Start 则表示重新开启一个线程，不必等待其他线程运行完，只要得到 CPU 就可以运行该线程
 
 ### 31.静态变量和实例变量有什么区别？
 
-            静态变量前面要加 static，实例变量不用
-            实例变量属于对象的属性，必须创建了实例对象才可以被使用
-            静态变量不属于某个实例对象，而是属于类，也叫类变量，不用创建任何实例对象就会被使用
+        静态变量前面要加 static，实例变量不用
+        实例变量属于对象的属性，必须创建了实例对象才可以被使用
+        静态变量不属于某个实例对象，而是属于类，也叫类变量，不用创建任何实例对象就会被使用
 
 ### 32.前后台数据交互的方式有哪些？
 
-            json、file、xml、jsonp 等
+        json、file、xml、jsonp 等
 
 ### 33.字节流和字符流有什么区别？
 
-            字节流：按字节读写
-            字符流：按字符读写
+        字节流：按字节读写
+        字符流：按字符读写
             
-            通常在处理文本时优先使用字符流，其他的用字节流
-            字节流在操作时本身不会用到缓冲区（内存），是文件本身直接操作的，而字符流在操作时使用了缓冲区，通过缓冲区再操作文件
+        通常在处理文本时优先使用字符流，其他的用字节流
+        字节流在操作时本身不会用到缓冲区（内存），是文件本身直接操作的，而字符流在操作时使用了缓冲区，通过缓冲区再操作文件
 
 ### 34.Redis 支持哪些数据类型的存储？
 
-            string、list、set、zset、hash
+        string、list、set、zset、hash
 
 ### 35.Java 如何调用 Redis 进行数据操作，并列举增删改查操作？
 
-            - 导包
-            - Jedis jd = new Jedis(IP);
-            - jd.ping();//PONG
+        - 导包
+        - Jedis jd = new Jedis(IP);
+        - jd.ping();//PONG
 
 ### 36.NoSQL 主要支持哪两种数据存储系统？
 
-            Redis:key-value
-            MongoDB:文档存储
+        Redis:key-value
+        MongoDB:文档存储
 
 ### 37.MongDB 的体系逻辑结构，主要由什么组成？
 
-            文档（document）、集合（collection）、数据库（database）
+        文档（document）、集合（collection）、数据库（database）
 
 ### 38.Redis 和 MongoDB 分别应用于哪些应用场景？
 
-            Redis：数据量比较小的侧重性能操作和运算上
-            MongoDB：主要解决海量数据的访问效率问题
-            [NoSQL | Redis、Memcache、MongoDB特点、区别以及应用场景](https://mp.weixin.qq.com/s?__biz=MzIxMjg4NDU1NA==&mid=2247484268&idx=1&sn=5431c00c451ebeca8aa99ae59f05a3a2&chksm=97be0e49a0c9875fa918412aa0d2544c8dbb02b8875382b08217b1e7818e7ae913d72ae4107c&scene=21#wechat_redirect)
+        Redis：数据量比较小的侧重性能操作和运算上
+        MongoDB：主要解决海量数据的访问效率问题
+            
+* [NoSQL | Redis、Memcache、MongoDB特点、区别以及应用场景](https://mp.weixin.qq.com/s?__biz=MzIxMjg4NDU1NA==&mid=2247484268&idx=1&sn=5431c00c451ebeca8aa99ae59f05a3a2&chksm=97be0e49a0c9875fa918412aa0d2544c8dbb02b8875382b08217b1e7818e7ae913d72ae4107c&scene=21#wechat_redirect)
 
 ### 39.Java 如何连接 MongoDB，写出逻辑代码？
 
-            导包
-            //建立连接
-            MongoClient mc = new MongoClient("192.168.0.1",27017);
-            MongoDatabase db = mc.getDatabase("db1");//数据库名称
+        导包
+        //建立连接
+        MongoClient mc = new MongoClient("192.168.0.1",27017);
+        MongoDatabase db = mc.getDatabase("db1");//数据库名称
 
 ### 40.如何给一张表增加一个字段，写出 sql 语句？
 
+        alert table 表名 add 字段 类型 NOT NULL Default 0;
+
 ### 41.==与 equals 有什么区别？
+
+        ==：比较两个数据内存地址是否相同
+        equals：比较两个数据是否一样
 
 ### 42.++i与i++的区别？
 
+        ++i：先赋值，后运算
+        i++：先运算，后赋值
+
 ### 42.List 和 Map 有什么区别？
+
+        list：
+            - 链表
+            - 有序
+            - 继承 Collection（set 也是）
+            - 可以有重复对象值，但是对象下标不能重复
+        map：
+            - key-value
+            - 无序
+            - 键不能有重复的，值可以重复或为空
 
 ### 42.Integer 与 int 的区别？
 
+        int：是基本数据类型，初值为0
+        Integer：是 int 的包装类，初值为 null
+        Integer 缓存：注意拆箱和装箱（-128 - 127之间）
+        
+        原始类型：boolean、char、byte、short、int、long、float、double
+        包装类型：Boolean、Character、Byte、Short、Integer、Long、Float、Double
+
 ### 45.ArrayList 和 LinkedList 的区别？
 
+        ArrayList、LinkedList、Vector 和 Stack 是 List 的四个实现类，其中 Vector 是基于 JDK1.0，虽然实现了同步，但是效率低，已经不使用了，Stack 继承 Vector
+        
+        区别：
+            - ArrayList 是实现了基于动态数组的数据结构，而 LinkedList 是基于链表的数据结构
+            - 对于随机访问 get 和 set，ArrayList 要优于 LinkedList，LinkedList 不支持高效的随机访问
+            - ArrayList 适合查找，LinkedList 适合增删
+
 ### 46.分别写出 OracleSQL、MySQL 的分页关键词？
+
+        Oracle：rownum 关键词、row_number()函数
+        MySQL：limit 0,5    /    limit  5;
+
+### 47.谈谈你对 MVC 的理解？
+
+### 48.如果 equals 方法比较为 true，那么他们的 Hashcode值一定相同吗？如果 hashcode 相同，那么 equals 方法比较一定为 true 吗？
+
+### 49.简述 servlet 生命周期？
+
+### 50.进程和线程的区别是什么？
+
+### 51.进程的几种状态分别是什么？
+
+### 52.重载和重写的区别是什么？
+
+### 53.JDK 和 JRE 的关系区别是什么？
