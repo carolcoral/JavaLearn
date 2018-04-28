@@ -417,6 +417,12 @@
 
 >6.[P2P 金融借贷平台](https://github.com/carolcoral/P2P)
 
+>7.[JEECMS内容管理系统-自动化建站](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JEECMS内容管理系统安装及使用.md)
+
+>8.[支付宝、微信第三方支付功能，抢红包流程](https://github.com/carolcoral/JavaLearn/blob/master/Finally/支付宝、微信第三方支付功能.md)
+
+>9.[直播、录播、点播](https://github.com/carolcoral/JavaLearn/blob/master/Finally/直播、录播、点播.md)
+
 >1.[JAVA面试汇总（附答案）](https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md)
  
 ## <a href="javascript:" name="buchong">补   充</a>
