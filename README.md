@@ -432,6 +432,8 @@
 
 >11.[WebService加密数据接口、SSO单点登录](https://github.com/carolcoral/JavaLearn/blob/master/Finally/WebService%E3%80%81SSO%20%E6%8A%80%E6%9C%AF.md)
 
+>12.[JVM 调优](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JVM%20%E8%B0%83%E4%BC%98.md)
+
 ## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
  
 ## <a href="javascript:" name="buchong">补   充</a>
