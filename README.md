@@ -430,6 +430,8 @@
 
 >10.[Nginx 负载均衡配置](https://blog.csdn.net/xyang81/article/details/51702900)
 
+>11.[WebService加密数据接口、SSO单点登录](https://github.com/carolcoral/JavaLearn/blob/master/Finally/WebService%E3%80%81SSO%20%E6%8A%80%E6%9C%AF.md)
+
 ## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
  
 ## <a href="javascript:" name="buchong">补   充</a>
