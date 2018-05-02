@@ -12,11 +12,11 @@
 <p class="second">安装过程</p>
 <p>1. 下载并解压</p>
 <div class="cnblogs_code">
-<pre></pre>
+<pre>
 <div class="line number1 index0 alt2"><code class="bash functions">cd</code> <code class="bash plain">/root/software</code></div>
 <div class="line number2 index1 alt1"><code class="bash plain">wget http:</code><code class="bash plain">//download</code><code class="bash plain">.redis.io</code><code class="bash plain">/releases/redis-3</code><code class="bash plain">.2.4.</code><code class="bash functions">tar</code><code class="bash plain">.gz</code></div>
 <div class="line number2 index1 alt1"><span style="color: #008000;"><code class="bash functions">tar</code> <code class="bash plain">-zxvf redis-3.2.4.</code><code class="bash functions">tar</code><code class="bash plain">.gz　</code><br /></span></div>
-</div>
+</div></pre>
 <p>2. 编译安装</p>
 <div class="cnblogs_code">
 <pre>cd redis-<span style="color: #800080;">3.2</span>.<span style="color: #800080;">4</span><span style="color: #000000;">
@@ -132,92 +132,3 @@ tcp        </span><span style="color: #800080;">0</span>      <span style="color
 <p data-anchor-id="n789">Redis 集群会把数据存在一个 master 节点，然后在这个 master 和其对应的salve 之间进行数据同步。当读取数据时，也根据一致性哈希算法到对应的 master 节点获取数据。只有当一个master 挂掉之后，才会启动一个对应的 salve 节点，充当 master 。</p>
 <p data-anchor-id="n789">需要注意的是：必须要<code>3个或以上</code>的主节点，否则在创建集群时会失败，并且当存活的主节点数小于总节点数的一半时，整个集群就无法提供服务了。</p>
 <p data-anchor-id="6uac">&nbsp;</p>
-<p>人生没有回头路，珍惜当下。<span id="transmark" style="display: none; width: 0px; height: 0px;"></span></p>
-<p>&nbsp;</p></div><div id="MySignature"></div>
-<div class="clear"></div>
-<div id="blog_post_info_block">
-<div id="BlogPostCategory"></div>
-<div id="EntryTag"></div>
-<div id="blog_post_info">
-</div>
-<div class="clear"></div>
-<div id="post_next_prev"></div>
-</div>
-
-</div>
-		<p class="postfoot">
-			posted on <span id="post-date">2016-09-29 16:22</span> <a href='http://www.cnblogs.com/wuxl360/'>邬兴亮</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=5920330" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(5920330);return false;">收藏</a>
-		</p>
-	</div>
-	<script type="text/javascript">var allowComments=true,cb_blogId=281376,cb_entryId=5920330,cb_blogApp=currentBlogApp,cb_blogUserGuid='1246c5cd-5308-e611-9fc1-ac853d9f53cc',cb_entryCreatedDate='2016/9/29 16:22:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
-	
-	</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
-<div id='comment_form' class='commentform'>
-<a name='commentform'></a>
-<div id='divCommentShow'></div>
-<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
-<div id='comment_form_container'></div>
-<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
-<div id='ad_t2'></div>
-<div id='opt_under_post'></div>
-<div id='cnblogs_c1' class='c_ad_block'></div>
-<div id='under_post_news'></div>
-<div id='cnblogs_c2' class='c_ad_block'></div>
-<div id='under_post_kb'></div>
-<div id='HistoryToday' class='c_ad_block'></div>
-<script type='text/javascript'>
-    fixPostBody();
-    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
-    deliverAdT2();
-    deliverAdC1();
-    deliverAdC2();    
-    loadNewsAndKb();
-    loadBlogSignature();
-    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
-    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
-    loadOptUnderPost();
-    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
-</script>
-</div>
-
-
-</div>
-<div id="rightmenu">
-	
-		
-<h3>导航</h3>
-<ul>
-<li><a id="blog_nav_sitehome" href="http://www.cnblogs.com/">博客园</a></li>
-<li><a id="blog_nav_myhome" href="http://www.cnblogs.com/wuxl360/">首页</a></li>
-<li><a id="blog_nav_newpost" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
-<li><a id="blog_nav_contact" accesskey="9" rel="nofollow" href="https://msg.cnblogs.com/send/%E9%82%AC%E5%85%B4%E4%BA%AE">联系</a></li>
-<li><a id="blog_nav_rss" href="http://www.cnblogs.com/wuxl360/rss">订阅</a><a id="blog_nav_rss_image" href="http://www.cnblogs.com/wuxl360/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a></li>
-<li><a id="blog_nav_admin" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
-</ul>
-		
-<h3>公告</h3>
-<div class="newsItem">
-	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
-</div>					
-		<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
-		<div id="blog_stats">
-<h3>统计</h3>
-<ul>
-	<li>随笔 - 311</li>
-	<li>文章 - 1</li>
-	<li>评论 - 57</li>
-	<li>引用 - 0</li>
- </ul></div>
-		<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
-		
-<div id="footer">
-	Powered by: 
-	<br />
-	<a id="Footer1_Hyperlink3" href="http://www.cnblogs.com/" style="font-family:Verdana;font-size:12px;">博客园</a>
-	<br />
-	Copyright &copy; 邬兴亮
-</div>
-	
-</div>			
-			
-
