@@ -63,7 +63,12 @@
 </br>
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#buchong" style="text-decoration: none;display: block;">七、补  充</a>
+<a href="#baodian" style="text-decoration: none;display: block;">七、面试宝典</a>
+</li>
+</br>
+
+<li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
+<a href="#buchong" style="text-decoration: none;display: block;">八、补  充</a>
 </li>
 </br>
 
@@ -437,6 +442,8 @@
 >13.[CentOS 安装 mysql5.7](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CentOS%20安装%20mysql5.7.md)
 
 ## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
+
+## <a id="baodian" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/面试宝典.md#m1">面试宝典</a>
  
 ## <a href="javascript:" name="buchong">补   充</a>
 
