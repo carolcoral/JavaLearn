@@ -441,6 +441,10 @@
 
 >13.[CentOS 安装 mysql5.7](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CentOS%20安装%20mysql5.7.md)
 
+>14.[MySQL 主从配置说明](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置说明.md)
+
+>15.[MySQL 主从配置知识点](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置知识点.md)
+
 ## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
 
 ## <a id="baodian" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/面试宝典.md">面试宝典</a>
