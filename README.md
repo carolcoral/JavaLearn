@@ -46,7 +46,6 @@
 <ul style="display: block;margin-top: 5px;">
 <li style="display: block;padding: 4px;"><a href="#spring_arithmetic" style="text-decoration: none;display: block;">Arithmetic 资料</a></li>
 <li style="display: block;padding: 4px;"><a href="#spring_code" style="text-decoration: none;display: block;">Code 代码</li>
-<li style="display: block;padding: 4px;"><a href="#spring_exam" style="text-decoration: none;display: block;">Exam 测试</li>
 <li style="display: block;padding: 4px;"><a href="#spring_program" style="text-decoration: none;display: block;">Program 项目</li>
 </ul>
 </li>
@@ -405,9 +404,6 @@
      >20.[hibernate 添加操作、主键生成器、配置生成器、增删改查操作、分页查询、统计查询、Criteria、Native](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-04)
 
      >21.[注解映射、关联映射、多对多映射、Hibernate 延迟加载（懒加载）、对象持久化、缓存、Spring和Hibernate整合](https://github.com/carolcoral/JavaLearn/tree/master/Frame/Code/SSH-05)
-
-* ### <a name="spring_exam">Exam（框架学习阶段测试）</a>
-
  
 * ### <a name="spring_program">Program（阶段项目）</a>
 
