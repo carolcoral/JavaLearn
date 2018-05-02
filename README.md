@@ -445,6 +445,8 @@
 
 >15.[MySQL 主从配置知识点](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置知识点.md)
 
+>16.[Redis 集群搭建和简单使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Redis%20集群搭建和简单使用.md)
+
 ## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
 
 ## <a id="baodian" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/面试宝典.md">面试宝典</a>
