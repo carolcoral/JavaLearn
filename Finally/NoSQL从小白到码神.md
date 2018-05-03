@@ -3,45 +3,45 @@
 <p>作者：康哥</p>
 <p>本课程适用于运维、开发相关人员。</p>
 <p>课程目录：</p>
-<pre><code>- NoSQL背景
-- NoSQL简介
-- NoSQL和关系型数据库对比
 
-- Redis简介
-- Redis下载安装配置(Linux环境)
-- Redis优点
-- Redis性能
-- Redis常见命令
-- Redis数据类型
-- Redis的功能
-    - Redis发布/订阅
-    - Redis事务支持
-    - Redis主从复制(集群)
-    - Redis持久化
-- Java操作Redis示例
-- Redis总结
-
-- MongoDB简介
-- MongoDB下载安装(Linux)
-- MongoDB基本操作
-    - 体系结构
-    - 启动、停止数据库
-    - 连接数据库
-    - 增删改查操作
-    - 高级查询操作
-    - 数据备份、恢复
-    - 访问控制
-    - 索引
-    - Replica Sets
-    - 自动分片（Auto-Sharding）
-- MongoDB常见命令
-- MongoDB工具集
-- MongoDB集群搭建
-- MongoDB安全验证
-- MongoDB应用场景
-- Java操作MongoDB示例
-- MongoDB总结
-</code></pre>
+        - NoSQL背景
+        - NoSQL简介
+        - NoSQL和关系型数据库对比
+        
+        - Redis简介
+        - Redis下载安装配置(Linux环境)
+        - Redis优点
+        - Redis性能
+        - Redis常见命令
+        - Redis数据类型
+        - Redis的功能
+            - Redis发布/订阅
+            - Redis事务支持
+            - Redis主从复制(集群)
+            - Redis持久化
+        - Java操作Redis示例
+        - Redis总结
+        
+        - MongoDB简介
+        - MongoDB下载安装(Linux)
+        - MongoDB基本操作
+            - 体系结构
+            - 启动、停止数据库
+            - 连接数据库
+            - 增删改查操作
+            - 高级查询操作
+            - 数据备份、恢复
+            - 访问控制
+            - 索引
+            - Replica Sets
+            - 自动分片（Auto-Sharding）
+        - MongoDB常见命令
+        - MongoDB工具集
+        - MongoDB集群搭建
+        - MongoDB安全验证
+        - MongoDB应用场景
+        - Java操作MongoDB示例
+        - MongoDB总结
 
 <h1>NoSQL篇</h1>
 <h2></h2>
@@ -236,7 +236,7 @@ Please select the redis executable path [/usr/lksoft/redis/bin/redis-server]
 </code></pre>
 
 <p><img src="https://i.imgur.com/zcXfJVD.png" /></p>
-<p>发现：Copied /tmp/6379.conf =&gt; /etc/init.d/redis_6379</p>
+<p>发现：Copied /tmp/6379.conf => /etc/init.d/redis_6379</p>
 <p>14：修改启动的名称</p>
 <pre><code>cd /etc/init.d/
 mv redis_6379 redisd
@@ -481,12 +481,12 @@ slaveof 175.41.209.118 6379
 </ul>
 <h3>Java操作Redis示例</h3>
 <p>所需jar包：</p>
-<pre><code>&lt;!-- https://mvnrepository.com/artifact/redis.clients/jedis --&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;redis.clients&lt;/groupId&gt;
-    &lt;artifactId&gt;jedis&lt;/artifactId&gt;
-    &lt;version&gt;2.9.0&lt;/version&gt;
-&lt;/dependency&gt;
+<pre><code><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    <version>2.9.0</version>
+</dependency>
 </code></pre>
 
 <p>java操作：</p>
@@ -499,40 +499,40 @@ import redis.clients.jedis.Jedis;
 public class RedisTest {
 
     public static void main(String[] args) {
-        Jedis jd = new Jedis(&quot;39.106.131.203&quot;);
-        System.out.println(&quot;连接redis成功&quot;);
-    //  System.out.println(&quot;服务正在运行&quot; + jd.ping());
+        Jedis jd = new Jedis("39.106.131.203");
+        System.out.println("连接redis成功");
+    //  System.out.println("服务正在运行" + jd.ping());
 
         /**
          * 操作string类型
          */
 
-    //  jd.set(&quot;key2&quot;, &quot;java1212&quot;);
-    //  System.out.println(&quot;redis中存储的值为：&quot;+jd.get(&quot;key2&quot;));
+    //  jd.set("key2", "java1212");
+    //  System.out.println("redis中存储的值为："+jd.get("key2"));
 
         /**
          * 操作list类型
          */
 
-    //  jd.lpush(&quot;list&quot;, &quot;listvalue1&quot;);
-    //  jd.lpush(&quot;list&quot;, &quot;listvalue2&quot;);
-    //  jd.lpush(&quot;list&quot;, &quot;listvalue3&quot;);
+    //  jd.lpush("list", "listvalue1");
+    //  jd.lpush("list", "listvalue2");
+    //  jd.lpush("list", "listvalue3");
     //      
-    //  List&lt;String&gt; list = jd.lrange(&quot;list&quot;, 0, 2);
-    //  for (int i = 0; i &lt; list.size(); i++) {
-    //      System.out.println(&quot;list的结果是：&quot; + list.get(i));
+    //  List<String> list = jd.lrange("list", 0, 2);
+    //  for (int i = 0; i < list.size(); i++) {
+    //      System.out.println("list的结果是：" + list.get(i));
     //  }
 
         /**
          * 操作set类型
          */
 
-        jd.sadd(&quot;setKey1&quot;, &quot;setvalue1&quot;);
-        jd.sadd(&quot;setKey1&quot;, &quot;setvalue2&quot;);
-        jd.sadd(&quot;setKey1&quot;, &quot;setvalue3&quot;);
-        Set&lt;String&gt; keys = jd.keys(&quot;*&quot;);
-    //  Set&lt;String&gt; keys = jd.smembers(&quot;setKey1&quot;);
-        Iterator&lt;String&gt; it = keys.iterator();
+        jd.sadd("setKey1", "setvalue1");
+        jd.sadd("setKey1", "setvalue2");
+        jd.sadd("setKey1", "setvalue3");
+        Set<String> keys = jd.keys("*");
+    //  Set<String> keys = jd.smembers("setKey1");
+        Iterator<String> it = keys.iterator();
         while(it.hasNext()){
             String key = it.next();
             System.out.println(key);
@@ -577,9 +577,9 @@ Redis更多场景是作为Memcached的替代者来使用。
 <p>模式自由（schema-free)</p>
 <ul>
 <li>
-<p>意味着对于存储在 MongoDB 数据库中的文件，我们不需要知道它的任何结构定义。提了这么多次&quot;无模式&quot;或&quot;模式自由&quot;，它到是个什么概念呢？ 例如，下面两个记录可以存在于同一个集合里面：</p>
-<p>{&quot;welcome&quot; : &quot;Beijing&quot;} </p>
-<p>{&quot;age&quot; : 25} </p>
+<p>意味着对于存储在 MongoDB 数据库中的文件，我们不需要知道它的任何结构定义。提了这么多次"无模式"或"模式自由"，它到是个什么概念呢？ 例如，下面两个记录可以存在于同一个集合里面：</p>
+<p>{"welcome" : "Beijing"} </p>
+<p>{"age" : 25} </p>
 </li>
 </ul>
 <p>文档型:</p>
@@ -759,7 +759,7 @@ repairpath
 <pre><code>show dbs:显示数据库列表 
 show collections：显示当前数据库中的集合（类似关系数据库中的表） 
 show users：显示用户
-use &lt;db name&gt;：切换当前数据库，这和MS-SQL里面的意思一样 
+use <db name>：切换当前数据库，这和MS-SQL里面的意思一样 
 db.help()：显示数据库操作命令，里面有很多的命令 
 db.foo.help()：显示集合操作命令，同样有很多的命令，foo指的是当前数据库下，一个叫foo的集合，并非真正意义上的命令 
 db.foo.find()：对于当前数据库中的foo集合进行数据查找（由于没有条件，会列出所有数据） 
@@ -779,12 +779,12 @@ MongoDB没有创建数据库的命令，但有类似的命令。
 <li>
 <p>添加文档：</p>
 <pre><code>db.users.insert({ 
-    “_id”:ObjectId(&quot;52c3c518498a9646a48133a2&quot;),
+    “_id”:ObjectId("52c3c518498a9646a48133a2"),
     “name”:“likang”, 
     “email”:“likang@qq.com”
 }); 
 db.users.save({ 
-    “_id”:ObjectId(&quot;52c3c518498a9646a48133a2&quot;),
+    “_id”:ObjectId("52c3c518498a9646a48133a2"),
     “name”:“likang2”, 
     “email”:“likang2@qq.com”
 }); 
@@ -810,14 +810,14 @@ db.user.drop();
 <p>更新文档：</p>
 <pre><code>    原⽂档：
     { 
-        “_id”:ObjectId(&quot;52c3c518498a9646a48133a2&quot;),
+        “_id”:ObjectId("52c3c518498a9646a48133a2"),
         “name”:“likang”, 
         “email”:“likang@qq.com”
     } 
     !
     修改后的⽂档：
     { 
-        “_id”:ObjectId(&quot;52c3c518498a9646a48133a2&quot;),
+        “_id”:ObjectId("52c3c518498a9646a48133a2"),
         “name”:“likang”, 
         “email”:[
             “likang@qq.com”, 
@@ -825,16 +825,16 @@ db.user.drop();
         ] 
     }
 
-    var doc = db.users.findOne({&quot;name&quot; : “likang”});
+    var doc = db.users.findOne({"name" : “likang”});
     doc.email =[ 
         “likang@qq.com”, 
         “likang2@qq.com” 
     ]; 
-    db.users.update({ &quot;name&quot; : &quot;likang&quot; }, doc);
+    db.users.update({ "name" : "likang" }, doc);
 
     // 更新:指定第三个参数为true可以开启upsert模式
     //根据条件查找不到数据则创建⼀条新的
-    db.users.update({ &quot;name&quot; : &quot;likang&quot; }, doc, true);
+    db.users.update({ "name" : "likang" }, doc, true);
 </code></pre>
 
 <ul>
@@ -863,11 +863,11 @@ mongod </li>
 <ul>
 <li>
 <p>配置所需jar包</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
-    &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-    &lt;version&gt;3.3.0&lt;/version&gt;
-&lt;/dependency&gt;
+<pre><code><dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongo-java-driver</artifactId>
+    <version>3.3.0</version>
+</dependency>
 </code></pre>
 
 </li>
@@ -880,7 +880,7 @@ mongod </li>
  */
 public class MongoDbUtil {
 
-    private static MongoCollection&lt;Document&gt; collection;
+    private static MongoCollection<Document> collection;
 
     /**
      * 链接数据库
@@ -891,7 +891,7 @@ public class MongoDbUtil {
      * @param port  端口号
      */
     public static void connect(String databaseName, String collectionName,String hostName, int port) {
-        @SuppressWarnings(&quot;resource&quot;)
+        @SuppressWarnings("resource")
         MongoClient client = new MongoClient(hostName, port);
         MongoDatabase db = client.getDatabase(databaseName);
         collection = db.getCollection(collectionName);
@@ -912,10 +912,10 @@ public class MongoDbUtil {
      * 
      * @return 所有文档集合
      */
-    public static List&lt;Document&gt; findAll() {
-        List&lt;Document&gt; results = new ArrayList&lt;Document&gt;();
-        FindIterable&lt;Document&gt; iterables = collection.find();
-        MongoCursor&lt;Document&gt; cursor = iterables.iterator();
+    public static List<Document> findAll() {
+        List<Document> results = new ArrayList<Document>();
+        FindIterable<Document> iterables = collection.find();
+        MongoCursor<Document> cursor = iterables.iterator();
         while (cursor.hasNext()) {
             results.add(cursor.next());
         }
@@ -930,10 +930,10 @@ public class MongoDbUtil {
      *            BsonDocumentWrapper, CommandResult, Document, RawBsonDocument
      * @return 返回集合列表
      */
-    public static List&lt;Document&gt; findBy(Bson filter) {
-        List&lt;Document&gt; results = new ArrayList&lt;Document&gt;();
-        FindIterable&lt;Document&gt; iterables = collection.find(filter);
-        MongoCursor&lt;Document&gt; cursor = iterables.iterator();
+    public static List<Document> findBy(Bson filter) {
+        List<Document> results = new ArrayList<Document>();
+        FindIterable<Document> iterables = collection.find(filter);
+        MongoCursor<Document> cursor = iterables.iterator();
         while (cursor.hasNext()) {
             results.add(cursor.next());
         }
@@ -997,13 +997,13 @@ public class MongoDbUtil {
 <pre><code>public class MongoTest {
 
     public static void main(String[] args) {
-        MongoDbUtil.connect(&quot;test&quot;, &quot;jihe1&quot;, &quot;*.*.*.*&quot;, 27017);
+        MongoDbUtil.connect("test", "jihe1", "*.*.*.*", 27017);
 //      testInsert();
 //      testFindAll();
-//      Mongo mg = new Mongo(&quot;39.106.131.203&quot;,27017);
-//        DB db = mg.getDB(&quot;jihe1&quot;);
+//      Mongo mg = new Mongo("39.106.131.203",27017);
+//        DB db = mg.getDB("jihe1");
 //        for(String s:db.getCollectionNames()){
-//          System.out.println(&quot;内容如下：&quot;);
+//          System.out.println("内容如下：");
 //            System.out.println(s);
 //        }
 //      
@@ -1011,12 +1011,12 @@ public class MongoDbUtil {
 
     public static void testInsert() {
         Document document = new Document();
-        document.append(&quot;name&quot;, &quot;likang&quot;).append(&quot;phone&quot;, &quot;18912341234&quot;);
+        document.append("name", "likang").append("phone", "18912341234");
         MongoDbUtil.insert(document);
     }
 
     public static void testFindAll() {
-        List&lt;Document&gt; results = MongoDbUtil.findAll();
+        List<Document> results = MongoDbUtil.findAll();
         for (Document doc : results) {
             System.out.println(doc.toJson());
         }
@@ -1024,8 +1024,8 @@ public class MongoDbUtil {
 
     public static void testFindBy() {
         Document filter = new Document();
-        filter.append(&quot;name&quot;, &quot;li si&quot;);
-        List&lt;Document&gt; results = MongoDbUtil.findBy(filter);
+        filter.append("name", "li si");
+        List<Document> results = MongoDbUtil.findBy(filter);
         for (Document doc : results) {
             System.out.println(doc.toJson());
         }
@@ -1033,42 +1033,42 @@ public class MongoDbUtil {
 
     public static void testUpdateOne() {
         Document filter = new Document();
-        filter.append(&quot;phone&quot;, &quot;18912341235&quot;);
-        // 注意update文档里要包含&quot;$set&quot;字段
+        filter.append("phone", "18912341235");
+        // 注意update文档里要包含"$set"字段
         Document update = new Document();
-        update.append(&quot;$set&quot;, new Document(&quot;phone&quot;, &quot;123123123&quot;));
+        update.append("$set", new Document("phone", "123123123"));
         UpdateResult result = MongoDbUtil.updateOne(filter, update);
-        System.out.println(&quot;matched count = &quot; + result.getMatchedCount());
+        System.out.println("matched count = " + result.getMatchedCount());
     }
 
     public static void testUpdateMany() {
         Document filter = new Document();
-        filter.append(&quot;phone&quot;, &quot;18912341235&quot;);
-        // 注意update文档里要包含&quot;$set&quot;字段
+        filter.append("phone", "18912341235");
+        // 注意update文档里要包含"$set"字段
         Document update = new Document();
-        update.append(&quot;$set&quot;, new Document(&quot;phone&quot;, &quot;123123123&quot;));
+        update.append("$set", new Document("phone", "123123123"));
         UpdateResult result = MongoDbUtil.updateMany(filter, update);
-        System.out.println(&quot;matched count = &quot; + result.getMatchedCount());
+        System.out.println("matched count = " + result.getMatchedCount());
     }
 
     public static void testReplace() {
         Document filter = new Document();
-        filter.append(&quot;name&quot;, &quot;likang&quot;);
-        // 注意：更新文档时，不需要使用&quot;$set&quot;
+        filter.append("name", "likang");
+        // 注意：更新文档时，不需要使用"$set"
         Document replacement = new Document();
-        replacement.append(&quot;value&quot;, 123);
+        replacement.append("value", 123);
         MongoDbUtil.replace(filter, replacement);
     }
 
     public static void testDeleteOne() {
         Document filter = new Document();
-        filter.append(&quot;name&quot;, &quot;wang&quot;);
+        filter.append("name", "wang");
         MongoDbUtil.deleteOne(filter);
     }
 
     public static void testDeleteMany() {
         Document filter = new Document();
-        filter.append(&quot;phone&quot;, &quot;18778907890&quot;);
+        filter.append("phone", "18778907890");
         MongoDbUtil.deleteMany(filter);
     }
 }
@@ -1087,4 +1087,5 @@ public class MongoDbUtil {
 </ul>
 <hr />
 <h3><a href="https://mp.weixin.qq.com/s?__biz=MzIxMjg4NDU1NA==&mid=2247484268&idx=1&sn=5431c00c451ebeca8aa99ae59f05a3a2&chksm=97be0e49a0c9875fa918412aa0d2544c8dbb02b8875382b08217b1e7818e7ae913d72ae4107c&scene=21#wechat_redirect">Redis、Memcache、MongoDB特点、区别以及应用场景</a></h3>
+
 
