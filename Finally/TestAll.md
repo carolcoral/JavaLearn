@@ -636,11 +636,11 @@
 ### 64.阐述JDBC操作数据库的步骤？
 
         1：加载驱动
-            Class.forName(&quot;oracle.jdbc.driver.OracleDriver&quot;);
+            Class.forName("oracle.jdbc.driver.OracleDriver");
         2：创建连接
-            Connection con = DriverManager.getConnection(&quot;jdbc:oracle:thin:@localhost:1521:orcl&quot;, &quot;1111&quot;, &quot;1111&quot;);
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "1111", "1111");
         3：创建语句
-            PreparedStatement ps = con.prepareStatement(&quot;select * from user&quot;);
+            PreparedStatement ps = con.prepareStatement("select * from user");
         4：执行语句
             ResultSet rs = ps.executeQuery();
         5：处理结果
@@ -675,14 +675,14 @@
             * 排序
             * @param list 待排序的数组
             */
-           public &lt;T extends Comparable&lt;T&gt;&gt; void sort(T[] list);
+           public <T extends Comparable<T>> void sort(T[] list);
         
            /**
             * 排序
             * @param list 待排序的数组
             * @param comp 比较两个对象的比较器
             */
-           public &lt;T&gt; void sort(T[] list, Comparator&lt;T&gt; comp);
+           public <T> void sort(T[] list, Comparator<T> comp);
         }
         
         
@@ -698,12 +698,12 @@
         public class BubbleSorter implements Sorter {
         
             @Override
-            public &lt;T extends Comparable&lt;T&gt;&gt; void sort(T[] list) {
+            public <T extends Comparable<T>> void sort(T[] list) {
                 boolean swapped = true;
-                for (int i = 1, len = list.length; i &lt; len &amp;&amp; swapped; ++i) {
+                for (int i = 1, len = list.length; i < len &amp;&amp; swapped; ++i) {
                     swapped = false;
-                    for (int j = 0; j &lt; len - i; ++j) {
-                        if (list[j].compareTo(list[j + 1]) &gt; 0) {
+                    for (int j = 0; j < len - i; ++j) {
+                        if (list[j].compareTo(list[j + 1]) > 0) {
                             T temp = list[j];
                             list[j] = list[j + 1];
                             list[j + 1] = temp;
@@ -714,12 +714,12 @@
             }
         
             @Override
-            public &lt;T&gt; void sort(T[] list, Comparator&lt;T&gt; comp) {
+            public <T> void sort(T[] list, Comparator<T> comp) {
                 boolean swapped = true;
-                for (int i = 1, len = list.length; i &lt; len &amp;&amp; swapped; ++i) {
+                for (int i = 1, len = list.length; i < len &amp;&amp; swapped; ++i) {
                     swapped = false;
-                    for (int j = 0; j &lt; len - i; ++j) {
-                        if (comp.compare(list[j], list[j + 1]) &gt; 0) {
+                    for (int j = 0; j < len - i; ++j) {
+                        if (comp.compare(list[j], list[j + 1]) > 0) {
                             T temp = list[j];
                             list[j] = list[j + 1];
                             list[j + 1] = temp;
