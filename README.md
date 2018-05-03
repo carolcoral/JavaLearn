@@ -53,21 +53,25 @@
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
 <a href="#zongjie" style="text-decoration: none;display: block;">五、扩展总结</a>
+<ul style="display: block;margin-top: 5px;">
+<li style="display: block;padding: 4px;"><a href="#finally_arithmetic" style="text-decoration: none;display: block;">Arithmetic 资料</a></li>
+<li style="display: block;padding: 4px;"><a href="#finally_code" style="text-decoration: none;display: block;">Code 代码</li>
+</ul>
 </li>
 </br>
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#QA" style="text-decoration: none;display: block;">六、JAVA 面试题汇总（附答案）</a>
+<a href="#buchong" style="text-decoration: none;display: block;">六、补  充</a>
 </li>
 </br>
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#baodian" style="text-decoration: none;display: block;">七、面试宝典</a>
+<a href="#QA" style="text-decoration: none;display: block;">七、JAVA 面试题汇总（附答案）</a>
 </li>
 </br>
 
 <li style="display: inline-block;line-height: 16px;text-decoration: none;vertical-align: middle;height: 60px;">
-<a href="#buchong" style="text-decoration: none;display: block;">八、补  充</a>
+<a href="#baodian" style="text-decoration: none;display: block;">八、面试宝典</a>
 </li>
 </br>
 
@@ -411,41 +415,44 @@
      
 ## <a href="https://github.com/carolcoral/JavaLearn/tree/master/Finally" name="zongjie">扩展总结</a>
 
->1.[Linux 下安装配置 JAVA 环境](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Ubuntu%E6%88%96CentOS%E4%B8%8B%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83%E5%92%8Ctomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
+* ### <a name="finally_arithmetic">Arithmetic（包含框架学习中主要需要了解和学习的内容的文本资料）</a>
 
->2.[Linux 部署Tomcat、开发工具搭建、Maven使用、DEBUG使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%20%E9%83%A8%E7%BD%B2Tomcat%E3%80%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA%E3%80%81Maven%E4%BD%BF%E7%94%A8%E3%80%81DEBUG%E4%BD%BF%E7%94%A8.md)
+     >1.[Linux 下安装配置 JAVA 环境](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Ubuntu%E6%88%96CentOS%E4%B8%8B%E5%AE%89%E8%A3%85java%E7%8E%AF%E5%A2%83%E5%92%8Ctomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
->3.[企业类型、项目类型、企业IT组成](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E4%BC%81%E4%B8%9A%E7%B1%BB%E5%9E%8B%E3%80%81%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E4%BC%81%E4%B8%9AIT%E7%BB%84%E6%88%90.md)
+     >2.[Linux 部署Tomcat、开发工具搭建、Maven使用、DEBUG使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%20%E9%83%A8%E7%BD%B2Tomcat%E3%80%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA%E3%80%81Maven%E4%BD%BF%E7%94%A8%E3%80%81DEBUG%E4%BD%BF%E7%94%A8.md)
 
->4.[技术架构、负载架构、二维码工具类](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E3%80%81%E8%B4%9F%E8%BD%BD%E6%9E%B6%E6%9E%84%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
+     >3.[企业类型、项目类型、企业IT组成](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E4%BC%81%E4%B8%9A%E7%B1%BB%E5%9E%8B%E3%80%81%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E4%BC%81%E4%B8%9AIT%E7%BB%84%E6%88%90.md)
 
->5.[CRM 客户管理系统](https://github.com/carolcoral/CRM)
+     >4.[技术架构、负载架构、二维码工具类](https://github.com/carolcoral/JavaLearn/blob/master/Finally/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E3%80%81%E8%B4%9F%E8%BD%BD%E6%9E%B6%E6%9E%84%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
 
->6.[P2P 金融借贷平台](https://github.com/carolcoral/P2P)
+     >5.[CRM 客户管理系统](https://github.com/carolcoral/CRM)
 
->7.[JEECMS内容管理系统-自动化建站](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JEECMS内容管理系统安装及使用.md)
+     >6.[P2P 金融借贷平台](https://github.com/carolcoral/P2P)
 
->8.[支付宝、微信第三方支付功能，抢红包流程](https://github.com/carolcoral/JavaLearn/blob/master/Finally/支付宝、微信第三方支付功能.md)
+     >7.[JEECMS内容管理系统-自动化建站](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JEECMS内容管理系统安装及使用.md)
 
->9.[直播、录播、点播](https://github.com/carolcoral/JavaLearn/blob/master/Finally/直播、录播、点播.md)
+     >8.[支付宝、微信第三方支付功能，抢红包流程](https://github.com/carolcoral/JavaLearn/blob/master/Finally/支付宝、微信第三方支付功能.md)
 
->10.[Nginx 负载均衡配置](https://blog.csdn.net/xyang81/article/details/51702900)
+     >9.[直播、录播、点播](https://github.com/carolcoral/JavaLearn/blob/master/Finally/直播、录播、点播.md)
 
->11.[WebService加密数据接口、SSO单点登录](https://github.com/carolcoral/JavaLearn/blob/master/Finally/WebService%E3%80%81SSO%20%E6%8A%80%E6%9C%AF.md)
+     >10.[Nginx 负载均衡配置](https://blog.csdn.net/xyang81/article/details/51702900)
 
->12.[JVM 调优](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JVM%20%E8%B0%83%E4%BC%98.md)
+     >11.[WebService加密数据接口、SSO单点登录](https://github.com/carolcoral/JavaLearn/blob/master/Finally/WebService%E3%80%81SSO%20%E6%8A%80%E6%9C%AF.md)
 
->13.[CentOS 安装 mysql5.7](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CentOS%20安装%20mysql5.7.md)
+     >12.[JVM 调优](https://github.com/carolcoral/JavaLearn/blob/master/Finally/JVM%20%E8%B0%83%E4%BC%98.md)
 
->14.[MySQL 主从配置说明](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置说明.md)
+     >13.[CentOS 安装 mysql5.7](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CentOS%20安装%20mysql5.7.md)
 
->15.[MySQL 主从配置知识点](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置知识点.md)
+     >14.[MySQL 主从配置说明](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置说明.md)
 
->16.[Redis 集群搭建和简单使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Redis%20集群搭建和简单使用.md)
+     >15.[MySQL 主从配置知识点](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL主从配置知识点.md)
 
-## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
+     >16.[Redis 集群搭建和简单使用](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Redis%20集群搭建和简单使用.md)
+     
+* ### <a name="finally_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
-## <a id="baodian" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/面试宝典.md">面试宝典</a>
+     >1.[MySQL 主从配置在 JAVA 中的应用](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/MasterAndSlave)
+
  
 ## <a href="javascript:" name="buchong">补   充</a>
 
@@ -459,3 +466,6 @@
 
 >5.[Gulp 前端自动化构建工具](https://www.imooc.com/learn/802)
 
+## <a id="QA" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/TestAll.md">JAVA面试汇总（附答案）</a>
+
+## <a id="baodian" href="https://github.com/carolcoral/JavaLearn/blob/master/Finally/面试宝典.md">面试宝典</a>
