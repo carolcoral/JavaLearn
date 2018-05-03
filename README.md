@@ -1,4 +1,4 @@
-# <a href="https://baike.baidu.com/item/java/85979" name="java">序言</a>
+# <p align="center"><a href="https://baike.baidu.com/item/java/85979" name="java">序言</a></p>
 
 * <a name="daoyu">导语：</a>
 
@@ -20,3 +20,4 @@
      
 * <a href="https://github.com/carolcoral/JavaLearn/tree/master/JAR" name="jarbao">相关 JAR 包与其他三方工具包</a>
 
+# 详细内容及目录请访问 WIKI [查看](https://github.com/carolcoral/JavaLearn/wiki)
