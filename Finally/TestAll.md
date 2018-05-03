@@ -602,9 +602,137 @@
         application：服务器只要运行，则有效
 
 ### 61.sleep 和 wait 有什么区别？
+
+        sleep：
+            1：属于Thread类，表示让一个线程进入睡眠状态，等待一定的时间之后，自动醒来进入到可运行状态，不会马上进入运行状态
+            2：sleep方法没有释放锁
+            3：sleep必须捕获异常
+        
+        wait：
+            1：属于Object，一旦一个对象调用了wait方法，必须要采用notify()和notifyAll()方法唤醒该进程
+            2：wait方法释放了锁
+            3：wait不需要捕获异常
+
 ### 62.Java 中的final关键字有哪些用法？
+
+        1：修饰类：表示该类不能被继承
+        2：修饰方法：表示方法不能被重写
+        3：修饰变量：表示变量只能一次赋值以后值不能被修改（常量）
+
 ### 63.Error和Exception有什么区别？什么时候需要捕获异常，什么时候需要抛出异常？
+
+        1:Error表示系统级的错误和程序不必处理的异常,有可能恢复，但是恢复比较困难的严重问题。
+        2：Exception表示需要捕捉或者需要程序进行处理的异常，是一种设计或实现问题；也就是说，它表示如果程序运行正常，从不会发生的情况
+        
+        异常处理的原则：
+            1：System.out.println是高代价的。调用System.out.println会降低系统吞吐量
+            2：在生产环境中别用异常的printStackTrace()方法。
+            3：如果你不能处理异常，不要捕获该异常
+            4：如果要捕获，应在离异常源近的地方捕获它
+            5：捕获的异常一定要做处理
+            6：可以自定义异常
+            7：就近原则
+
 ### 64.阐述JDBC操作数据库的步骤？
+
+        1：加载驱动
+            Class.forName(&quot;oracle.jdbc.driver.OracleDriver&quot;);
+        2：创建连接
+            Connection con = DriverManager.getConnection(&quot;jdbc:oracle:thin:@localhost:1521:orcl&quot;, &quot;1111&quot;, &quot;1111&quot;);
+        3：创建语句
+            PreparedStatement ps = con.prepareStatement(&quot;select * from user&quot;);
+        4：执行语句
+            ResultSet rs = ps.executeQuery();
+        5：处理结果
+            while(rs.next()) {
+                rs.get.....（“”）；
+            }
+        6：关闭资源
+            finally {
+                if(con != null) {
+                    try {
+                        con.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
 ### 65.写出冒泡排序的程序代码？
+
+        高逼格的代码：
+        
+        接口：
+        
+        import java.util.Comparator;
+        
+        /**
+         * 排序器接口(策略模式: 将算法封装到具有共同接口的独立的类中使得它们可以相互替换)
+         */
+        public interface Sorter {
+        
+           /**
+            * 排序
+            * @param list 待排序的数组
+            */
+           public &lt;T extends Comparable&lt;T&gt;&gt; void sort(T[] list);
+        
+           /**
+            * 排序
+            * @param list 待排序的数组
+            * @param comp 比较两个对象的比较器
+            */
+           public &lt;T&gt; void sort(T[] list, Comparator&lt;T&gt; comp);
+        }
+        
+        
+        
+        实现类：
+        
+        import java.util.Comparator;
+        
+        /**
+         * 冒泡排序
+         *
+         */
+        public class BubbleSorter implements Sorter {
+        
+            @Override
+            public &lt;T extends Comparable&lt;T&gt;&gt; void sort(T[] list) {
+                boolean swapped = true;
+                for (int i = 1, len = list.length; i &lt; len &amp;&amp; swapped; ++i) {
+                    swapped = false;
+                    for (int j = 0; j &lt; len - i; ++j) {
+                        if (list[j].compareTo(list[j + 1]) &gt; 0) {
+                            T temp = list[j];
+                            list[j] = list[j + 1];
+                            list[j + 1] = temp;
+                            swapped = true;
+                        }
+                    }
+                }
+            }
+        
+            @Override
+            public &lt;T&gt; void sort(T[] list, Comparator&lt;T&gt; comp) {
+                boolean swapped = true;
+                for (int i = 1, len = list.length; i &lt; len &amp;&amp; swapped; ++i) {
+                    swapped = false;
+                    for (int j = 0; j &lt; len - i; ++j) {
+                        if (comp.compare(list[j], list[j + 1]) &gt; 0) {
+                            T temp = list[j];
+                            list[j] = list[j + 1];
+                            list[j + 1] = temp;
+                            swapped = true;
+                        }
+                    }
+                }
+            }
+        }
+
+### 66.数据库集群模式下，如何保证主从数据库的数据一致性？以 mysql 为例进行说明配置步骤？
+### 67.简述 JAVA 中 I/O 和 NIO 的区别？
+### 68.简述单例模式额特征和应用场景？
+### 69.写出将1000个存在重复手机号的号码池去重的 JAVA 代码？
 
 
