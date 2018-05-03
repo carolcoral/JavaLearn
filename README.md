@@ -1,5 +1,7 @@
 ## 详细内容及目录请访问 WIKI [查看](https://github.com/carolcoral/JavaLearn/wiki)
 
+## 重要：本教程所有资源每次使用请注明版权信息@Copyright Carol.lxw ，商用请邮箱联系，谢谢 ！
+
 # <p align="center">序   言</p> 
 
 * <a name="daoyu">导语：</a>
