@@ -451,7 +451,7 @@
      
 * ### <a name="finally_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
-     >1.[MySQL 主从配置在 JAVA 中的应用](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/MasterAndSlave)
+     >1.[MySQL 主从配置在 JAVA 中的应用](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/MasterAndSlave)
 
  
 ## <a href="javascript:" name="buchong">补   充</a>
