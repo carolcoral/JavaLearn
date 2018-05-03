@@ -1,6 +1,6 @@
 ## 详细内容及目录请访问 WIKI [查看](https://github.com/carolcoral/JavaLearn/wiki)
 
-#  <p align="center">序   言</p>
+<p align="center">序   言</p>
 
 * <a name="daoyu">导语：</a>
 
