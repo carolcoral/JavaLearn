@@ -3,7 +3,9 @@
 ### 参考文档
 
 [《02_CentOS安装mysql数据库文档》](https://github.com/carolcoral/JavaLearn/blob/master/Finally/CentOS%20%E5%AE%89%E8%A3%85%20mysql5.7.md)
+
 [《03_Mysql主从配置文档》](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.md)
+
 [《04_mysql主从知识点》](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E7%82%B9.md)
 
 ### 分库分表
