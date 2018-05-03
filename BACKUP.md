@@ -451,6 +451,8 @@
      
      >17.[MySQL 优化和脑图](https://github.com/carolcoral/JavaLearn/blob/master/Finally/MySQL%E4%BC%98%E5%8C%96%E5%92%8C%E8%84%91%E5%9B%BE.md)
      
+     >18.[Linux 安装配置 Nginx](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEnginx.md)
+     
 * ### <a name="finally_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
      >1.[MySQL 主从配置在 JAVA 中的应用](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/MasterAndSlave)
