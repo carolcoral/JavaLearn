@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:oxm="http://www.springframework.org/schema/oxm"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.2.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+    http://www.springframework.org/schema/oxm     http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd
+    http://www.springframework.org/schema/tx      http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+    http://www.springframework.org/schema/aop     http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+    ">
+    
+
+	<!-- 扫描包 -->
+	  <context:component-scan base-package="com.xdl">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+    
+	
+	<!-- jdbc配置文件 -->
+	<bean id="configurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 配置数据源  写   主服务器mysql -->
+	<!--master数据源 读写 -->
+	<bean id="masterDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${dirverM}" />
+		<property name="url" value="${urlM}" />
+		<property name="username" value="${usernameM}" />
+		<property name="password" value="${passwordM}" />
+		<!--#给出一条简单的sql语句进行验证 -->
+		<property name="validationQuery" value="select 1" />
+		<!-- 连接池启动时的初始值 -->
+		<property name="initialSize" value="30" />
+		<!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+		<property name="maxIdle" value="50" />
+		<!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+		<property name="minIdle" value="30" />
+		<!-- 连接池的最大值 -->
+		<property name="maxActive" value="1000" />
+		<property name="maxWait" value="10000" />
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="60" />
+	</bean>
+
+	
+	
+	<!--配置数据源  读   从服务器mysql  -->
+	<bean id="slaveDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		 <property name="driverClassName" value="${dirverS}" />
+		<property name="url" value="${urlS}" />
+		<property name="username" value="${usernameS}" />
+		<property name="password" value="${passwordS}" />
+		<!--#给出一条简单的sql语句进行验证 -->
+		<property name="validationQuery" value="select 1" />
+		<!-- 连接池启动时的初始值 -->
+		<property name="initialSize" value="30" />
+		<!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+		<property name="maxIdle" value="50" />
+		<!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+		<property name="minIdle" value="30" />
+		<!-- 连接池的最大值 -->
+		<property name="maxActive" value="1000" />
+		<property name="maxWait" value="10000" />
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="60" />
+	</bean>
+
+	
+	
+	
+	<!-- dataSource配置 -->	
+	<bean id="dataSource" class="com.xdl.util.ChooseDataSource">
+		<property name="targetDataSources">
+			<map key-type="java.lang.String">
+				<entry key="master" value-ref="masterDataSource" />
+				<entry key="slave" value-ref="slaveDataSource" />
+			</map>
+		</property>
+		<property name="defaultTargetDataSource" ref="masterDataSource" />
+	</bean>
+	
+	
+	<!-- mybatis与spring整合 -->
+	<bean id="sqlSessionFactory"  name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>
+		<property name="dataSource" ref="dataSource"/>
+		<property name="mapperLocations" value="classpath:mapper/*.xml"/>
+	</bean>
+	
+	<!-- mapper配置扫描信息 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.xdl.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+	
+	<!--事务配置  -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" order="1"/>	
+	
+	
+	<!-- 为了业务逻辑方法解析@DataSource 注解，为当前线程的source注入数据源 -->
+	<bean id="dataSourceAspect" class="com.xdl.util.DataSourceAspect"/>
+	<aop:config proxy-target-class="true"><!-- 使用AOP，且开启代理模式 -->
+		<aop:aspect id="dataSourceAspect" ref="dataSourceAspect" order="2">
+			<!-- 当前工程，com.xdl.service.impl..包下，所有的类（*.*）中的所有方法（(..)），都可以使用切面 -->
+			<aop:pointcut id="tx" expression="execution(* com.xdl.service.impl..*.*(..)) " />
+			<aop:before pointcut-ref="tx" method="before" />
+		</aop:aspect>
+	</aop:config>
+	
+	
+
+</beans>

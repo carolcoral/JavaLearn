@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	 
+	 <settings>
+	 	<!-- 转换驼峰算法 -->
+	 	<setting name="mapUnderscoreToCamelCase" value="true"/>
+	 </settings>
+	 
+	 <typeAliases>
+	 	<!-- mapper.xml，paramType -->
+	 	<package name="com.xdl.*.*.entity"/>
+	 </typeAliases>
+	 
+	 
+	 <plugins>
+	 	<plugin interceptor="com.github.pagehelper.PageInterceptor">
+	 		<!--true:启用分页参数合理化，如果请求的是-1页，则返回第一页数据  -->
+	 		<!--false:禁用分页参数，如果是请求的-1页，则返回的是空数据 -->
+	 		<property name="reasonable" value="true"/>
+	 	</plugin>
+	 </plugins>
+	 
+	 
+</configuration>
+
