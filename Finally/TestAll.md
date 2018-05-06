@@ -731,8 +731,154 @@
         }
 
 ### 66.数据库集群模式下，如何保证主从数据库的数据一致性？以 mysql 为例进行说明配置步骤？
+
+        1：开启所有服务器的二进制文件
+        2：开启所有从服务的IO和SQL线程
+        3：配置主从连接的用户信息和主从信息
+        4：开启3306端口号
+
 ### 67.简述 JAVA 中 I/O 和 NIO 的区别？
+
+        NIO:是一种new IO，其目的是为了实现高速IO的代码，将IO操作并转换为操作系统，属于非阻塞型，java.nio.*，是以块（缓冲区）的形式就行数据的传输
+        IO：是以流的方式就行数据的传输，属于阻塞型，影响程序的性能
+        
+        传统阻塞IO，如果你要read/write( byte[10M])一个10M的文件，一旦调用了read/write( byte[10M])这个方法，就得等10M全部read/write，方法底层才会返回。
+        
+        非阻塞线程，调用read/write( byte[10M])方法立即返回，当然这并不能代表10M已经read/write完成，你需要检测这个byte[10M]的缓冲区
+        
+        java BIO：同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善；
+        
+        java NIO：同步非阻塞，服务器实现模式为一个请求一个线程，NIO多线程对某资源进行IO操作时会先把资源先操作至内存缓冲区。然后询问是否IO操作就绪，是则进行IO操作，否则进行下一步操作，然后不断的轮询是否IO操作就绪，直到iIO操作就绪后进行相关操作
+        
+        java AIO：异步非阻塞，异步非阻塞，服务器实现模式为一个有效请求一个线程，客户端的I/O请求都是由OS先完成了再通知服务器应用去启动线程进行处理。
+        
+        BIO和NIO的异同：
+        
+            共同点：两者都是同步操作。即必须先进行IO操作后才能进行下一步操作。
+            不同点：BIO多线程对某资源进行IO操作时会出现阻塞，即一个线程进行IO操作完才会通知另外的IO操作线程，必须等待。
+
 ### 68.简述单例模式额特征和应用场景？
+
+        单例模式（Singleton），也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。
+        单例模式只允许创建一个对象，因此节省内存，加快对象访问速度
+        
+        单例模式要素： 
+            a.私有构造方法 
+            b.私有静态引用指向自己实例 
+            c.以自己实例为返回值的公有静态方法 
+        
+        饿汉式：单例实例在类装载时就构建，急切初始化。（预先加载法） 
+        
+            优点 
+                1.线程安全 
+                2.在类加载的同时已经创建好一个静态对象，调用时反应速度快 
+            缺点 
+                 资源效率不高，可能getInstance()永远不会执行到，但执行该类的其他静态方法或者加载了该类（class.forName)，那么这个实例仍然初始化 
+        
+        懒汉式：单例实例在第一次被使用时构建，延迟初始化。 
+        
+        应用场景：
+        
+            - 需要频繁实例化然后销毁的对象
+            - 创建对象时耗时过多或者耗资源过多，但又经常用到的对象
+            - 有状态的工具类对象
+            - 频繁访问数据库或文件的对象
+            - 网站计数器，一般是采用单例模式实现
+            - 由于配置文件一般都是共享资源，即web应用的配置对象的读取，一般采用单例模式来实现。如：spring的配置文件的读取等
+            - 多线程的线程池的设计一般也是采用单例模式
+            - 数据库连接池的设计
+
 ### 69.写出将1000个存在重复手机号的号码池去重的 JAVA 代码？
 
-
+        public static void main(String[] args) {
+                phoneDis();
+                phoneDis2();
+                phoneDis3();
+                phoneDis4();
+                phoneDis5();
+                phoneDis6();
+            }
+        
+            public static void phoneDis(){
+                String[] array = {"18310141089","18310141089","18310141080","18310141083","18310141089","18310141489"};  
+                List<String> result = new ArrayList<String>();  
+                boolean flag;  
+                for(int i=0;i<array.length;i++){  
+                    flag = false;  
+                    for(int j=0;j<result.size();j++){  
+                        if(array[i].equals(result.get(j))){  
+                            flag = true;  
+                            break;  
+                        }  
+                    }  
+                    if(!flag){  
+                        result.add(array[i]);  
+                    }  
+                }  
+                String[] arrayResult = (String[]) result.toArray(new String[result.size()]);  
+                System.out.println("方法1：" + Arrays.toString(arrayResult));  
+            }
+        
+        
+            public static void phoneDis2(){
+                String[] array = {"18310141089","18310141089","18310141080","18310141083","18310141089","18310141489"};  
+                List<String> list = new ArrayList<String>();  
+                list.add(array[0]);  
+                for(int i=1;i<array.length;i++){  
+                    if(list.toString().indexOf(array[i]) == -1){  
+                       list.add(array[i]);  
+                    }  
+                }  
+                String[] arrayResult = (String[]) list.toArray(new String[list.size()]);  
+                System.out.println("方法2：" + Arrays.toString(arrayResult));  
+            }
+        
+            public static void phoneDis3(){
+                String[] array = {"18310141089","18310141089","18310141080","18310141083","18310141089","18310141489"};  
+                List<String> list = new ArrayList<String>();  
+                for(int i=0;i<array.length;i++){  
+                    for(int j=i+1;j<array.length;j++){  
+                        if(array[i] == array[j]){  
+                            j = ++i;  
+                        }  
+                    }  
+                    list.add(array[i]);  
+                }  
+                String[] arrayResult = (String[]) list.toArray(new String[list.size()]);  
+                System.out.println("方法3：" + Arrays.toString(arrayResult));
+            }
+        
+            public static void phoneDis4(){
+                String[] array = {"18310141089","18310141089","18310141080","18310141083","18310141089","18310141489"};  
+                Arrays.sort(array);  
+                List<String> list = new ArrayList<String>();  
+                list.add(array[0]);  
+                for(int i=1;i<array.length;i++){  
+                  if(!array[i].equals(list.get(list.size()-1))){  
+                     list.add(array[i]);  
+                  }  
+                }  
+               String[] arrayResult = (String[]) list.toArray(new String[list.size()]);  
+               System.out.println("方法4：" + Arrays.toString(arrayResult));
+            }
+        
+            public static void phoneDis5(){
+                String[] array = {"18310141089","18310141089","18310141080","18310141083","18310141089","18310141489"};  
+                Set<String> set = new HashSet<String>();  
+                for(int i=0;i<array.length;i++){  
+                    set.add(array[i]);  
+                }  
+                String[] arrayResult = (String[]) set.toArray(new String[set.size()]);  
+                System.out.println("方法5：" + Arrays.toString(arrayResult)); 
+            }
+        
+            public static void phoneDis6() {
+                String[] array = { "18310141089", "18310141089", "18310141080","18310141083", "18310141089", "18310141489" };
+                SortedSet<String> sset = new TreeSet<String>();
+                for (int i = 0; i < array.length; i++) {
+                    sset.add(array[i]);
+                }
+                String[] arrayResult2 = (String[]) sset.toArray(new String[sset.size()]);
+                System.out.println("方法6：" + Arrays.toString(arrayResult2));
+            }
+        }
