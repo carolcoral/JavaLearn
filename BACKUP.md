@@ -454,11 +454,14 @@
      >18.[Linux 安装配置 Nginx](https://github.com/carolcoral/JavaLearn/blob/master/Finally/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEnginx.md)
      
      >19.[NoSQL 从小白到码神](https://github.com/carolcoral/JavaLearn/blob/master/Finally/NoSQL%E4%BB%8E%E5%B0%8F%E7%99%BD%E5%88%B0%E7%A0%81%E7%A5%9E.md)
-     
+
+     >20.[ActiveMQ 消息管理(机制)](https://github.com/carolcoral/JavaLearn/blob/master/Finally/ActiveMQ%20消息管理(机制).md)
+     
 * ### <a name="finally_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
      >1.[MySQL 主从配置在 JAVA 中的应用](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/MasterAndSlave)
 
+     >2.[ActiveMQ 的 demo](https://github.com/carolcoral/JavaLearn/tree/master/Finally/Code/ActiveMQ)
  
 ## <a href="javascript:" name="buchong">补   充</a>
 
