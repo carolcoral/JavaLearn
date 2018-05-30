@@ -458,6 +458,10 @@
      >20.[ActiveMQ 消息管理(机制)](https://github.com/carolcoral/JavaLearn/blob/master/Finally/ActiveMQ%20消息管理(机制).md)
 
      >21.[ActiveMQ应用与实例 PDF](https://github.com/carolcoral/JavaLearn/blob/master/Finally/ActiveMQ应用与实例.pdf)
+     
+     >22.[lucene、solr全文搜索](https://github.com/carolcoral/JavaLearn/blob/master/Finally/lucene%E3%80%81solr%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2.md)
+     
+     >23.[shiro权限管理](https://github.com/carolcoral/JavaLearn/blob/master/Finally/shiro%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86.md)
      
 * ### <a name="finally_code">Code（包含框架学习过程中所编写的一些代码，以下仅列出部分重要代码链接）</a>
 
