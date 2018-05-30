@@ -101,12 +101,12 @@ discovery discovery://host:port
 
 <h2>ActiveMQ持久化</h2>
 <p>日志：</p>
-<pre><code><journaledJDBC journalLogFiles="5"dataDirectory="../mq-data" />
+<pre><code>&lt;journaledJDBC journalLogFiles=&quot;5&quot;dataDirectory=&quot;../mq-data&quot; /&gt;
 </code></pre>
 
 <p>数据库：</p>
 <pre><code>包括： Derby,HSQL,MySQL,SQLServer, Sybase,DB2,Oracle…
-<journaledJDBC  dataSource="#mysql-ds"/>
+&lt;journaledJDBC  dataSource=&quot;#mysql-ds&quot;/&gt;
 </code></pre>
 
 <h2>ActiveMQ安全</h2>
@@ -209,6 +209,8 @@ webapps :用于存放项目的目录
 </code></pre>
 
 <h4>ActiveMQ应用场景</h4>
+<p><img src="https://i.imgur.com/FhRDE22.png" />
+<img src="https://i.imgur.com/Q9fMAjK.png" /></p>
 <h4>ActiveMQ入门案例1</h4>
 <ul>
 <li>
@@ -264,7 +266,7 @@ public class Product {
              * 
              */
             session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
-            destination = session.createQueue("java12");//选择协议主题，并且初始化主题名称
+            destination = session.createQueue(&quot;java12&quot;);//选择协议主题，并且初始化主题名称
             messageProducer = session.createProducer(destination);//创建生产者
             sendMessage(messageProducer,session);//发送消息
             session.commit();//提交消息到MQ容器中
@@ -281,9 +283,9 @@ public class Product {
      */
     private static void sendMessage(MessageProducer messageProducer,Session session) throws JMSException {
 
-        for (int i = 0; i < 10; i++) {
-            TextMessage tx = session.createTextMessage("ActiveMQ 发送消息" + i);
-            System.out.println("生产者发送消息内容为：" + tx.getText());
+        for (int i = 0; i &lt; 10; i++) {
+            TextMessage tx = session.createTextMessage(&quot;ActiveMQ 发送消息&quot; + i);
+            System.out.println(&quot;生产者发送消息内容为：&quot; + tx.getText());
             messageProducer.send(tx);
         }
 
@@ -317,14 +319,14 @@ public class Columer {
             connection = connectionFactory.createConnection();//创建连接
             connection.start();//启动连接信息
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-            destination = session.createQueue("java12");//选择协议主题，并且初始化主题名称
+            destination = session.createQueue(&quot;java12&quot;);//选择协议主题，并且初始化主题名称
             messageConsumer = session.createConsumer(destination);//创建消费者
 
             while(true){
 //              TextMessage tx = session.createTextMessage();//接收消息
                 TextMessage tx = (TextMessage) messageConsumer.receive(1000000);//100S
                 if (tx != null) {
-                    System.out.println("消费者接收消息内容为："+tx.getText());
+                    System.out.println(&quot;消费者接收消息内容为：&quot;+tx.getText());
                 }else{
                     break;
                 }
