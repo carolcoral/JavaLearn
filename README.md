@@ -1,4 +1,4 @@
-## 重要：本教程所有资源每次使用请注明版权信息@Copyright Carol.lxw ，商用请邮箱联系，谢谢 ！
+## 重要：本教程所有资源每次使用请注明版权信息@Copyright [Carol.lxw](https://github.com/carolcoral/) ，商用请邮箱联系，谢谢 ！
 
 ## 详细内容及目录请访问 WIKI [查看](https://github.com/carolcoral/JavaLearn/wiki)
 
